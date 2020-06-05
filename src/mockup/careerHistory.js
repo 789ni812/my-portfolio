@@ -6,8 +6,9 @@ import { CareerHistory as history } from './data-points';
 import { Card, CardContent, Typography } from '@material-ui/core';
 
 const CareerHistory = () => {
-    const sortedHistory = history.reverse();
-    const content = sortedHistory.map((post) =>
+
+    //FIXME Reverse().map is constanly reversing the order each time you load the page.
+    const content = history.reverse().map((post) =>
 
         < Card key={post.id} >
 
@@ -38,11 +39,11 @@ const CareerHistory = () => {
 
 
     return (
-        <div>
-            Career History
+        <>
+            <h1>Employment History</h1>
             {content}
 
-        </div>
+        </>
 
     )
 };
