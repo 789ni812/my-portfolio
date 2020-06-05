@@ -20,6 +20,7 @@ import Footer from './components/Footer';
 import CareerHistory from './mockup/careerHistory';
 //import UserDetailsTest from './mockup/test_usersDetails'; // navigator useragent information
 import ContentIntroduction from './mockup/ContentIntroduction';
+import PortfolioContent from './mockup/Portfolio';
 
 
 function Home() {
@@ -27,10 +28,10 @@ function Home() {
 }
 
 function Portfolio() {
-  return <h2>Portfolio</h2>;
+  return <PortfolioContent />
 }
 
-function CHistory() {
+function EmploymentHistory() {
   return <CareerHistory />
 }
 
@@ -38,7 +39,6 @@ const App = () => {
 
   return (
     <div>
-
       <Grid container spacing={3}>
         <Grid item xs={12} >
           <Router>
@@ -52,7 +52,7 @@ const App = () => {
                     <Link to="/portfolio">Portfolio</Link>
                   </li>
                   <li>
-                    <Link to="/careerHistory">Career history</Link>
+                    <Link to="/employmentHistory">Employment history</Link>
                   </li>
                 </ul>
               </nav>
@@ -60,8 +60,8 @@ const App = () => {
                 <Route path="/portfolio">
                   <Portfolio />
                 </Route>
-                <Route path="/careerHistory">
-                  <CHistory />
+                <Route path="/employmentHistory">
+                  <EmploymentHistory />
                 </Route>
                 <Route path="/">
                   <Home />
@@ -69,36 +69,10 @@ const App = () => {
               </Switch>
             </div>
           </Router>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </Grid>
-        <Grid item xs={12} sm={2}>
-
         </Grid>
         <Grid item xs={12} sm={10}><Footer /></Grid>
       </Grid>
-
-
-
-
-
-
     </div>
   );
 }
-
-
 export default App;
