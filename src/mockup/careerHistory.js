@@ -24,15 +24,15 @@ const CareerHistory = () => {
             <ul>
                 <li>Role: {post.role}</li>
                 <li >Time at role: <Moment from={post.startDate}>{post.endDate}</Moment>  </li>
-                <li>Started: <Moment format="Do MMMM YYYY">{post.startDate}</Moment></li>
-                <li>Ended: <Moment format="Do MMMM YYYY">{post.endDate}</Moment></li>
+                <li>Started: <Moment format="DD MM YYYY">{post.startDate}</Moment></li>
+                <li>Ended: <Moment format="DD MM YYYY">{post.endDate}</Moment></li>
                 {post.delmeAchievments ? <li>{post.delmeAchievments}</li> : ''}
                 {post.agileSkills ? <li>{post.agileSkills}</li> : ''}
-                {post.skills ? <li>{post.skills}</li> : ''}
+                {post.skills ? <ul>{post.skills.map(skill => (<li>{skill}</li>))}</ul> : ''}
 
                 <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        {post.description ? `post.description` : ''}
+                        {post.description ? post.description : ''}
                     </Typography>
                 </CardContent>
 
