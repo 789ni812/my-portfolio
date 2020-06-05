@@ -21,7 +21,8 @@ Project: My-Portfolio
 
     Project: Portfolio
       Todo:
-        [ ] Build Portfolio page/section    
+        [ ] Build Portfolio page/section
+          [ ] Add devicons for each project I link to (class="devicons devicons-drupal")    
 
     Project: Employment History
       Todo:   

@@ -7,17 +7,16 @@ import { Card, CardContent, Typography } from '@material-ui/core';
 
 const CareerHistory = () => {
 
-
     const content = history.map((post) =>
         //TODO Moment time from is not working below
         //TODO Moment is creating invalid start and end date
         //TODO How to iterate over the array inside an obkect e.g. example sites inside of companies
-        //TODO iterate through skills and show icons for some of them? - devicons
+
 
 
         < Card key={post.id} >
 
-
+            <span class="devicons devicons-bing_small">Spoon</span>
 
 
             <p>{post.companyName}</p>
@@ -27,7 +26,7 @@ const CareerHistory = () => {
                 <li>Started: <Moment format="DD MM YYYY">{post.startDate}</Moment></li>
                 <li>Ended: <Moment format="DD MM YYYY">{post.endDate}</Moment></li>
                 {post.delmeAchievments ? <li>{post.delmeAchievments}</li> : ''}
-                {post.agileSkills ? <li>{post.agileSkills}</li> : ''}
+                {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li>{agileSkill}</li>))}</ul> : ''}
                 {post.skills ? <ul>{post.skills.map(skill => (<li>{skill}</li>))}</ul> : ''}
 
                 <CardContent>
@@ -38,9 +37,9 @@ const CareerHistory = () => {
 
 
 
-                {post.exampleSites ? <li>{post.exampleSites}</li> : ''}
+                {post.exampleSites ? <ul>{post.exampleSites.map(exampleSite => (<li>{exampleSite}</li>))}</ul> : ''}
                 {post.respnsibilitiesAndDuties ? <li>{post.respnsibilitiesAndDuties}</li> : ''}
-                {post.clientsWorkedWith ? `<li>post.clientsWorkedWith</li>` : ''}
+                {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li>{client}</li>))}</ul> : ''}
             </ul>
         </Card >
     );
