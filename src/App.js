@@ -3,15 +3,12 @@ import React from "react";
 
 import './App.scss';
 import Grid from '@material-ui/core/Grid';
-
-
-
 import Header from './mockup/Header'
 import Footer from './components/Footer';
 //import ChartExample from './mockup/chartExample'; // show off some information in chart. Dont know what though?
-// import CareerHistory from './mockup/careerHistory';
+import CareerHistory from './mockup/careerHistory';
 //import UserDetailsTest from './mockup/test_usersDetails'; // navigator useragent information
-import ContentIntroduction from './mockup/ContentIntroduction';
+//import ContentIntroduction from './mockup/ContentIntroduction';
 
 
 const App = () => {
@@ -24,7 +21,7 @@ const App = () => {
         <Grid item xs={12} >
 
 
-          <ContentIntroduction />
+          <CareerHistory />
 
 
 

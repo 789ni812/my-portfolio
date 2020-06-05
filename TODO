@@ -1,0 +1,32 @@
+Project: My-Portfolio
+  
+  Project: Styling
+      [ ] Style Content and typography first
+ 
+  Project: General
+      [ ] Add Links for the content pages
+      [ ] IDEA: Download CV on header or footer maybe? 
+
+  Project: Content
+      [ ] Home / Intro Text / About 
+      [ ] Portfolio
+      [ ] Employment History
+      [ ] Contact
+      [ ] Footer content
+
+    Project: Home / Intro Text / About 
+      Todo:   
+        [ ] Write Content for intro text
+        [ ] Review old and update About text
+
+    Project: Portfolio
+      Todo:
+        [ ] Build Portfolio page/section    
+
+    Project: Employment History
+      Todo:   
+        [ ] Fix Invalid Dates for "Ended" field.
+        [ ] Fix Invalid Dates for "Time at role" field.
+        [ ] Add spacing between Skills 
+        [ ] Improve layout of content
+        [ ] fix example sites
