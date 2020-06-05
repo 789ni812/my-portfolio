@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box } from '@material-ui/core';
-import UseMousePosition from './UseMousePosition';
+
 
 
 
 
 const UsersNavigatorDetails = () => {
 
-    // const { x, y } = useMousePosition();
+
 
     const hasMovedCursor = typeof x === "number" && typeof y === "number";
 
@@ -27,12 +27,8 @@ const UsersNavigatorDetails = () => {
                             {navigator.userAgent ? <li>User Agent: {navigator.userAgent}</li> : ''}
                         </ul>
 
-                        <h1>
-                            {hasMovedCursor
-                                ? `Your cursor is at ${x}, ${y}.`
-                                : "Move your mouse around."}
-                        </h1>
-                        <UseMousePosition />
+
+
                     </Box>
                 </Typography>
             </CardContent >

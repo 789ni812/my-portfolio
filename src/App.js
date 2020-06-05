@@ -10,10 +10,8 @@ import Header from './mockup/Header'
 import Footer from './components/Footer';
 //import ChartExample from './mockup/chartExample'; // show off some information in chart. Dont know what though?
 // import CareerHistory from './mockup/careerHistory';
-import UserDetailsTest from './mockup/test_usersDetails'; // navigator useragent information
-
-
-
+//import UserDetailsTest from './mockup/test_usersDetails'; // navigator useragent information
+import ContentIntroduction from './mockup/ContentIntroduction';
 
 
 const App = () => {
@@ -24,17 +22,17 @@ const App = () => {
       <Grid container spacing={3}>
         <Grid item xs={12}><Header /></Grid>
         <Grid item xs={12} >
-          MAIN AREA
-          
-          
-         
-         
-         
-          
+
+
+          <ContentIntroduction />
+
+
+
+
         </Grid>
-<Grid item xs={12} sm={2}>
-<UserDetailsTest />
-</Grid>
+        <Grid item xs={12} sm={2}>
+
+        </Grid>
         <Grid item xs={12} sm={10}><Footer /></Grid>
       </Grid>
 
@@ -43,7 +41,7 @@ const App = () => {
 
 
 
-    </div >
+    </div>
   );
 }
 
