@@ -32,6 +32,7 @@ Project: My-Portfolio
         [ ] Improve layout of content
         [x] fix example sites
         [x] Show employment history in reverse order e.g. last company first.
+        [ ] FIX warnings about keys for the arrays in the history data
 
 Project: CV
   Todo:
