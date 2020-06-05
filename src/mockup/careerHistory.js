@@ -6,8 +6,8 @@ import { CareerHistory as history } from './data-points';
 import { Card, CardContent, Typography } from '@material-ui/core';
 
 const CareerHistory = () => {
-
-    const content = history.map((post) =>
+    const sortedHistory = history.reverse();
+    const content = sortedHistory.map((post) =>
 
         < Card key={post.id} >
 
