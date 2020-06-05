@@ -28,6 +28,13 @@ Project: My-Portfolio
       Todo:   
         [ ] Fix Invalid Dates for "Ended" field.
         [ ] Fix Invalid Dates for "Time at role" field.
-        [ ] Add spacing between Skills 
+        [x] Add spacing between Skills 
         [ ] Improve layout of content
-        [ ] fix example sites
+        [x] fix example sites
+        [ ] Show employment history in reverse order e.g. last company first.
+
+Project: CV
+  Todo:
+    [ ] Check email for old examples of good CV
+    [ ] Review and rewrite Ensemble content
+    [ ] Write impactful intro message (this should be used on the site)

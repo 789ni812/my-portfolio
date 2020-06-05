@@ -8,11 +8,6 @@ import { Card, CardContent, Typography } from '@material-ui/core';
 const CareerHistory = () => {
 
     const content = history.map((post) =>
-        //TODO Moment time from is not working below
-        //TODO Moment is creating invalid start and end date
-        //TODO How to iterate over the array inside an obkect e.g. example sites inside of companies
-
-
 
         < Card key={post.id} >
 
