@@ -16,9 +16,6 @@ const CareerHistory = () => {
 
         < Card key={post.id} >
 
-            <span class="devicons devicons-bing_small">Spoon</span>
-
-
             <p>{post.companyName}</p>
             <ul>
                 <li>Role: {post.role}</li>
