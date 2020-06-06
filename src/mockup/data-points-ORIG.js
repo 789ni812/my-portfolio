@@ -1,3 +1,7 @@
+// Original Data points information - including original employment history
+
+
+
 export const DevVsPM = [
     { year: 2011, PM: 0, Developer: 100, companyName: 'BBC', roleTitle: 'web developer', link: 'link to more info' },
     { year: 2012, PM: 10, Developer: 95, companyName: 'BBC', link: 'link to more info' },
@@ -28,7 +32,7 @@ export const CareerHistory = [
         endDate: '23/12/1999',
         role: 'Resident Sound Engineer',
     },
-    {
+    {   
         id: 2,
         companyName: 'Self-employed',
         startDate: '01/01/1997',
@@ -139,7 +143,7 @@ export const CareerHistory = [
         skills: ['Jira', 'Confluence', 'BDD', 'TDD', 'Release Planning', 'Lean', 'XP programming', 'Scrum', 'Kanban', 'Poker planning', 'MoSCoW', 'Risk vs Value', 'Acceptance criteria', 'Business visions', 'Tmeboxing', 'Retrospectives', 'RAID logs', 'SOW', 'Change Requests'],
         clientsWorkedWith: ['Adobe', 'HSBC', 'Puma', 'Sheffield City Council', 'Creditsafe', 'Acom', 'Atlas Copco', 'Heath Wallace', 'Astute', 'Workfront'],
         respnsibilitiesAndDuties: ['Writing and reviewing Statement of Work documents and Change Requests', 'managing budgets', 'timelines', 'resources', 'clients and developers', 'Account Management', 'Project Management'],
-        description: 'Worked closely with the managing director to help grow the London Ensemble office from 4 to 20? staff and project manage many projects from multiple clients. Some hands on coding but mainly work was focused on hiring, project managing clients digital projects, managing developers and agile workflows. Writing and reviewing contracts, system architechture  From writing Statement of Work and Change Requests to hiring staff and client management across multiple locations and teams<br />Project manager for over 7 clients and managed over 12 projects in two years typically projects ran between 3 months and 18 months, from account management, Scrum master, Waterfall and Agile Project styles<br /><ul><li>Hiring staff</li><li>Writing Statement of Works, Change Requests</li></ul>Managing budgets, deliverables, developers, resources<br />Worked with co-located teams from locations such as India, Vancouver, Romania, Germany'
+        description: 'Worked closely with the managing director to help grow the London Ensemble office from 4 to 20? staff and project manage many projects from multiple clients<br />From writing Statement of Work and Change Requests to hiring staff and client management across multiple locations and teams<br />Project manager for over 7 clients and managed over 12 projects in two years typically projects ran between 3 months and 18 months, from account management, Scrum master, Waterfall and Agile Project styles<br /><ul><li>Hiring staff</li><li>Writing Statement of Works, Change Requests</li></ul>Managing budgets, deliverables, developers, resources<br />Worked with co-located teams from locations such as India, Vancouver, Romania, Germany'
     },
 ]
 
