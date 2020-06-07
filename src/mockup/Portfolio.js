@@ -5,7 +5,10 @@ import React from 'react';
 // Material-ui
 import { Card, CardContent, Typography } from '@material-ui/core';
 
+
 const Portfolio = () => {
+
+
     return (
         <>
             <h1>Portfolio</h1>
@@ -35,8 +38,6 @@ const Portfolio = () => {
                             <li className="devicons devicons-html5">HTML 5</li>
                             <li className="devicons devicons-css3">CSS3</li>
                             <li className="devicons devicons-git">Git</li>
-
-                            //TODO >> Last edits made >> Portfolio 
                             <li className="devicons devicons-reactjs">Raect</li>
                         </ul>
                     </Typography>
