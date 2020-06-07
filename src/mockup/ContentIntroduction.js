@@ -17,7 +17,7 @@ const ContentIntroduction = () => {
                         Front End Developer and Javascript Engineer
                       </Typography>
 
-                    <Typography color="#555555" variant="h5" align="right" gutterBottom>
+                    <Typography color="textSecondary" variant="h5" align="right" gutterBottom>
                         "With a fair amount of previous"
                       </Typography>
                     <hr />
@@ -27,7 +27,7 @@ const ContentIntroduction = () => {
                         Work status: Currently available for work
                     </Typography>
 
-                    <Typography color="#555555" variant="h5" align="right" gutterBottom>
+                    <Typography color="textSecondary" variant="h5" align="right" gutterBottom>
                         As of 14th June 2020
                     </Typography>
 
@@ -36,43 +36,46 @@ const ContentIntroduction = () => {
 
 
                     {/* //TODO add Currently available for work. */}
-                    <Typography color="textPrimary" component="p" variant="p">
+                    <Typography color="textPrimary" variant="body2">
                         <p>Over 20 years experience</p>
                         <p>Delivering digital projects, has given me a solid understanding and hands on experience delivering digital projects</p>
 
                         <p>Such as: </p>
+
+                    </Typography>
+                    <Typography color="textPrimary" variant="body2">
                         <ul>
 
                             <li>Planning</li>
-                            <li>Developing</li>
+                            <li>Developing
 
                             <ul>
-                                <li>Current:
+                                    <li>Current:
                                 <ul>
-                                        <li>ReactJS</li>
-                                        <li>JavaScript</li>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>Node</li>
-                                        <li>Mongo</li>
-                                    </ul>
-                                </li>
-                                <li>Previously Experience:
-                                <ul>
-                                        <li>PHP</li>
-                                        <li>Drupal</li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-
+                                            <li>ReactJS</li>
+                                            <li>JavaScript</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Node</li>
+                                            <li>Mongo</li>
+                                        </ul>
+                                    </li>
+                                    <li>Previously Experience:
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>Drupal</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li>Maintaining</li>
-                            <li>Managing</li>
-                            <ul>
-                                <li>Teams</li>
-                                <li>Digital Projects</li>
-                                <li>Infrastructure</li>
-                            </ul>
+                            <li>Managing
+                                 <ul>
+                                    <li>Teams</li>
+                                    <li>Digital Projects</li>
+                                    <li>Infrastructure</li>
+                                </ul>
+                            </li>
                         </ul>
 
                         <p>digital projects</p>
