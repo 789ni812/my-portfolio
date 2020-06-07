@@ -17,14 +17,24 @@ const ContentIntroduction = () => {
                         Front End Developer and Javascript Engineer
                       </Typography>
 
-                    <Typography color="#555555" component="caption" variant="p" align="right" gutterBottom>
+                    <Typography color="#555555" variant="h5" align="right" gutterBottom>
                         "With a fair amount of previous"
                       </Typography>
+                    <hr />
 
 
-                    <Typography variant="h2" component="h2" color="textSecondary" gutterBottom>
-                        Availability: Currently Available
+                    <Typography variant="h2" color="textPrimary" gutterBottom>
+                        Work status: Currently available for work
                     </Typography>
+
+                    <Typography color="#555555" variant="h5" align="right" gutterBottom>
+                        As of 14th June 2020
+                    </Typography>
+
+                    <hr />
+                    {/* //TODO FINISH this page layout */}
+
+
                     {/* //TODO add Currently available for work. */}
                     <Typography color="textPrimary" component="p" variant="p">
                         <p>Over 20 years experience</p>
