@@ -16,6 +16,7 @@ const ContentIntroduction = () => {
                     <Typography variant="h1" component="h2" color="textSecondary" gutterBottom>
                         Front End Developer and Javascript Engineer
                       </Typography>
+                    {/* //TODO add Currently available for work. */}
                     <Typography>
                         Over 20 years experience
                     <ul>
