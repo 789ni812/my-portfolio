@@ -16,26 +16,27 @@ Project: My-Portfolio
 
     Project: Home / Intro Text / About 
       Todo:   
-        [ ] Write Content for intro text
-        [ ] Review old and update About text
+        [ ] @high Write Content for intro text
+        [ ] @high Review old and update About text
 
     Project: Portfolio
       Todo:
         [ ] Build Portfolio page/section
-          [ ] Add devicons for each project I link to (class="devicons devicons-drupal")    
+          [ ] Finish @Easy Finish  Adding devicons for each project I link to (class="devicons devicons-drupal")    
 
     Project: Employment History
       Todo:   
         [ ] Fix Invalid Dates for "Ended" field.
         [ ] Fix Invalid Dates for "Time at role" field.
         [x] Add spacing between Skills 
-        [ ] Improve layout of content
+        [ ] @high  Improve layout of content
         [x] fix example sites
         [x] Show employment history in reverse order e.g. last company first.
-        [ ] FIX warnings about keys for the arrays in the history data
+        [ ] @high FIX warnings about keys for the arrays in the history data
+        [ ] Finish @Easy layout of companies worked for Expansion  panels
 
 Project: CV
   Todo:
-    [ ] Check email for old examples of good CV
+    [ ] @easy Check email for old examples of good CV
     [ ] Review and rewrite Ensemble content
     [ ] Write impactful intro message (this should be used on the site)
