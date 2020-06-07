@@ -121,43 +121,7 @@ const App = () => {
 
 
 
-          <div>
-            <Button
-              aria-controls="customized-menu"
-              aria-haspopup="true"
-              variant="contained"
-              color="primary"
-              onClick={handleClick}
-            >
-              Open Menu
-        </Button>
-            <StyledMenu
-              id="customized-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <StyledMenuItem>
-                <ListItemIcon>
-                  <SendIcon fontSize="small" />
-                </ListItemIcon>
-                <ListItemText primary="Sent mail" />
-              </StyledMenuItem>
-              <StyledMenuItem>
-                <ListItemIcon>
-                  <DraftsIcon fontSize="small" />
-                </ListItemIcon>
-                <ListItemText primary="Drafts" />
-              </StyledMenuItem>
-              <StyledMenuItem>
-                <ListItemIcon>
-                  <InboxIcon fontSize="small" />
-                </ListItemIcon>
-                <ListItemText primary="Inbox" />
-              </StyledMenuItem>
-            </StyledMenu>
-          </div>
+
 
 
 
@@ -169,9 +133,48 @@ const App = () => {
           <div className={classes.root}>
             <AppBar position="fixed">
               <Toolbar>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                  <MenuIcon />
-                </IconButton>
+
+                <div>
+                  <Button
+                    aria-controls="customized-menu"
+                    aria-haspopup="true"
+                    variant="contained"
+                    color="primary"
+                    onClick={handleClick}
+                  >Menu
+                  </Button>
+                  <Router>
+                    <StyledMenu
+                      id="customized-menu"
+                      anchorEl={anchorEl}
+                      keepMounted
+                      open={Boolean(anchorEl)}
+                      onClose={handleClose}
+                    >
+                      <StyledMenuItem>
+
+                        <ListItemIcon>
+                          <SendIcon fontSize="small" />
+                        </ListItemIcon>
+                        {/* //FIXME Links do not work for header menu */}
+                        <Link to="/">  <ListItemText primary="Sent mail" />
+                        </Link>
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon>
+                          <DraftsIcon fontSize="small" />
+                        </ListItemIcon>
+                        <ListItemText primary="Drafts" />
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon>
+                          <InboxIcon fontSize="small" />
+                        </ListItemIcon>
+                        <ListItemText primary="Inbox" />
+                      </StyledMenuItem>
+                    </StyledMenu>
+                  </Router>
+                </div>
                 <Typography variant="h6" className={classes.title}>
                   News
               </Typography>
