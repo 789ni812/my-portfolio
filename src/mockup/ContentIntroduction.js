@@ -16,10 +16,22 @@ const ContentIntroduction = () => {
                     <Typography variant="h1" component="h2" color="textSecondary" gutterBottom>
                         Front End Developer and Javascript Engineer
                       </Typography>
+
+                    <Typography color="#555555" component="caption" variant="p" align="right" gutterBottom>
+                        "With a fair amount of previous"
+                      </Typography>
+
+
+                    <Typography variant="h2" component="h2" color="textSecondary" gutterBottom>
+                        Availability: Currently Available
+                    </Typography>
                     {/* //TODO add Currently available for work. */}
-                    <Typography>
-                        Over 20 years experience
-                    <ul>
+                    <Typography color="textPrimary" component="p" variant="p">
+                        <p>Over 20 years experience</p>
+                        <p>Delivering digital projects, has given me a solid understanding and hands on experience delivering digital projects</p>
+
+                        <p>Such as: </p>
+                        <ul>
 
                             <li>Planning</li>
                             <li>Developing</li>
