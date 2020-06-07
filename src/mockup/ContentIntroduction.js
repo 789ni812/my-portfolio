@@ -13,12 +13,59 @@ const ContentIntroduction = () => {
             <h1>Home</h1>
             <Card variant="outlined">
                 <CardContent>
-                    <Typography color="textSecondary" gutterBottom>
+                    <Typography variant="h1" component="h2" color="textSecondary" gutterBottom>
                         Front End Developer and Javascript Engineer
-          </Typography>
+                      </Typography>
                     <Typography>
-                        I've been helping companies deliver online platforms and apps for over 20 years
-          </Typography>
+                        Over 20 years experience
+                    <ul>
+
+                            <li>Planning</li>
+                            <li>Developing</li>
+
+                            <ul>
+                                <li>Current:
+                                <ul>
+                                        <li>ReactJS</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Node</li>
+                                        <li>Mongo</li>
+                                    </ul>
+                                </li>
+                                <li>Previously Experience:
+                                <ul>
+                                        <li>PHP</li>
+                                        <li>Drupal</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                            <li>Maintaining</li>
+                            <li>Managing</li>
+                            <ul>
+                                <li>Teams</li>
+                                <li>Digital Projects</li>
+                                <li>Infrastructure</li>
+                            </ul>
+                        </ul>
+
+                        <p>digital projects</p>
+                        <p>For</p>
+                        <ul>
+                            <li>Startups</li>
+                            <li>Government</li>
+                            <li>Banks</li>
+                            <li>Global brands</li>
+                        </ul>
+                    </Typography>
+
+
+
+                    {/* 
+          
                     <Typography color="textSecondary">
                         <p>Working with some great people across a varied sectors</p>
                         <p>From: </p>
@@ -29,6 +76,7 @@ const ContentIntroduction = () => {
                             <li>Health to mot sports</li>
                         </ul>
                     </Typography>
+                    */}
                 </CardContent>
             </Card>
         </>
