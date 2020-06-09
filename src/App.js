@@ -158,14 +158,19 @@ const App = () => {
                         </ListItemIcon>
                         {/* //FIXME Links do not work for header menu */}
                         <Link to="/">  <ListItemText primary="Sent mail" />
-                        </Link>
+                     hello   </Link>
                       </StyledMenuItem>
+
                       <StyledMenuItem>
+
                         <ListItemIcon>
                           <DraftsIcon fontSize="small" />
                         </ListItemIcon>
-                        <ListItemText primary="Drafts" />
+                        <Link to="/portfolio">  <ListItemText primary="Drafts" />Portfolio
+                        </Link>
+                        {/* FIXME >>>> THIS WAS LAST PLACE _ WOrking on Router Link issue*/}
                       </StyledMenuItem>
+
                       <StyledMenuItem>
                         <ListItemIcon>
                           <InboxIcon fontSize="small" />

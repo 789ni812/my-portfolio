@@ -36,73 +36,71 @@ const ContentIntroduction = () => {
 
 
                     {/* //TODO add Currently available for work. */}
-                    <Typography color="textPrimary" variant="body2">
-                        <p>Over 20 years experience</p>
-                        <p>Delivering digital projects, has given me a solid understanding and hands on experience delivering digital projects</p>
 
-                        <p>Such as: </p>
+                    <p>Over 20 years experience</p>
+                    <p>Delivering digital projects, has given me a solid understanding and hands on experience delivering digital projects</p>
 
-                    </Typography>
-                    <Typography color="textPrimary" variant="body2">
-                        <ul>
+                    <p>Such as: </p>
 
-                            <li>Planning</li>
-                            <li>Developing
+
+
+                    <ul>
+
+                        <li>Planning</li>
+                        <li>Developing
 
                             <ul>
-                                    <li>Current:
+                                <li>Current:
                                 <ul>
-                                            <li>ReactJS</li>
-                                            <li>JavaScript</li>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Node</li>
-                                            <li>Mongo</li>
-                                        </ul>
-                                    </li>
-                                    <li>Previously Experience:
+                                        <li>ReactJS</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Node</li>
+                                        <li>Mongo</li>
+                                    </ul>
+                                </li>
+                                <li>Previously Experience:
                                         <ul>
-                                            <li>PHP</li>
-                                            <li>Drupal</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Maintaining</li>
-                            <li>Managing
+                                        <li>PHP</li>
+                                        <li>Drupal</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Maintaining</li>
+                        <li>Managing
                                  <ul>
-                                    <li>Teams</li>
-                                    <li>Digital Projects</li>
-                                    <li>Infrastructure</li>
-                                </ul>
-                            </li>
-                        </ul>
+                                <li>Teams</li>
+                                <li>Digital Projects</li>
+                                <li>Infrastructure</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                        <p>digital projects</p>
-                        <p>For</p>
-                        <ul>
-                            <li>Startups</li>
-                            <li>Government</li>
-                            <li>Banks</li>
-                            <li>Global brands</li>
-                        </ul>
-                    </Typography>
+                    <p>digital projects</p>
+                    <p>For</p>
+                    <ul>
+                        <li>Startups</li>
+                        <li>Government</li>
+                        <li>Banks</li>
+                        <li>Global brands</li>
+                    </ul>
+
+                    <p>Working with some great people across varied sectors</p>
+                    <p>including: </p>
+                    <ul>
+                        <li>Startups</li>
+                        <li>Government</li>
+                        <li>Banks</li>
+                        <li>Health</li>
+                        <li>Education</li>
+                        <li>Sports</li>
+                        <li>Music</li>
+                        <li>Global brands</li>
+                    </ul>
 
 
-
-                    {/* 
-          
-                    <Typography color="textSecondary">
-                        <p>Working with some great people across a varied sectors</p>
-                        <p>From: </p>
-                        <ul>
-                            <li>Startups to Blue chip</li>
-                            <li>Government funded to the largest bank in the world</li>
-                            <li>Education to Finance</li>
-                            <li>Health to mot sports</li>
-                        </ul>
-                    </Typography>
-                    */}
                 </CardContent>
             </Card>
         </>
