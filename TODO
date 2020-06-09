@@ -28,15 +28,19 @@ Project: My-Portfolio
 
     Project: Employment History
       Todo:   
-        [ ] Fix Invalid Dates for "Ended" field.
-        [ ] Fix Invalid Dates for "Time at role" field.
+        [x] Fix Invalid Dates for "Ended" field.
+        [x] Fix Invalid Dates for "Time at role" field.
         [x] Add spacing between Skills 
         [ ] @high  Improve layout of content
         [x] fix example sites
         [x] Show employment history in reverse order e.g. last company first.
         [ ] @high FIX warnings about keys for the arrays in the history data
         [ ] Finish @Easy layout of companies worked for Expansion  panels
+        [ ] Sort Companies to show last company work for first.
+        REFERENCE: https://dev.to/ramonak/react-how-to-dynamically-sort-an-array-of-objects-using-the-dropdown-with-react-hooks-195p
+        
 
+        [ ] Fix @later startDateUS and endDateUS to work as en-gb locale.
 Project: CV
   Todo:
     [ ] @easy Check email for old examples of good CV

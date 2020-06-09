@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Moment from 'react-moment';
 
+
+
 import { CareerHistory as history } from './data-points';
 
 import { Card, CardContent, Typography } from '@material-ui/core';
@@ -11,6 +13,8 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
@@ -53,8 +57,11 @@ const CareerHistory = () => {
                     aria-controls={`panel${post.id}bh-content`}
                     id="panel4bh-header"
                 >
-                    <Typography className={classes.heading}>General settings</Typography>
-                    <Typography className={classes.secondaryHeading}>`I am an expansion panel ID {post.id}`</Typography>
+                    <Typography className={classes.heading}>Company: {post.companyName}</Typography>
+                    <Typography className={classes.heading}>Role: {post.role}</Typography>
+                    <Typography className={classes.secondaryHeading}><Moment format="MMMM YYYY">{post.startDateUS}</Moment> to <Moment format="MMMM YYYY">{post.endDateUS}</Moment></Typography>
+
+
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
@@ -65,9 +72,9 @@ const CareerHistory = () => {
                             <p>{post.companyName}</p>
                             <ul>
                                 <li>Role: {post.role}</li>
-                                <li >Time at role: <Moment from={post.startDate}>{post.endDate}</Moment>  </li>
-                                <li>Started: <Moment format="DD MM YYYY">{post.startDate}</Moment></li>
-                                <li>Ended: <Moment format="DD MM YYYY">{post.endDate}</Moment></li>
+                                <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
+                                <li>Started: <Moment format="DD MM YYYY">{post.startDateUS}</Moment></li>
+                                <li>Ended: <Moment format="DD MM YYYY">{post.endDateUS}</Moment></li>
                                 {post.delmeAchievments ? <li>{post.delmeAchievments}</li> : ''}
                                 {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li>{agileSkill}</li>))}</ul> : ''}
                                 {post.skills ? <ul>{post.skills.map(skill => (<li>{skill}</li>))}</ul> : ''}
