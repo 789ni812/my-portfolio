@@ -156,32 +156,42 @@ const App = () => {
                         <ListItemIcon>
                           <SendIcon fontSize="small" />
                         </ListItemIcon>
-                        {/* //FIXME Links do not work for header menu */}
-                        <Link to="/">  <ListItemText primary="Sent mail" />
-                     hello   </Link>
+                        <Link to="/">  <ListItemText primary="Home" />
+                        </Link>
                       </StyledMenuItem>
 
                       <StyledMenuItem>
-
                         <ListItemIcon>
                           <DraftsIcon fontSize="small" />
                         </ListItemIcon>
-                        <Link to="/portfolio">  <ListItemText primary="Drafts" />Portfolio
+                        <Link to="/portfolio">  <ListItemText primary="Portfolio" />
                         </Link>
-                        {/* FIXME >>>> THIS WAS LAST PLACE _ WOrking on Router Link issue*/}
                       </StyledMenuItem>
 
                       <StyledMenuItem>
                         <ListItemIcon>
                           <InboxIcon fontSize="small" />
                         </ListItemIcon>
-                        <ListItemText primary="Inbox" />
+                        <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
+
+                        </Link>
                       </StyledMenuItem>
                     </StyledMenu>
+                    <Switch>
+                      <Route path="/portfolio">
+                        <Portfolio />
+                      </Route>
+                      <Route path="/employmentHistory">
+                        <EmploymentHistory />
+                      </Route>
+                      <Route path="/">
+                        <Home />
+                      </Route>
+                    </Switch>
                   </Router>
                 </div>
-                <Typography variant="h6" className={classes.title}>
-                  News
+                <Typography variant="h6" className={classes.title} align="center">
+                  StuartBradford.com
               </Typography>
                 <Button color="inherit">Login</Button>
               </Toolbar>
@@ -192,34 +202,39 @@ const App = () => {
 
 
 
-          <Router>
-            <div>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/portfolio">Portfolio</Link>
-                  </li>
-                  <li>
-                    <Link to="/employmentHistory">Employment history</Link>
-                  </li>
-                </ul>
-              </nav>
-              <Switch>
-                <Route path="/portfolio">
-                  <Portfolio />
-                </Route>
-                <Route path="/employmentHistory">
-                  <EmploymentHistory />
-                </Route>
-                <Route path="/">
-                  <Home />
-                </Route>
-              </Switch>
-            </div>
-          </Router>
+
+          {
+            //     <Router>
+            // <div>
+            // <nav>
+            //   <ul>
+            //     <li>
+            //       <Link to="/">Home</Link>
+            //     </li>
+            //     <li>
+            //       <Link to="/portfolio">Portfolio</Link>
+            //     </li>
+            //     <li>
+            //       <Link to="/employmentHistory">Employment history</Link>
+            //     </li>
+            //   </ul>
+            // </nav>
+
+            // <Switch>
+            //   <Route path="/portfolio">
+            //     <Portfolio />
+            //   </Route>
+            //   <Route path="/employmentHistory">
+            //     <EmploymentHistory />
+            //   </Route>
+            //   <Route path="/">
+            //     <Home />
+            //   </Route>
+            // </Switch>
+            // </div>
+            // </Router>
+          }
+
         </Grid>
         <Grid item xs={12} sm={10}><Footer /></Grid>
       </Grid>

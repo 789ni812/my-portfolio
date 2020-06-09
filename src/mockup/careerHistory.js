@@ -61,7 +61,7 @@ const CareerHistory = () => {
                     <Typography className={classes.heading}>Role: {post.role}</Typography>
                     <Typography className={classes.secondaryHeading}><Moment format="MMMM YYYY">{post.startDateUS}</Moment> to <Moment format="MMMM YYYY">{post.endDateUS}</Moment></Typography>
 
-
+                    {/* //LASTEDIT >> Fixing layout and typography warnings and navigationlinks*/}
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
