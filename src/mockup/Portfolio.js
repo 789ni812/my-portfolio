@@ -3,7 +3,7 @@ import React from 'react';
 
 
 // Material-ui
-import { Card, CardContent, Typography, ListItem, ListItemText } from '@material-ui/core';
+import { Card, CardContent, Typography } from '@material-ui/core';
 
 
 const Portfolio = () => {
