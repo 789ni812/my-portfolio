@@ -116,24 +116,12 @@ const App = () => {
   return (
     <div>
       <Grid container spacing={3}>
+
+        {/* START HEADER */}
         <Grid item xs={12} >
-
-
-
-
-
-
-
-
-
-
-
-
-
           <div className={classes.root}>
             <AppBar position="fixed">
               <Toolbar>
-
                 <div>
                   <Button
                     aria-controls="customized-menu"
@@ -190,53 +178,21 @@ const App = () => {
                     </Switch>
                   </Router>
                 </div>
-                <Typography variant="h6" className={classes.title} align="center">
-                  StuartBradford.com
+                <div>
+                  <Typography variant="h6" className={classes.title} align="center">
+                    StuartBradford.com
               </Typography>
-                <Button color="inherit">Login</Button>
+                  <Button color="inherit">Login</Button>
+                </div>
               </Toolbar>
             </AppBar>
           </div>
-
-
-
-
-
-
-          {
-            //     <Router>
-            // <div>
-            // <nav>
-            //   <ul>
-            //     <li>
-            //       <Link to="/">Home</Link>
-            //     </li>
-            //     <li>
-            //       <Link to="/portfolio">Portfolio</Link>
-            //     </li>
-            //     <li>
-            //       <Link to="/employmentHistory">Employment history</Link>
-            //     </li>
-            //   </ul>
-            // </nav>
-
-            // <Switch>
-            //   <Route path="/portfolio">
-            //     <Portfolio />
-            //   </Route>
-            //   <Route path="/employmentHistory">
-            //     <EmploymentHistory />
-            //   </Route>
-            //   <Route path="/">
-            //     <Home />
-            //   </Route>
-            // </Switch>
-            // </div>
-            // </Router>
-          }
-
         </Grid>
+        {/* END HEADER */}
+
+        {/* START FOOTER */}
         <Grid item xs={12} sm={10}><Footer /></Grid>
+        {/* END FOOTER */}
       </Grid>
     </div>
   );
