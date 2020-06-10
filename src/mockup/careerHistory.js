@@ -95,9 +95,6 @@ const CareerHistory = () => {
                     </Card >
                     {/* END MAIN CONTENT LOOP */}
 
-
-
-
                 </ExpansionPanelDetails>
             </ExpansionPanel>
 
