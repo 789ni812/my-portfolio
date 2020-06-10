@@ -32,7 +32,6 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
-
 import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -114,24 +113,27 @@ const App = () => {
     setAnchorEl(null);
   }
   return (
-    <div>
-      <Grid container spacing={3}>
+    <Router>
+      <div>
+        <Grid container spacing={3}>
 
-        {/* START HEADER */}
-        <Grid item xs={12} >
-          <div className={classes.root}>
-            <AppBar position="fixed">
-              <Toolbar>
-                <div>
-                  <Button
-                    aria-controls="customized-menu"
-                    aria-haspopup="true"
-                    variant="contained"
-                    color="primary"
-                    onClick={handleClick}
-                  >Menu
+          {/* START HEADER */}
+          <Grid item xs={12} >
+            <div className={classes.root}>
+
+              <AppBar position="fixed">
+                <Toolbar>
+                  <div>
+                    <Button
+                      aria-controls="customized-menu"
+                      aria-haspopup="true"
+                      variant="contained"
+                      color="primary"
+                      onClick={handleClick}
+                    >Menu
                   </Button>
-                  <Router>
+
+
                     <StyledMenu
                       id="customized-menu"
                       anchorEl={anchorEl}
@@ -139,8 +141,8 @@ const App = () => {
                       open={Boolean(anchorEl)}
                       onClose={handleClose}
                     >
-                      <StyledMenuItem>
 
+                      <StyledMenuItem>
                         <ListItemIcon>
                           <SendIcon fontSize="small" />
                         </ListItemIcon>
@@ -161,40 +163,46 @@ const App = () => {
                           <InboxIcon fontSize="small" />
                         </ListItemIcon>
                         <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
-
                         </Link>
                       </StyledMenuItem>
                     </StyledMenu>
-                    <Switch>
-                      <Route path="/portfolio">
-                        <Portfolio />
-                      </Route>
-                      <Route path="/employmentHistory">
-                        <EmploymentHistory />
-                      </Route>
-                      <Route path="/">
-                        <Home />
-                      </Route>
-                    </Switch>
-                  </Router>
-                </div>
-                <div>
-                  <Typography variant="h6" className={classes.title} align="center">
-                    StuartBradford.com
-              </Typography>
-                  <Button color="inherit">Login</Button>
-                </div>
-              </Toolbar>
-            </AppBar>
-          </div>
-        </Grid>
-        {/* END HEADER */}
+                  </div>
+                  <div>
+                    <Typography variant="h6" className={classes.title} align="center">
+                      StuartBradford.com
+                  </Typography>
+                  </div>
+                </Toolbar>
+              </AppBar>
 
-        {/* START FOOTER */}
-        <Grid item xs={12} sm={10}><Footer /></Grid>
-        {/* END FOOTER */}
-      </Grid>
-    </div>
+            </div>
+          </Grid>
+          {/* END HEADER */}
+
+          {/* START CONTENT SWITCH */}
+          <Grid item xs={12} sm={10} >
+            <Switch>
+              <Route path="/portfolio">
+                <Portfolio />
+              </Route>
+              <Route path="/employmentHistory">
+                <EmploymentHistory />
+              </Route>
+              <Route path="/" exact>
+                <Home />
+              </Route>
+            </Switch>
+          </Grid>
+          {/* END CONTENT SWITCH */}
+
+
+
+          {/* START FOOTER */}
+          <Grid item xs={12} sm={10}><Footer /></Grid>
+          {/* END FOOTER */}
+        </Grid>
+      </div>
+    </Router>
   );
 }
 export default App;
