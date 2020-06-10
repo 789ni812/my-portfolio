@@ -57,11 +57,12 @@ const CareerHistory = () => {
                     aria-controls={`panel${post.id}bh-content`}
                     id="panel4bh-header"
                 >
-                    <Typography className={classes.heading}>Company: {post.companyName}</Typography>
-                    <Typography className={classes.heading}>Role: {post.role}</Typography>
-                    <Typography className={classes.secondaryHeading}><Moment format="MMMM YYYY">{post.startDateUS}</Moment> to <Moment format="MMMM YYYY">{post.endDateUS}</Moment></Typography>
+                    <Typography className={classes.secondaryHeading}>Company: </Typography> <Typography className={classes.heading}> {post.companyName}</Typography>
+                    <Typography className={classes.secondaryHeading}> Role: </Typography>
 
-                    {/* //LASTEDIT >> Fixing layout and typography warnings and navigationlinks*/}
+
+                    <Typography className={classes.heading}>{post.role}</Typography>
+                    <Typography className={classes.secondaryHeading}><Moment format="MMMM YYYY">{post.startDateUS}</Moment> to <Moment format="MMMM YYYY">{post.endDateUS}</Moment></Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
 

@@ -32,7 +32,7 @@ export const CareerHistory = [
     },
     {
         id: 2,
-        companyName: 'Self-employed',
+        companyName: 'Freelance Web Developer',
         startDate: '01/01/1997',
         endDate: '23/07/1999',
         startDateUS: '01/01/1997',
@@ -77,7 +77,7 @@ export const CareerHistory = [
         endDate: '10/05/2001',
         startDateUS: '07/22/2000',
         endDateUS: '05/10/2001',
-        role: 'E-Commerce Project Manager',
+        role: 'E-Commerce Manager',
         skills: ['CSS', 'XHMTL', 'Photoshop', 'XML', 'JavaScript', 'DHTML'],
         description: 'Responsible for design, build, market and maintenance of e-commerce websites for business-to-business and the general public.'
     },
@@ -88,7 +88,7 @@ export const CareerHistory = [
         endDate: '29/05/2006',
         startDateUS: '05/12/2001',
         endDateUS: '05/29/2006',
-        role: 'Web Manager / Senior Developer',
+        role: 'Senior Developer > Web Manager',
         skills: ['LINUX', 'Apache', 'MySQL', 'PHP4/5', 'Perl', 'PEAR', 'CSS', 'XHMTL', 'Drupal', 'subversion', 'BASH', 'Photoshop', 'SEO', 'XML', 'JavaScript', 'RSS feeds'],
         description: 'Web manager, designer and coder for one of the largest online independent finance sites in the UK, powering several finance portals for companies such as Ask Jeeves, Financial Times, Wanadoo and The Independent. '
     },
@@ -99,7 +99,7 @@ export const CareerHistory = [
         endDate: '30/03/2009',
         startDateUS: '05/30/2006',
         endDateUS: '03/30/2009',
-        role: 'Senior Developer & Head of Technology',
+        role: 'Senior Developer > Head of Technology',
         skills: ['LINUX', 'JavaScript', 'Apache', 'MySQL', 'PHP5', 'Perl', 'OOP', 'PEAR', 'CSS', 'XHMTL', 'Drupal', 'subversion', 'BASH', 'Photoshop', 'SEO', 'XML', 'ANT', 'AJAX'],
         description: 'Responsible for developing and maintaining over 50 educational websites. Train or give presentations to teachers, students, colleagues and the general public, and support face-to-face and online training sessions. Responsible for managing a team of developers, contract programmers and content developers through strict development processes to tight budgets and timelines. Manage all servers and IT infrastructure. A varied role that utilises such skills as PHP and object orientated programming, database creation and management, project management, graphic design, video editing for DVDs and the web, have built over 20 custom Drupal sites managing and developing the build process for the front and back end including designing the server, database and version control configurations. Our Drupal sites where so successful they where a major factor in winning the 2007 e-learning age team of the year.Due to the nature of the company’s audience a very strong focus is on usability, web accessibility, quality assurance and testing on various platforms.',
         exampleSites: ['http://etasc.londongt.org', 'http://ibtl.londongt.org', 'http://teacherTools.londongt.org', 'http://www.realproject.org.uk']
@@ -123,7 +123,7 @@ export const CareerHistory = [
         endDate: '08/08/2014',
         startDateUS: '04/06/2010',
         endDateUS: '08/08/2014',
-        role: 'Scrum Master, Agile Project Manager and Web Development Manager',
+        role: 'Web Development Manager',
         skills: ['Redmine', 'Google Analytics', 'Google optimizer', 'Flairbuilder', 'LINUX', 'Apache', 'Drupal 7', 'angularJS', 'HTML5', 'CSS3', 'MySQL', 'PHP5', 'GEOIP'],
         agileSkills: ['Release Planning', 'Lean', 'XP programming', 'Scrum', 'Poker planning', 'MoSCoW', 'Risk vs Value', 'Acceptance criteria', 'Business visions', 'timeboxing'],
         description: "Electric Word currently has around 50 websites on different versions of the Drupal CMS platform, most sites are a combination of e-commerce and subscription based services. When I started at Electric Word, I hired a new web development team to focus solely with the Drupal CMS and trained them and the newly assigned Product Owners in agile methodologies. Since then, we’ve been very busy migrating all the Drupal sites over to a new Drupal 7 multi-site platform whilst enhancing and adding new functionality such as responsive designs, improved subscription and e-commerce functionality as well as improving the user experience, SEO techniques and editor environments. I'm still a keen developer and often help out the web team (time permitting) with development and R&D builds. ",
