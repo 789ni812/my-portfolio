@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 
 import { CareerHistory as history } from './data-points';
 
-import { Card, CardContent, Typography } from '@material-ui/core';
+import { Card, CardContent, Typography, Container } from '@material-ui/core';
 
 // Material-ui Expansion panel
 import { makeStyles } from '@material-ui/core/styles';
@@ -47,10 +47,12 @@ const CareerHistory = () => {
 
     //FIXME Reverse().map is constanly reversing the order each time you load the page.
     // const content = history.reverse().map((post) =>
+    // TODO >>> LAST EDIT HERE
+    const sortedContent = history.sort()
+    const content = sortedContent.map((post) =>
 
-    const content = history.map((post) =>
 
-        < div className={classes.root} key={post.id}>
+        < div className={classes.root} key={post.id} >
             <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -68,31 +70,33 @@ const CareerHistory = () => {
 
 
                     {/* MAIN CONTENT LOOP */}
-                    < Card key={post.id} >
+                    <Container>
+                        < Card key={post.id}>
 
-                        <p>{post.companyName}</p>
-                        <ul>
-                            <li>Role: {post.role}</li>
-                            <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
-                            <li>Started: <Moment format="DD MM YYYY">{post.startDateUS}</Moment></li>
-                            <li>Ended: <Moment format="DD MM YYYY">{post.endDateUS}</Moment></li>
-                            {post.delmeAchievments ? <li>{post.delmeAchievments}</li> : ''}
-                            {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li key={agileSkill}>{agileSkill}</li>))}</ul> : ''}
-                            {post.skills ? <ul>{post.skills.map(skill => (<li key={skill}>{skill}</li>))}</ul> : ''}
+                            <p>{post.companyName}</p>
+                            <ul>
+                                <li>Role: {post.role}</li>
+                                <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
+                                <li>Started: <Moment format="DD MM YYYY">{post.startDateUS}</Moment></li>
+                                <li>Ended: <Moment format="DD MM YYYY">{post.endDateUS}</Moment></li>
+                                {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li key={agileSkill}>{agileSkill}</li>))}</ul> : ''}
+                                {post.skills ? <ul>{post.skills.map(skill => (<li key={skill}>{skill}</li>))}</ul> : ''}
 
-                            <CardContent>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    {post.description ? post.description : ''}
-                                </Typography>
-                            </CardContent>
+                                {post.description ? post.description : ''}
+                                <CardContent>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        {JSON.stringify(post.description)}
+                                    </Typography>
+                                </CardContent>
 
-                            {post.exampleSites ? <ul>{post.exampleSites.map(exampleSite => (<li key={exampleSite}>{exampleSite}</li>))}</ul> : ''}
+                                {post.exampleSites ? <ul>{post.exampleSites.map(exampleSite => (<li key={exampleSite}>{exampleSite}</li>))}</ul> : ''}
 
-                            {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li key={client}>{client}</li>))}</ul> : ''}
-                            {post.respnsibilitiesAndDuties ? <li>{post.respnsibilitiesAndDuties}</li> : ''}
+                                {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li key={client}>{client}</li>))}</ul> : ''}
+                                {post.respnsibilitiesAndDuties ? <li>{post.respnsibilitiesAndDuties}</li> : ''}
 
-                        </ul>
-                    </Card >
+                            </ul>
+                        </Card >
+                    </Container>
                     {/* END MAIN CONTENT LOOP */}
 
                 </ExpansionPanelDetails>
@@ -100,6 +104,7 @@ const CareerHistory = () => {
 
 
         </div >
+
     );
 
 
