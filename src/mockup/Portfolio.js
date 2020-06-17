@@ -3,7 +3,13 @@ import React from 'react';
 
 
 // Material-ui
-import { Card, CardContent, Typography } from '@material-ui/core';
+import {
+    Card,
+    CardContent,
+    Typography,
+    List,
+    ListItem
+} from '@material-ui/core';
 
 
 const Portfolio = () => {
@@ -23,17 +29,18 @@ const Portfolio = () => {
                     <p>The JavaScript eco system is moving at an incredible pace, hopefully Sc1pt0.com will be of some help to a buddy JavaScript or front end developer.</p>
 
                     <p>built with:</p>
-                    <ul>
-                        <li className="devicons devicons-nodejs">Node</li>
-                        <li className="devicons devicons-javascript">JavaScript</li>
-                        <li className="devicons devicons-mongo">Mongo</li>
-                        <li className="devicons devicons-html5">HTML 5</li>
-                        <li className="devicons devicons-css3">CSS3</li>
-                        <li className="devicons devicons-git">Git</li>
-                        <li className="devicons devicons-reactjs">React</li>
-                    </ul>
+                    <List>
+                        <ListItem><span className="devicons devicons-nodejs">Node</span></ListItem>
+                        <ListItem><span className="devicons devicons-javascript">JavaScript</span></ListItem>
+                        <ListItem><span className="devicons devicons-react">React</span></ListItem>
+                        <ListItem><span className="devicons devicons-mongo">Mongo</span></ListItem>
+                        <ListItem><span className="devicons devicons-html5">HTML 5</span></ListItem>
+                        <ListItem><span className="devicons devicons-css3">CSS3</span></ListItem>
+                        <ListItem><span className="devicons devicons-git">Git</span></ListItem>
+                    </List>
 
-                    {/* //TODO Get screenshot of Scr1pt0.com site for portfolio */}
+
+
 
 
 
@@ -50,17 +57,17 @@ const Portfolio = () => {
 
                     <p>Built with:</p>
 
-                    <ul>
-                        <li className="devicons devicons-nodejs">Node</li>
-                        <li className="devicons devicons-javascript">JavaScript</li>
-                        <li className="devicons devicons-mongo">Mongo</li>
-                        <li className="devicons devicons-html5">HTML 5</li>
-                        <li className="devicons devicons-css3">CSS3</li>
-                        <li className="devicons devicons-git">Git</li>
-                        <li className="devicons devicons-reactjs">React</li>
-                    </ul>
+                    <List>
+                        <ListItem><span className="devicons devicons-nodejs">Node</span></ListItem>
+                        <ListItem><span className="devicons devicons-javascript">JavaScript</span></ListItem>
+                        <ListItem><span className="devicons devicons-react">React</span></ListItem>
+                        <ListItem><span className="devicons devicons-mongo">Mongo</span></ListItem>
+                        <ListItem><span className="devicons devicons-html5">HTML 5</span></ListItem>
+                        <ListItem><span className="devicons devicons-css3">CSS3</span></ListItem>
+                        <ListItem><span className="devicons devicons-git">Git</span></ListItem>
+                    </List>
 
-                    {/* //TODO Get screenshot of ProdPom.com site for portfolio */}
+
 
                 </CardContent>
             </Card >
@@ -76,15 +83,15 @@ const Portfolio = () => {
 
                     <p>Built with:</p>
 
-                    <ul>
-                        <li className="devicons devicons-nodejs">Node</li>
-                        <li className="devicons devicons-javascript">JavaScript</li>
-                        <li className="devicons devicons-mongo">Mongo</li>
-                        <li className="devicons devicons-html5">HTML 5</li>
-                        <li className="devicons devicons-css3">CSS3</li>
-                        <li className="devicons devicons-git">Git</li>
-                        <li className="devicons devicons-reactjs">React</li>
-                    </ul>
+                    <List>
+                        <ListItem><span className="devicons devicons-nodejs">Node</span></ListItem>
+                        <ListItem><span className="devicons devicons-javascript">JavaScript</span></ListItem>
+                        <ListItem><span className="devicons devicons-react">React</span></ListItem>
+                        <ListItem><span className="devicons devicons-mongo">Mongo</span></ListItem>
+                        <ListItem><span className="devicons devicons-html5">HTML 5</span></ListItem>
+                        <ListItem><span className="devicons devicons-css3">CSS3</span></ListItem>
+                        <ListItem><span className="devicons devicons-git">Git</span></ListItem>
+                    </List>
 
                     {/* //TODO Get screenshot of stuartbradford.com site for portfolio */}
 
