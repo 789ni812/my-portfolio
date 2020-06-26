@@ -11,6 +11,8 @@ const Footer = () => {
                 <div>
                     <hr />
                 Footer loaded
+
+                Making computers do stuff since 1998.
                 </div>
 
             </Grid>
