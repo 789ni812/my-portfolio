@@ -1,22 +1,24 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
+import ContactsRoundedIcon from '@material-ui/icons/ContactsRounded';
 const Footer = () => {
 
 
     return (
-        <Grid container spacing={3}>
-            <Grid item xs={12}>
+        <>
+            <Card>
 
-                <div>
-                    <hr />
-                Footer loaded
+                <Button variant="contained" color="primary"><GetAppRoundedIcon />Download CV</Button>
 
-                Making computers do stuff since 1998.
-                </div>
 
-            </Grid>
-        </Grid>
+                <Button variant="contained" color="primary"><ContactsRoundedIcon /> Get in touch</Button>
+
+            </Card>
+        </>
     )
 }
 

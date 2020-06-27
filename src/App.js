@@ -10,7 +10,8 @@ import {
 
 
 
-import './App.scss';
+//import './App.scss'; //TODo decide if to keep this stylesheet / theme approach
+
 
 import Footer from './components/Footer';
 //import ChartExample from './mockup/chartExample'; // show off some information in chart. Dont know what though?
@@ -22,6 +23,13 @@ import PortfolioContent from './mockup/Portfolio';
 
 // Material-ui
 import Grid from '@material-ui/core/Grid';
+
+
+// playing
+import { ThemeProvider } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import theme from './theme'
+
 
 //START Material-ui AppBar
 import { makeStyles } from '@material-ui/core/styles';
@@ -112,94 +120,98 @@ const App = () => {
   }
   return (
     <Router>
-      <div>
-        <Grid container spacing={3}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div>
+          <Grid container spacing={3}>
 
-          {/* START HEADER */}
-          <Grid item xs={12} >
-            <div className={classes.root}>
+            {/* START HEADER */}
+            <Grid item xs={12} >
+              <div className={classes.root}>
 
-              <AppBar position="fixed">
-                <Toolbar>
-                  <div>
-                    <Button
-                      aria-controls="customized-menu"
-                      aria-haspopup="true"
-                      variant="contained"
-                      color="primary"
-                      onClick={handleClick}
-                    >Menu
+                <AppBar position="fixed">
+                  <Toolbar>
+                    <div>
+                      <Button
+                        aria-controls="customized-menu"
+                        aria-haspopup="true"
+                        variant="contained"
+                        color="primary"
+                        onClick={handleClick}
+                      >Menu
                   </Button>
 
 
-                    <StyledMenu
-                      id="customized-menu"
-                      anchorEl={anchorEl}
-                      keepMounted
-                      open={Boolean(anchorEl)}
-                      onClose={handleClose}
-                    >
+                      <StyledMenu
+                        id="customized-menu"
+                        anchorEl={anchorEl}
+                        keepMounted
+                        open={Boolean(anchorEl)}
+                        onClose={handleClose}
+                      >
 
-                      <StyledMenuItem>
-                        <ListItemIcon>
-                          <SendIcon fontSize="small" />
-                        </ListItemIcon>
-                        <Link to="/">  <ListItemText primary="Home" />
-                        </Link>
-                      </StyledMenuItem>
+                        <StyledMenuItem>
+                          <ListItemIcon>
+                            <SendIcon fontSize="small" />
+                          </ListItemIcon>
+                          <Link to="/">  <ListItemText primary="Home" />
+                          </Link>
+                        </StyledMenuItem>
 
-                      <StyledMenuItem>
-                        <ListItemIcon>
-                          <DraftsIcon fontSize="small" />
-                        </ListItemIcon>
-                        <Link to="/portfolio">  <ListItemText primary="Portfolio" />
-                        </Link>
-                      </StyledMenuItem>
+                        <StyledMenuItem>
+                          <ListItemIcon>
+                            <DraftsIcon fontSize="small" />
+                          </ListItemIcon>
+                          <Link to="/portfolio">  <ListItemText primary="Portfolio" />
+                          </Link>
+                        </StyledMenuItem>
 
-                      <StyledMenuItem>
-                        <ListItemIcon>
-                          <InboxIcon fontSize="small" />
-                        </ListItemIcon>
-                        <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
-                        </Link>
-                      </StyledMenuItem>
-                    </StyledMenu>
-                  </div>
-                  <div>
-                    <Typography variant="h6" className={classes.title} align="center">
-                      StuartBradford.com
+                        <StyledMenuItem>
+                          <ListItemIcon>
+                            <InboxIcon fontSize="small" />
+                          </ListItemIcon>
+                          <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
+                          </Link>
+                        </StyledMenuItem>
+                      </StyledMenu>
+                    </div>
+                    <div>
+                      <Typography variant="h6" className={classes.title} align="center">
+                        StuartBradford.com
                   </Typography>
-                  </div>
-                </Toolbar>
-              </AppBar>
+                    </div>
+                  </Toolbar>
+                </AppBar>
 
-            </div>
+              </div>
+            </Grid>
+            {/* END HEADER */}
+
+            {/* START CONTENT SWITCH */}
+            <Grid item xs={12} sm={10} >
+              <Switch>
+                <Route path="/portfolio">
+                  <Portfolio />
+                </Route>
+                <Route path="/employmentHistory">
+                  <EmploymentHistory />
+                </Route>
+                <Route path="/" exact>
+                  <Home />
+                </Route>
+              </Switch>
+            </Grid>
+            {/* END CONTENT SWITCH */}
+
+
+
+            {/* START FOOTER */}
+            <Grid item xs={12} sm={10}><Footer /></Grid>
+            {/* END FOOTER */}
           </Grid>
-          {/* END HEADER */}
+        </div>
+      </ ThemeProvider>
 
-          {/* START CONTENT SWITCH */}
-          <Grid item xs={12} sm={10} >
-            <Switch>
-              <Route path="/portfolio">
-                <Portfolio />
-              </Route>
-              <Route path="/employmentHistory">
-                <EmploymentHistory />
-              </Route>
-              <Route path="/" exact>
-                <Home />
-              </Route>
-            </Switch>
-          </Grid>
-          {/* END CONTENT SWITCH */}
-
-
-
-          {/* START FOOTER */}
-          <Grid item xs={12} sm={10}><Footer /></Grid>
-          {/* END FOOTER */}
-        </Grid>
-      </div>
     </Router>
   );
 }
