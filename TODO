@@ -1,8 +1,16 @@
 Project: My-Portfolio
   
-  Project: Styling
+  Project: Styling 
       [ ] Style Content and typography first
-      [ ] Add Material-ui Back to top - https://material-ui.com/components/app-bar/
+      [ ] Layout
+        [ ] Add main body padding for the card layout so cards are more centered.
+        [ ] Navigation
+          [ ] Improve look of the hyperlinks
+          [ ] Update Icons with something a bit appropriate
+        [ ] Footer
+          [ ] Improve layout of buttons 
+          [ ] icons on buttons (especially Github button is wrong size) github is coming from devicons other are MD.
+        [ ] Add Material-ui Back to top - https://material-ui.com/components/app-bar/
  
   Project: General
       [ ] Add Links for the content pages
@@ -14,6 +22,7 @@ Project: My-Portfolio
       [ ] Employment History
       [ ] Contact
       [ ] Footer content
+        [ ] 
 
     Project: Home / Intro Text / About 
       Todo:   

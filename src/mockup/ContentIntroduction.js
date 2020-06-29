@@ -12,28 +12,12 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 
 
+import { DiHtml5, DiCss3, DiMongodb, DiReact, DiNodejs, DiJavascript } from "react-icons/di";
 
 // Icons
-import FormatQuoteRoundedIcon from '@material-ui/icons/FormatQuoteRounded';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import EmojiObjectsRoundedIcon from '@material-ui/icons/EmojiObjectsRounded';
-import AudiotrackRoundedIcon from '@material-ui/icons/AudiotrackRounded';
-import SportsTennisRoundedIcon from '@material-ui/icons/SportsTennisRounded';
-import LocalLibraryRoundedIcon from '@material-ui/icons/LocalLibraryRounded';
-import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
-import LocationCityRoundedIcon from '@material-ui/icons/LocationCityRounded';
-import LocalHospitalRoundedIcon from '@material-ui/icons/LocalHospitalRounded';
-import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
-import TimerRoundedIcon from '@material-ui/icons/TimerRounded';
-import GroupAddRoundedIcon from '@material-ui/icons/GroupAddRounded';
-import AssignmentIndRoundedIcon from '@material-ui/icons/AssignmentIndRounded';
-import EuroRoundedIcon from '@material-ui/icons/EuroRounded';
-import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
-import ContactsRoundedIcon from '@material-ui/icons/ContactsRounded';
-import LibraryBooksRoundedIcon from '@material-ui/icons/LibraryBooksRounded';
+import { MdEuroSymbol, MdFormatQuote, MdGroupAdd, MdAssignmentInd, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdSportsTennis, MdAudiotrack, MdAccountBalance } from 'react-icons/md';
 
 const ContentIntroduction = () => {
 
@@ -45,124 +29,120 @@ const ContentIntroduction = () => {
                 <h2>I'm Stuart</h2>
                 <h3>how are you?</h3>
             </Card>
-            <Card>
+            <Card variant="outlined">
                 <CardContent>
-                    <FormatQuoteRoundedIcon />Over the past 20 yesrs I've helped some great companies build and deliver digital projects<FormatQuoteRoundedIcon />
+                    <MdFormatQuote />Over the past 20 yesrs I've helped some great companies build and deliver digital projects<MdFormatQuote />
                 </CardContent>
 
             </Card>
 
+
             <Card>
-                <CardContent>
-                    <h3>Working as: </h3>
 
-                    <Card>
-                        <CardContent>
-                            <h2>Front End Developer</h2>
+                <h3>Working as:</h3>
 
-                            <h3>Current Developing with:</h3>
-                            <Grid container spacing={2}>
-                                <Grid item xs={6} sm={2}>
-                                    <span className="devicon-html5-plain"> HTML</span>
-                                </Grid>
-                                <Grid item xs={6} sm={2}>
-                                    <span className="devicon-css3-plain"> CSS</span>
-                                </Grid>
-                                <Grid item xs={6} sm={2}>
-                                    <span className="devicon-javascript-plain"> JavaScript</span>
-                                </Grid>
+                <h2>Front End Developer</h2>
+                Currently I'm loving the JavaScript ecosystem.
 
-                                <Grid item xs={6} sm={2}>
-                                    <span className="devicon-mongodb-plain"> Mongo</span>
-                                </Grid>
-                                <Grid item xs={6} sm={2}>
-                                    <span className="devicon-react-plain"> React</span>
-                                </Grid>
-                                <Grid item xs={6} sm={2}>
-                                    <span className="devicon-nodejs-plain"> NodeJS</span>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
+            <h3>Current Developing in:</h3>
+                <Grid container spacing={2}>
+                    <Grid item xs={6} sm={2}>
+                        <DiHtml5 /> HTML
+                    </Grid>
+                    <Grid item xs={6} sm={2}>
+                        <DiCss3 /> CSS
+                </Grid>
+                    <Grid item xs={6} sm={2}>
+                        <DiJavascript /> JavaScript
+                </Grid>
 
-                    <Card>
-                        <CardContent>
-                            <Divider />
+                    <Grid item xs={6} sm={2}>
+                        <DiMongodb /> Mongo
+                </Grid>
+                    <Grid item xs={6} sm={2}>
+                        <DiReact /> React
+                </Grid>
+                    <Grid item xs={6} sm={2}>
+                        <DiNodejs /> NodeJS
+                </Grid>
+                </Grid>
 
-                            <h2>Delivery Manager / Agile Project Manager</h2>
+                <Divider />
 
-                            <h3>Managing:</h3>
-
-
-
-                            <Grid container spacing={2}>
-                                <Grid item xs={6} sm={2}>
-                                    <GroupAddRoundedIcon /> Teams
+                <h2>Delivery Manager / Agile Project Manager</h2>
+                <h3>Managing:</h3>
+                <Grid container spacing={2}>
+                    <Grid item xs={6} sm={2}>
+                        <MdGroupAdd />Teans
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <EuroRoundedIcon /> Budgets
+                    <Grid item xs={6} sm={2}>
+                        <MdEuroSymbol /> Budgets
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <AssignmentIndRoundedIcon /> Clients
+                    <Grid item xs={6} sm={2}>
+                        <MdAssignmentInd /> Projects
+                        </Grid>
+                    <Grid item xs={6} sm={2}>
+                        <MdTimer />
+                            Clients
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <TimerRoundedIcon /> Projects
+                </Grid>
+
+
+
+
+            </Card>
+            <Card>
+
+                <p>Working with some great people across varied sectors</p>
+
+
+
+
+                <h3>including: </h3>
+
+                <Grid container spacing={2}>
+                    <Grid item xs={6} sm={2}>
+                        Startups
                         </Grid>
 
-                            </Grid>
-
-                        </CardContent>
-
-                    </Card>
-                    <Card>
-                        <CardContent>
-                            <p>Working with some great people across varied sectors</p>
-                            <h3>including: </h3>
-                            <Grid container spacing={2}>
-                                <Grid item xs={6} sm={2}>
-                                    <EmojiObjectsRoundedIcon />Startups
-                        </Grid>
-
-                                <Grid item xs={6} sm={2}>
-                                    <LocationCityRoundedIcon /> Government
+                    <Grid item xs={6} sm={2}>
+                        <MdLocationCity /> Government
                     </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <AccountBalanceIcon /> Banks
+                    <Grid item xs={6} sm={2}>
+                        <MdAccountBalance /> Banks
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <LocalHospitalRoundedIcon /> Health
+                    <Grid item xs={6} sm={2}>
+                        <MdLocalHospital /> Health
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <LocalLibraryRoundedIcon /> Education
+                    <Grid item xs={6} sm={2}>
+                        <MdLocalLibrary /> Education
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <SportsTennisRoundedIcon /> Sport
+                    <Grid item xs={6} sm={2}>
+                        Sport
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <ShoppingCartRoundedIcon /> Ecommerce
+                    <Grid item xs={6} sm={2}>
+                        <MdShoppingCart /> Ecommerce
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <AudiotrackRoundedIcon /> Music
+                    <Grid item xs={6} sm={2}>
+                        <MdAudiotrack /> Music
                         </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <BusinessRoundedIcon /> Global Brands
+                    <Grid item xs={6} sm={2}>
+                        <MdBusiness /> Global Brands
                         </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                </CardContent>
+
+                </Grid>
+                <Divider />
             </Card>
-
         </>
     )
 }

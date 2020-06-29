@@ -42,9 +42,10 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
+import Container from '@material-ui/core/Container'
+// Icons
+import { MdDrafts, MdSend, MdInbox } from 'react-icons/md';
+
 
 const StyledMenu = withStyles({
   paper: {
@@ -122,7 +123,7 @@ const App = () => {
     <Router>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div>
+        <Container maxWidth="xl">
           <Grid container spacing={3}>
 
             {/* START HEADER */}
@@ -152,7 +153,7 @@ const App = () => {
 
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <SendIcon fontSize="small" />
+                            <MdSend fontSize="small" />
                           </ListItemIcon>
                           <Link to="/">  <ListItemText primary="Home" />
                           </Link>
@@ -160,7 +161,7 @@ const App = () => {
 
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <DraftsIcon fontSize="small" />
+                            <MdDrafts fontSize="small" />
                           </ListItemIcon>
                           <Link to="/portfolio">  <ListItemText primary="Portfolio" />
                           </Link>
@@ -168,7 +169,7 @@ const App = () => {
 
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <InboxIcon fontSize="small" />
+                            <MdInbox fontSize="small" />
                           </ListItemIcon>
                           <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
                           </Link>
@@ -209,7 +210,7 @@ const App = () => {
             <Grid item xs={12} sm={10}><Footer /></Grid>
             {/* END FOOTER */}
           </Grid>
-        </div>
+        </Container>
       </ ThemeProvider>
 
     </Router>

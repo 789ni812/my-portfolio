@@ -12,10 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-
-// Icons
-import { MdExpandMore } from 'react-icons/md';
-
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -47,18 +44,18 @@ const CareerHistory = () => {
     };
 
 
+
+    //FIXME Reverse().map is constanly reversing the order each time you load the page.
+    // const content = history.reverse().map((post) =>
+    // TODO >>> LAST EDIT HERE
     const sortedContent = history.sort()
-
-    // Render employment history in reverse order
-    const content = sortedContent.slice(0).reverse().map((post) =>
-
-
+    const content = sortedContent.map((post) =>
 
 
         < div className={classes.root} key={post.id} >
             <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
                 <ExpansionPanelSummary
-                    expandIcon={<MdExpandMore />}
+                    expandIcon={<ExpandMoreIcon />}
                     aria-controls={`panel${post.id}bh-content`}
                     id="panel4bh-header"
                 >
