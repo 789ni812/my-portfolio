@@ -43,6 +43,11 @@ import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Container from '@material-ui/core/Container'
+
+
+// Icons
+import { MdGetApp, MdContacts } from 'react-icons/md';
+import { DiGithub } from "react-icons/di";
 // Icons
 import { MdDrafts, MdSend, MdInbox } from 'react-icons/md';
 
@@ -159,14 +164,15 @@ const App = () => {
                           </Link>
                         </StyledMenuItem>
 
+                        {/*
                         <StyledMenuItem>
                           <ListItemIcon>
                             <MdDrafts fontSize="small" />
                           </ListItemIcon>
-                          <Link to="/portfolio">  <ListItemText primary="Portfolio" />
-                          </Link>
+                                      <Link to="/portfolio">  <ListItemText primary="Portfolio" />
+  </Link> 
                         </StyledMenuItem>
-
+*/}
                         <StyledMenuItem>
                           <ListItemIcon>
                             <MdInbox fontSize="small" />
@@ -181,6 +187,14 @@ const App = () => {
                         StuartBradford.com
                   </Typography>
                     </div>
+
+
+                    <Button variant="contained" color="primary"><MdGetApp />Download CV</Button> |
+                <Button variant="contained" color="primary"><MdContacts /> Get in touch</Button> |
+
+                <Button variant="contained" color="primary"><DiGithub /> Github</Button>
+
+
                   </Toolbar>
                 </AppBar>
 
@@ -191,9 +205,9 @@ const App = () => {
             {/* START CONTENT SWITCH */}
             <Grid item >
               <Switch>
-                <Route path="/portfolio">
+                { /* <Route path="/portfolio">
                   <Portfolio />
-                </Route>
+                </Route> */}
                 <Route path="/employmentHistory">
                   <EmploymentHistory />
                 </Route>

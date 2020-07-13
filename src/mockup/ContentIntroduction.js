@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-// MAterial UI
+// Material UI
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
