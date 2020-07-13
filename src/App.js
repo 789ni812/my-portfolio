@@ -123,8 +123,8 @@ const App = () => {
     <Router>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Container maxWidth="xl">
-          <Grid container spacing={3}>
+        <Container >
+          <Grid>
 
             {/* START HEADER */}
             <Grid item xs={12} >
@@ -189,7 +189,7 @@ const App = () => {
             {/* END HEADER */}
 
             {/* START CONTENT SWITCH */}
-            <Grid item xs={12} sm={10} >
+            <Grid item >
               <Switch>
                 <Route path="/portfolio">
                   <Portfolio />

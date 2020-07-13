@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 
 import { CareerHistory as history } from './data-points';
 
-import { Card, CardContent, Typography, Container } from '@material-ui/core';
+import { Card, CardContent, Typography, Container, Box, Grid } from '@material-ui/core';
 
 // Material-ui Expansion panel
 import { makeStyles } from '@material-ui/core/styles';
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
+        fontWeight: theme.typography.fontWeightRegular,
         flexBasis: '33.33%',
         flexShrink: 0,
     },
@@ -60,14 +61,21 @@ const CareerHistory = () => {
                 <ExpansionPanelSummary
                     expandIcon={<MdExpandMore />}
                     aria-controls={`panel${post.id}bh-content`}
-                    id="panel4bh-header"
-                >
-                    <Typography className={classes.secondaryHeading}>Company: </Typography> <Typography className={classes.heading}> {post.companyName}</Typography>
-                    <Typography className={classes.secondaryHeading}> Role: </Typography>
+                    id="panel4bh-header">
+
+                    <Box textAlign="left" m={1}>
+                        <Typography className={classes.secondaryHeading}>Company: {post.companyName}</Typography>
+                        <Typography className={classes.secondaryHeading}> Role: {post.role}</Typography>
+                    </Box>
 
 
-                    <Typography className={classes.heading}>{post.role}</Typography>
-                    <Typography className={classes.secondaryHeading}><Moment format="MMMM YYYY">{post.startDateUS}</Moment> to <Moment format="MMMM YYYY">{post.endDateUS}</Moment></Typography>
+                    <Box textAlign="right" m={1}>
+                        <Typography className={classes.secondaryHeading}>
+                            Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>
+                        </Typography>
+                    </Box>
+
+
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
 
@@ -103,7 +111,8 @@ const CareerHistory = () => {
                     {/* END MAIN CONTENT LOOP */}
 
                 </ExpansionPanelDetails>
-            </ExpansionPanel>
+            </ExpansionPanel >
+
 
 
         </div >

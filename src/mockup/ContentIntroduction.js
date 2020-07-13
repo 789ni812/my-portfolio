@@ -6,6 +6,7 @@ import React from 'react';
 // MAterial UI
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -25,9 +26,10 @@ const ContentIntroduction = () => {
     return (
         <>
             <Card>
-                <h1>Hi,</h1>
-                <h2>I'm Stuart</h2>
-                <h3>how are you?</h3>
+                <CardContent>
+                    <h1>Hi,</h1>
+                    <h2>I'm Stuart</h2>
+                </CardContent>
             </Card>
             <Card variant="outlined">
                 <CardContent>
@@ -37,60 +39,61 @@ const ContentIntroduction = () => {
             </Card>
 
 
-            <Card>
+            <Card >
+                <CardContent>
 
-                <h3>Working as:</h3>
+                    <h2>Working as:</h2>
 
-                <h2>Front End Developer</h2>
+                    <h3>Front End Developer</h3>
                 Currently I'm loving the JavaScript ecosystem.
 
-            <h3>Current Developing in:</h3>
-                <Grid container spacing={2}>
-                    <Grid item xs={6} sm={2}>
-                        <DiHtml5 /> HTML
+            <h4>Current Developing in:</h4>
+                    <Grid container spacing={2}>
+                        <Grid item xs={6} sm={2}>
+                            <DiHtml5 /> HTML
                     </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <DiCss3 /> CSS
+                        <Grid item xs={6} sm={2}>
+                            <DiCss3 /> CSS
                 </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <DiJavascript /> JavaScript
-                </Grid>
-
-                    <Grid item xs={6} sm={2}>
-                        <DiMongodb /> Mongo
-                </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <DiReact /> React
-                </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <DiNodejs /> NodeJS
-                </Grid>
+                        <Grid item xs={6} sm={2}>
+                            <DiJavascript /> JavaScript
                 </Grid>
 
-                <Divider />
+                        <Grid item xs={6} sm={2}>
+                            <DiMongodb /> Mongo
+                </Grid>
+                        <Grid item xs={6} sm={2}>
+                            <DiReact /> React
+                </Grid>
+                        <Grid item xs={6} sm={2}>
+                            <DiNodejs /> NodeJS
+                </Grid>
+                    </Grid>
 
-                <h2>Delivery Manager / Agile Project Manager</h2>
-                <h3>Managing:</h3>
-                <Grid container spacing={2}>
-                    <Grid item xs={6} sm={2}>
-                        <MdGroupAdd />Teans
+                    <Divider />
+
+                    <h3>Delivery Manager / Agile Project Manager</h3>
+                    <h4>Managing:</h4>
+                    <Grid container spacing={2}>
+                        <Grid item xs={6} sm={2}>
+                            <MdGroupAdd />Teans
                         </Grid>
 
-                    <Grid item xs={6} sm={2}>
-                        <MdEuroSymbol /> Budgets
+                        <Grid item xs={6} sm={2}>
+                            <MdEuroSymbol /> Budgets
                         </Grid>
 
-                    <Grid item xs={6} sm={2}>
-                        <MdAssignmentInd /> Projects
+                        <Grid item xs={6} sm={2}>
+                            <MdAssignmentInd /> Projects
                         </Grid>
-                    <Grid item xs={6} sm={2}>
-                        <MdTimer />
+                        <Grid item xs={6} sm={2}>
+                            <MdTimer />
                             Clients
                         </Grid>
 
-                </Grid>
+                    </Grid>
 
-
+                </CardContent>
 
 
             </Card>
