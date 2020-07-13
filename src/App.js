@@ -18,11 +18,12 @@ import Footer from './components/Footer';
 import CareerHistory from './mockup/careerHistory';
 //import UserDetailsTest from './mockup/test_usersDetails'; // navigator useragent information
 import ContentIntroduction from './mockup/ContentIntroduction';
-import PortfolioContent from './mockup/Portfolio';
+//import PortfolioContent from './mockup/Portfolio';
 
 
 // Material-ui
 import Grid from '@material-ui/core/Grid';
+
 
 
 // playing
@@ -37,6 +38,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Menu from '@material-ui/core/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -49,7 +51,12 @@ import Container from '@material-ui/core/Container'
 import { MdGetApp, MdContacts } from 'react-icons/md';
 import { DiGithub } from "react-icons/di";
 // Icons
-import { MdDrafts, MdSend, MdInbox } from 'react-icons/md';
+import { MdSend, MdInbox } from 'react-icons/md';
+import { Divider } from "@material-ui/core";
+
+
+
+
 
 
 const StyledMenu = withStyles({
@@ -105,9 +112,9 @@ function Home() {
   return <ContentIntroduction />;
 }
 
-function Portfolio() {
-  return <PortfolioContent />
-}
+// function Portfolio() {
+//   return <PortfolioContent />
+// }
 
 function EmploymentHistory() {
   return <CareerHistory />
@@ -129,7 +136,8 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container >
-          <Grid>
+          <Grid container spacing={8} alignItems="center"
+            justify="center">
 
             {/* START HEADER */}
             <Grid item xs={12} >
@@ -183,18 +191,19 @@ const App = () => {
                       </StyledMenu>
                     </div>
                     <div>
-                      <Typography variant="h6" className={classes.title} align="center">
+                      <Typography variant="h6" className={classes.title}>
                         StuartBradford.com
                   </Typography>
                     </div>
+                  </Toolbar>
+                  <Toolbar>
+                    <ButtonGroup alignItems="center" fullWidth="2" size="small">
+                      <Button variant="contained" color="primary" size="small"><MdContacts /> Get in touch</Button> |
 
-
-                    <Button variant="contained" color="primary"><MdGetApp />Download CV</Button> |
-                <Button variant="contained" color="primary"><MdContacts /> Get in touch</Button> |
-
-                <Button variant="contained" color="primary"><DiGithub /> Github</Button>
-
-
+            <Button variant="contained" color="primary" size="small"><DiGithub /> Github</Button> |
+            <Button variant="contained" color="secondary" size="small" alignItems="center"
+                        justify="center" ><MdGetApp />Download CV</Button>
+                    </ButtonGroup>
                   </Toolbar>
                 </AppBar>
 
