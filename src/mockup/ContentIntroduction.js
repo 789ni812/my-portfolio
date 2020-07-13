@@ -6,11 +6,6 @@ import React from 'react';
 // MAterial UI
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 
@@ -18,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import { DiHtml5, DiCss3, DiMongodb, DiReact, DiNodejs, DiJavascript } from "react-icons/di";
 
 // Icons
-import { MdEuroSymbol, MdFormatQuote, MdGroupAdd, MdAssignmentInd, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdSportsTennis, MdAudiotrack, MdAccountBalance } from 'react-icons/md';
+import { MdEuroSymbol, MdFormatQuote, MdGroupAdd, MdAssignmentInd, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdAccountBalance } from 'react-icons/md';
 
 const ContentIntroduction = () => {
 
@@ -29,10 +24,6 @@ const ContentIntroduction = () => {
                 <CardContent>
                     <h1>Hi,</h1>
                     <h2>I'm Stuart</h2>
-                </CardContent>
-            </Card>
-            <Card variant="outlined">
-                <CardContent>
                     <MdFormatQuote />Over the past 20 yesrs I've helped some great companies build and deliver digital projects<MdFormatQuote />
                 </CardContent>
 
