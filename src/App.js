@@ -52,7 +52,6 @@ import { MdGetApp, MdContacts } from 'react-icons/md';
 import { DiGithub } from "react-icons/di";
 // Icons
 import { MdSend, MdInbox } from 'react-icons/md';
-import { Divider } from "@material-ui/core";
 
 
 
@@ -104,8 +103,6 @@ const useStyles = makeStyles(theme => ({
 
 
 }));
-
-
 //END Material-ui AppBar
 
 
@@ -140,7 +137,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container >
-          <Grid container spacing={8} alignItems="center"
+          <Grid container spacing={8} alignitems="center"
             justify="center">
 
             {/* START HEADER */}
@@ -201,11 +198,11 @@ const App = () => {
                     </div>
                   </Toolbar>
                   <Toolbar>
-                    <ButtonGroup alignItems="centre" size="small">
+                    <ButtonGroup alignitems="centre" size="small">
                       <Button variant="contained" color="primary" size="small"><MdContacts /> Get in touch</Button> |
 
             <Button variant="contained" color="primary" size="small"><DiGithub /> Github</Button> |
-            <Button variant="contained" color="secondary" size="small" alignItems="center"
+            <Button variant="contained" color="secondary" size="small" alignitems="center"
                         justify="center" ><MdGetApp />Download CV</Button>
                     </ButtonGroup>
                   </Toolbar>

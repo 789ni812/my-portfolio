@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import { DiHtml5, DiCss3, DiMongodb, DiReact, DiNodejs, DiJavascript } from "react-icons/di";
 
 // Icons
-import { MdEuroSymbol, MdFormatQuote, MdGroupAdd, MdAssignmentInd, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdAccountBalance } from 'react-icons/md';
+import { MdEuroSymbol, MdFormatQuote, MdGroupAdd, MdAssignmentInd, MdTrendingUp, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdPool, MdAccountBalance } from 'react-icons/md';
 
 const ContentIntroduction = () => {
 
@@ -53,14 +53,14 @@ const ContentIntroduction = () => {
                 </Grid>
                         </Grid>
                     </Card>
-                    <h2>And a...</h2>
-                    <Divider variant="middle" light={0} />
+                    <h2>And a <span >...</span></h2>
+                    <Divider variant="middle" />
                     <Card>
                         <h3>Delivery Manager / Agile Project Manager</h3>
                         <h4>Managing:</h4>
                         <Grid container spacing={2}>
                             <Grid item xs={6} sm={2}>
-                                <MdGroupAdd />Teans
+                                <MdGroupAdd /> Teams
                         </Grid>
 
                             <Grid item xs={6} sm={2}>
@@ -85,7 +85,7 @@ const ContentIntroduction = () => {
                     <Card>
                         <Grid container spacing={2}>
                             <Grid item xs={6} sm={2}>
-                                Startups
+                                <MdTrendingUp /> Startups
                         </Grid>
 
                             <Grid item xs={6} sm={2}>
@@ -105,7 +105,7 @@ const ContentIntroduction = () => {
                         </Grid>
 
                             <Grid item xs={6} sm={2}>
-                                Sport
+                                <MdPool />Sport
                         </Grid>
 
                             <Grid item xs={6} sm={2}>
