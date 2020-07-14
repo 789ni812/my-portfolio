@@ -29,7 +29,8 @@ import Avatar from '@material-ui/core/Avatar';
 import { MdExpandMore } from 'react-icons/md';
 import { AiOutlineUsergroupAdd, AiOutlineUsergroupDelete } from 'react-icons/ai';
 
-
+// react-html-parser
+import parse from 'html-react-parser';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -90,6 +91,7 @@ const CareerHistory = () => {
 
                             {/* MAIN CONTENT LOOP */}
                             <Container>
+
                                 < Card key={post.id}>
 
 
@@ -114,12 +116,14 @@ const CareerHistory = () => {
                                         </ListItem>
                                     </List>
 
-                                    {post.description ? <CardContent>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            {JSON.stringify(post.description)}
-                                        </Typography>
-                                    </CardContent>
-                                        : ''}
+                                    {post.description ?
+                                        <CardContent>
+                                            <Typography variant="body2" color="textSecondary" >
+                                                {parse(post.description)}
+                                            </Typography>
+                                        </CardContent>
+                                        :
+                                        ''}
 
 
                                     {/*
