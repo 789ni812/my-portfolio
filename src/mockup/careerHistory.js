@@ -125,9 +125,8 @@ const CareerHistory = () => {
 
     return (
         <>
-            <h1>Employment History</h1>
+            <h1>Previous employment</h1>
             {content}
-
         </>
 
     )
