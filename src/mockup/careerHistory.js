@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import Moment from 'react-moment';
 
-
-
 import { CareerHistory as history } from './data-points';
 
-import { Card, Typography, Container, Box } from '@material-ui/core';
+import { Card, Typography, Container, Box, CardContent } from '@material-ui/core';
 
 // Material-ui Expansion panel
 import { makeStyles } from '@material-ui/core/styles';
@@ -54,43 +52,44 @@ const CareerHistory = () => {
     const content = sortedContent.slice(0).reverse().map((post) =>
 
 
+        <Card key={post.id}>
+            <CardContent>
+
+                <div className={classes.root} key={post.id} >
+                    <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
+                        <ExpansionPanelSummary
+                            expandIcon={<MdExpandMore />}
+                            aria-controls={`panel${post.id}bh-content`}
+                            id="panel4bh-header">
+
+                            <Box textAlign="left" m={1}>
+                                <Typography className={classes.secondaryHeading}>Company: {post.companyName}</Typography>
+                                <Typography className={classes.secondaryHeading}> Role: {post.role}</Typography>
+                            </Box>
 
 
-        < div className={classes.root} key={post.id} >
-            <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
-                <ExpansionPanelSummary
-                    expandIcon={<MdExpandMore />}
-                    aria-controls={`panel${post.id}bh-content`}
-                    id="panel4bh-header">
-
-                    <Box textAlign="left" m={1}>
-                        <Typography className={classes.secondaryHeading}>Company: {post.companyName}</Typography>
-                        <Typography className={classes.secondaryHeading}> Role: {post.role}</Typography>
-                    </Box>
+                            <Box textAlign="right" m={1}>
+                                <Typography className={classes.secondaryHeading}>
+                                    {/*Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>*/}
+                                </Typography>
+                            </Box>
 
 
-                    <Box textAlign="right" m={1}>
-                        <Typography className={classes.secondaryHeading}>
-                            {/*Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>*/}
-                        </Typography>
-                    </Box>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
 
 
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
+                            {/* MAIN CONTENT LOOP */}
+                            <Container>
+                                < Card key={post.id}>
 
 
-                    {/* MAIN CONTENT LOOP */}
-                    <Container>
-                        < Card key={post.id}>
+                                    <ul>
+                                        <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
+                                        <li>Started: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment></li>
+                                        <li>Ended: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment></li>
 
-
-                            <ul>
-                                <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
-                                <li>Started: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment></li>
-                                <li>Ended: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment></li>
-
-                                {/*
+                                        {/*
                                 {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li key={agileSkill}>{agileSkill}</li>))}</ul> : ''}
                                 {post.skills ? <ul>{post.skills.map(skill => (<li key={skill}>{skill}</li>))}</ul> : ''}
 
@@ -106,18 +105,19 @@ const CareerHistory = () => {
                                 {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li key={client}>{client}</li>))}</ul> : ''}
                                 {post.respnsibilitiesAndDuties ? <li>{post.respnsibilitiesAndDuties}</li> : ''}
                      */}
-                            </ul>
-                        </Card >
-                    </Container>
-                    {/* END MAIN CONTENT LOOP */}
+                                    </ul>
+                                </Card >
+                            </Container>
+                            {/* END MAIN CONTENT LOOP */}
 
-                </ExpansionPanelDetails>
-            </ExpansionPanel >
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel >
 
 
 
-        </div >
-
+                </div >
+            </CardContent>
+        </Card>
     );
 
 
