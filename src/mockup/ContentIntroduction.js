@@ -77,11 +77,7 @@ const ContentIntroduction = () => {
 
                         </Grid>
                     </Card>
-
-
-
-
-                    <h2>Working with some great people across varied sectors including...</h2>
+                    <h2>Across some varied sectors including...</h2>
                     <Card>
                         <Grid container spacing={2}>
                             <Grid item xs={6} sm={2}>
