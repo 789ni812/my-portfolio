@@ -38,7 +38,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Menu from '@material-ui/core/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -173,6 +172,14 @@ const App = () => {
                           </Link>
                         </StyledMenuItem>
 
+                        <StyledMenuItem>
+                          <ListItemIcon>
+                            <MdInbox fontSize="small" />
+                          </ListItemIcon>
+                          <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
+                          </Link>
+                        </StyledMenuItem>
+
                         {/*
                         <StyledMenuItem>
                           <ListItemIcon>
@@ -184,12 +191,23 @@ const App = () => {
 */}
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <MdInbox fontSize="small" />
+                            <DiGithub fontSize="small" />
                           </ListItemIcon>
-                          <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
+                          <Link to="/employmentHistory">  <ListItemText primary="Git" />
+                          </Link>
+                        </StyledMenuItem>
+
+
+
+                        <StyledMenuItem>
+                          <ListItemIcon>
+                            <MdGetApp fontSize="small" />
+                          </ListItemIcon>
+                          <Link to="/employmentHistory">  <ListItemText primary="Download CV" />
                           </Link>
                         </StyledMenuItem>
                       </StyledMenu>
+
                     </div>
                     <div>
                       <Typography variant="h6" className={classes.title}>
@@ -197,15 +215,7 @@ const App = () => {
                   </Typography>
                     </div>
                   </Toolbar>
-                  <Toolbar>
-                    <ButtonGroup alignitems="centre" size="small">
-                      <Button variant="contained" color="primary" size="small"><MdContacts /> Get in touch</Button> |
 
-            <Button variant="contained" color="primary" size="small"><DiGithub /> Github</Button> |
-            <Button variant="contained" color="secondary" size="small" alignitems="center"
-                        justify="center" ><MdGetApp />Download CV</Button>
-                    </ButtonGroup>
-                  </Toolbar>
                 </AppBar>
 
               </div>
