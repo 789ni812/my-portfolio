@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 
 import { CareerHistory as history } from './data-points';
 
-import { Card, CardContent, Typography, Container, Box } from '@material-ui/core';
+import { Card, Typography, Container, Box } from '@material-ui/core';
 
 // Material-ui Expansion panel
 import { makeStyles } from '@material-ui/core/styles';
@@ -71,7 +71,7 @@ const CareerHistory = () => {
 
                     <Box textAlign="right" m={1}>
                         <Typography className={classes.secondaryHeading}>
-                            Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>
+                            {/*Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>*/}
                         </Typography>
                     </Box>
 
@@ -87,9 +87,16 @@ const CareerHistory = () => {
                             <p>{post.companyName}</p>
                             <ul>
                                 <li>Role: {post.role}</li>
+
+
+
                                 <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
-                                <li>Started: <Moment format="DD MM YYYY">{post.startDateUS}</Moment></li>
-                                <li>Ended: <Moment format="DD MM YYYY">{post.endDateUS}</Moment></li>
+
+
+                                <li>Started: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment></li>
+                                <li>Ended: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment></li>
+
+                                {/*
                                 {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li key={agileSkill}>{agileSkill}</li>))}</ul> : ''}
                                 {post.skills ? <ul>{post.skills.map(skill => (<li key={skill}>{skill}</li>))}</ul> : ''}
 
@@ -104,7 +111,7 @@ const CareerHistory = () => {
 
                                 {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li key={client}>{client}</li>))}</ul> : ''}
                                 {post.respnsibilitiesAndDuties ? <li>{post.respnsibilitiesAndDuties}</li> : ''}
-
+                     */}
                             </ul>
                         </Card >
                     </Container>
