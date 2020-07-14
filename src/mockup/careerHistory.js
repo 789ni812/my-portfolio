@@ -3,16 +3,31 @@ import Moment from 'react-moment';
 
 import { CareerHistory as history } from './data-points';
 
-import { Card, Typography, Container, Box, CardContent } from '@material-ui/core';
 
-// Material-ui Expansion panel
+
+// **** START: Material-ui 
+
+import { Card, Typography, Container, Box, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+
+// Expansion panel
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
-// Icons
+// Lists
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import Avatar from '@material-ui/core/Avatar';
+
+// **** End: Material-ui 
+
+
+// react-Icons
 import { MdExpandMore } from 'react-icons/md';
+import { AiOutlineUsergroupAdd, AiOutlineUsergroupDelete } from 'react-icons/ai';
 
 
 
@@ -56,7 +71,8 @@ const CareerHistory = () => {
             <CardContent>
 
                 <div className={classes.root} key={post.id} >
-                    <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
+                    <ExpansionPanel square expanded={true}>
+                        {/*<ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>*/}
                         <ExpansionPanelSummary
                             expandIcon={<MdExpandMore />}
                             aria-controls={`panel${post.id}bh-content`}
@@ -65,15 +81,8 @@ const CareerHistory = () => {
                             <Box textAlign="left" m={1}>
                                 <Typography className={classes.secondaryHeading}>Company: {post.companyName}</Typography>
                                 <Typography className={classes.secondaryHeading}> Role: {post.role}</Typography>
+                                <Typography className={classes.secondaryHeading}>Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment></Typography>
                             </Box>
-
-
-                            <Box textAlign="right" m={1}>
-                                <Typography className={classes.secondaryHeading}>
-                                    {/*Duration: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>*/}
-                                </Typography>
-                            </Box>
-
 
                         </ExpansionPanelSummary>
                         <ExpansionPanelDetails>
@@ -84,12 +93,30 @@ const CareerHistory = () => {
                                 < Card key={post.id}>
 
 
-                                    <ul>
-                                        <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
-                                        <li>Started: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment></li>
-                                        <li>Ended: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment></li>
+                                    <List className={classes.root}>
 
-                                        {/*
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <Avatar>
+                                                    <AiOutlineUsergroupAdd />
+                                                </Avatar>
+                                            </ListItemAvatar>
+                                            <ListItemText primary="Started: " secondary={<Moment format="DD-MM-YYYY">{post.startDateUS}</Moment>} />
+
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListItemAvatar>
+                                                <Avatar>
+                                                    <AiOutlineUsergroupDelete />
+                                                </Avatar>
+                                            </ListItemAvatar>
+                                            <ListItemText primary="Ended" secondary={<Moment format="DD-MM-YYYY">{post.endDateUS}</Moment>} />
+                                        </ListItem>
+                                    </List>
+
+
+
+                                    {/*
                                 {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li key={agileSkill}>{agileSkill}</li>))}</ul> : ''}
                                 {post.skills ? <ul>{post.skills.map(skill => (<li key={skill}>{skill}</li>))}</ul> : ''}
 
@@ -105,7 +132,7 @@ const CareerHistory = () => {
                                 {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li key={client}>{client}</li>))}</ul> : ''}
                                 {post.respnsibilitiesAndDuties ? <li>{post.respnsibilitiesAndDuties}</li> : ''}
                      */}
-                                    </ul>
+
                                 </Card >
                             </Container>
                             {/* END MAIN CONTENT LOOP */}
@@ -117,7 +144,7 @@ const CareerHistory = () => {
 
                 </div >
             </CardContent>
-        </Card>
+        </Card >
     );
 
 

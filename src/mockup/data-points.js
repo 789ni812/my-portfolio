@@ -159,7 +159,7 @@ export const CareerHistory = [
         endDate: '18/02/2020',
         startDateUS: '09/01/2016',
         endDateUS: '02/18/2020',
-        role: 'Project Manager',
+        role: 'Digital Project Manager',
         skills: ['Jira', 'Confluence', 'BDD', 'TDD', 'Release Planning', 'Lean', 'XP programming', 'Scrum', 'Kanban', 'Poker planning', 'MoSCoW', 'Risk vs Value', 'Acceptance criteria', 'Business visions', 'Tmeboxing', 'Retrospectives', 'RAID logs', 'SOW', 'Change Requests'],
         clientsWorkedWith: ['Adobe', 'HSBC', 'Puma', 'Sheffield City Council', 'Creditsafe', 'Acom', 'Atlas Copco', 'Heath Wallace', 'Astute', 'Workfront'],
         respnsibilitiesAndDuties: ['Writing and reviewing Statement of Work documents and Change Requests', 'managing budgets', 'timelines', 'resources', 'clients and developers', 'Account Management', 'Project Management'],
