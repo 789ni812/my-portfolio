@@ -101,10 +101,14 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
+
+
 }));
 
 
 //END Material-ui AppBar
+
+
 
 
 
@@ -197,7 +201,7 @@ const App = () => {
                     </div>
                   </Toolbar>
                   <Toolbar>
-                    <ButtonGroup alignItems="center" fullWidth="2" size="small">
+                    <ButtonGroup alignItems="centre" size="small">
                       <Button variant="contained" color="primary" size="small"><MdContacts /> Get in touch</Button> |
 
             <Button variant="contained" color="primary" size="small"><DiGithub /> Github</Button> |
