@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 
 import { CareerHistory as history } from './data-points';
 
-import { Card, CardContent, Typography, Container, Box, Grid } from '@material-ui/core';
+import { Card, CardContent, Typography, Container, Box } from '@material-ui/core';
 
 // Material-ui Expansion panel
 import { makeStyles } from '@material-ui/core/styles';
