@@ -84,15 +84,9 @@ const CareerHistory = () => {
                     <Container>
                         < Card key={post.id}>
 
-                            <p>{post.companyName}</p>
+
                             <ul>
-                                <li>Role: {post.role}</li>
-
-
-
                                 <li >Time at role: <Moment ago from={post.endDateUS}>{post.startDateUS}</Moment>  </li>
-
-
                                 <li>Started: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment></li>
                                 <li>Ended: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment></li>
 
