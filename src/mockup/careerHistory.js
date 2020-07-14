@@ -114,19 +114,19 @@ const CareerHistory = () => {
                                         </ListItem>
                                     </List>
 
+                                    {post.description ? <CardContent>
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            {JSON.stringify(post.description)}
+                                        </Typography>
+                                    </CardContent>
+                                        : ''}
 
 
                                     {/*
                                 {post.agileSkills ? <ul>{post.agileSkills.map(agileSkill => (<li key={agileSkill}>{agileSkill}</li>))}</ul> : ''}
                                 {post.skills ? <ul>{post.skills.map(skill => (<li key={skill}>{skill}</li>))}</ul> : ''}
 
-                                {post.description ? post.description : ''}
-                                <CardContent>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        {JSON.stringify(post.description)}
-                                    </Typography>
-                                </CardContent>
-
+                                
                                 {post.exampleSites ? <ul>{post.exampleSites.map(exampleSite => (<li key={exampleSite}>{exampleSite}</li>))}</ul> : ''}
 
                                 {post.clientsWorkedWith ? <ul>{post.clientsWorkedWith.map(client => (<li key={client}>{client}</li>))}</ul> : ''}
