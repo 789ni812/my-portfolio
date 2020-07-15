@@ -80,8 +80,10 @@ const CareerHistory = () => {
         <Card key={post.id}>
             <CardContent>
                 <div className={classes.root} key={post.id} >
-                    <ExpansionPanel square expanded={true}>
-                        {/*<ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>*/}
+
+                    {/*<ExpansionPanel square expanded={true}>
+                        */}
+                    <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
                         <ExpansionPanelSummary
                             expandIcon={<MdExpandMore />}
                             aria-controls={`panel${post.id}bh-content`}
@@ -96,7 +98,14 @@ const CareerHistory = () => {
                                     ''}
                                 <Typography gutterBottom={true}><span className={classes.secondaryHeading}> Role: </span>{post.role}</Typography>
                                 <Typography gutterBottom={false}><span className={classes.secondaryHeading}>Duration: </span><Moment ago from={post.endDateUS}>{post.startDateUS}</Moment></Typography>
-
+                                {post.teaser ?
+                                    <CardContent>
+                                        <Typography variant="body2" color="textSecondary" >
+                                            {parse(post.teaser)}
+                                        </Typography>
+                                    </CardContent>
+                                    :
+                                    ''}
 
                             </Box>
                         </ExpansionPanelSummary>
@@ -104,7 +113,7 @@ const CareerHistory = () => {
                             {/* MAIN CONTENT LOOP */}
                             <Container>
                                 < Card key={post.id}>
-                                    <Grid container spacing={2}>
+                                    <Grid container spacing={6} display={'block'}>
                                         <Grid item xs={6} sm={2}>
                                             <Box m={2}>
                                                 <Avatar small>
@@ -124,14 +133,7 @@ const CareerHistory = () => {
 
 
                                     </Grid>
-                                    {post.shortDescription ?
-                                        <CardContent>
-                                            <Typography variant="body2" color="textSecondary" >
-                                                {parse(post.shortDescription)}
-                                            </Typography>
-                                        </CardContent>
-                                        :
-                                        ''}
+
 
                                     {post.clientsWorkedWith ?
                                         <CardContent>
