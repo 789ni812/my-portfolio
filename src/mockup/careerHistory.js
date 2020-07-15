@@ -75,12 +75,9 @@ const CareerHistory = () => {
 
     // Render employment history in reverse order
     const content = sortedContent.slice(0).reverse().map((post) =>
-
-
         <Card key={post.id}>
             <CardContent>
                 <div className={classes.root} key={post.id} >
-
                     {/*<ExpansionPanel square expanded={true}>
                         */}
                     <ExpansionPanel expanded={expanded === `panel${post.id}`} onChange={handleChange(`panel${post.id}`)}>
@@ -88,12 +85,10 @@ const CareerHistory = () => {
                             expandIcon={<MdExpandMore />}
                             aria-controls={`panel${post.id}bh-content`}
                             id="panel4bh-header">
-
                             <Box textAlign="left" m={1}>
                                 <Typography display={'block'} gutterBottom={true}><span className={classes.secondaryHeading}>Company: </span>{post.companyName}</Typography>
                                 {post.companysite ?
                                     <Typography gutterBottom={true} ><span className={classes.secondaryHeading}>URL: </span> <a href={post.companySite}>{post.companySite}</a></Typography>
-
                                     :
                                     ''}
                                 <Typography gutterBottom={true}><span className={classes.secondaryHeading}> Role: </span>{post.role}</Typography>
@@ -113,32 +108,15 @@ const CareerHistory = () => {
                             {/* MAIN CONTENT LOOP */}
                             <Container>
                                 < Card key={post.id}>
-                                    <Grid container spacing={6} display={'block'}>
-                                        <Grid item xs={6} sm={2}>
-                                            <Box m={2}>
-                                                <Avatar small>
-                                                    <AiOutlineUsergroupAdd />
-                                                </Avatar>
-                                            Started: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment>
-                                            </Box>
-                                        </Grid>
-                                        <Grid item xs={6} sm={2}>
-                                            <Box m={2}>
-                                                <Avatar>
-                                                    <AiOutlineUsergroupDelete />
-                                                </Avatar>
-                                                Ended: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment>
-                                            </Box>
-                                        </Grid>
-
-
-                                    </Grid>
-
-
+                                    <CardContent>
+                                        <Typography variant="caption" color="textSecondary" >
+                                            Start date: <Moment format="DD-MM-YYYY">{post.startDateUS}</Moment> | End date: <Moment format="DD-MM-YYYY">{post.endDateUS}</Moment>
+                                        </Typography>
+                                    </CardContent>
                                     {post.clientsWorkedWith ?
                                         <CardContent>
-                                            <Typography variant="body2" color="textPrimary" >
-                                                <h3>Clients worked with: </h3>
+                                            <h3>Clients worked with:</h3>
+                                            <Typography variant="caption" color="textPrimary" >
                                                 <Grid container spacing={2}>
                                                     {post.clientsWorkedWith.map(client => (
                                                         <Grid item xs={6} sm={2} key={client}>
@@ -153,8 +131,8 @@ const CareerHistory = () => {
 
                                     {post.pmSkills ?
                                         <CardContent>
-                                            <Typography variant="body2" color="textPrimary" >
-                                                <h3>PM (Waterfall/Agile) practices used include:</h3>
+                                            <h3>PM (Waterfall/Agile) practices used include:</h3>
+                                            <Typography variant="caption" color="textSecondary" >
                                                 <Grid container spacing={2}>
                                                     {post.pmSkills.map(skill => (
                                                         <Grid item xs={6} sm={2} key={skill}>
@@ -169,8 +147,8 @@ const CareerHistory = () => {
 
                                     {post.devSkills ?
                                         <CardContent>
+                                            <h3>Development environment and tools used include:</h3>
                                             <Typography variant="body2" color="textPrimary" >
-                                                <h3>Development environment and tools used include:</h3>
                                                 <Grid container spacing={2}>
                                                     {post.devSkills.map(skill => (
                                                         <Grid item xs={6} sm={2} key={skill}>
@@ -187,8 +165,8 @@ const CareerHistory = () => {
 
                                     {post.respnsibilitiesAndDuties ?
                                         <CardContent>
+                                            <h3>Some key responsibilities: </h3>
                                             <Typography variant="body2" color="textPrimary" >
-                                                <h3>Some key responsibilities: </h3>
                                                 <Grid container spacing={2}>
                                                     {post.respnsibilitiesAndDuties.map(skill => (
                                                         <Grid item xs={6} sm={2} key={skill}>
