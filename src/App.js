@@ -177,7 +177,7 @@ const App = () => {
                           <ListItemIcon>
                             <MdInbox fontSize="large" />
                           </ListItemIcon>
-                          <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
+                          <Link to="/employmentHistory">  <ListItemText primary="Previous Employment" />
                           </Link>
                         </StyledMenuItem>
 
