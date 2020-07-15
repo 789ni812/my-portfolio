@@ -98,6 +98,7 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
+    marginLeft: theme.spacing(2),
   },
 
 
@@ -143,7 +144,7 @@ const App = () => {
             <Grid item xs={12} >
               <div className={classes.root}>
 
-                <AppBar position="fixed">
+                <AppBar position="fixed" >
                   <Toolbar>
                     <div>
                       <Button
@@ -166,7 +167,7 @@ const App = () => {
 
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <MdSend fontSize="small" />
+                            <MdSend fontSize="large" />
                           </ListItemIcon>
                           <Link to="/">  <ListItemText primary="Home" />
                           </Link>
@@ -174,7 +175,7 @@ const App = () => {
 
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <MdInbox fontSize="small" />
+                            <MdInbox fontSize="large" />
                           </ListItemIcon>
                           <Link to="/employmentHistory">  <ListItemText primary="Previous employment" />
                           </Link>
@@ -188,15 +189,15 @@ const App = () => {
                                       <Link to="/portfolio">  <ListItemText primary="Portfolio" />
   </Link> 
                         </StyledMenuItem>
-*/}
+
                         <StyledMenuItem>
                           <ListItemIcon>
-                            <DiGithub fontSize="small" />
+                            <DiGithub fontSize="large" />
                           </ListItemIcon>
                           <Link to="/employmentHistory">  <ListItemText primary="Git" />
                           </Link>
                         </StyledMenuItem>
-
+*/}
 
 
                         <StyledMenuItem>
