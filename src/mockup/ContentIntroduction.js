@@ -23,6 +23,7 @@ const ContentIntroduction = () => {
             <Card>
                 <CardContent>
                     <h1>Hi,</h1>
+
                     <h2>I'm Stuart</h2>
                     <MdFormatQuote />Over the past 20 yesrs I've helped some great companies build and deliver digital projects<MdFormatQuote />
 
