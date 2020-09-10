@@ -1,22 +1,19 @@
 import React from 'react';
 
 
-
-
 // Material UI
-import { Card, CardHeader, Typography } from '@material-ui/core';
+import { Card } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
+
 
 import { DiHtml5, DiCss3, DiMongodb, DiReact, DiNodejs, DiJavascript } from "react-icons/di";
 import styled from "styled-components";
 // Icons
-import { MdEuroSymbol, MdFormatQuote, MdGroupAdd, MdAssignmentInd, MdTrendingUp, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdPool, MdAccountBalance } from 'react-icons/md';
+import { MdEuroSymbol, MdGroupAdd, MdAssignmentInd, MdTrendingUp, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdPool, MdAccountBalance } from 'react-icons/md';
 
 import CareerHistory from './careerHistory';
-
 
 
 const TitleWorkingAs = styled.h2`
@@ -24,9 +21,7 @@ font-size: 24px;
     color: #2f855a;
 `;
 
-
 const ContentIntroduction = () => {
-
 
     return (
         <>
@@ -136,7 +131,6 @@ const ContentIntroduction = () => {
                     <Divider />
                 </CardContent>
             </Card>
-            <CareerHistory />
         </>
     )
 }

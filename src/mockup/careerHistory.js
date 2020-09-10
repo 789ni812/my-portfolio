@@ -13,15 +13,13 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
-import Avatar from '@material-ui/core/Avatar';
+
 
 // **** End: Material-ui 
 
 
 // react-Icons
 import { MdExpandMore } from 'react-icons/md';
-import { AiOutlineUsergroupAdd, AiOutlineUsergroupDelete } from 'react-icons/ai';
-import { BsKanban } from 'react-icons/bs';
 // react-html-parser
 import parse from 'html-react-parser';
 
