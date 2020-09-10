@@ -1,0 +1,17 @@
+/* chipsbackground */
+
+position: static;
+width: 1600px;
+height: 968px;
+left: 952px;
+top: 2px;
+
+background: url("assets/images/bckgrnd-circuit-board.png");
+filter: blur(4px);
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+margin: 0px 0px;

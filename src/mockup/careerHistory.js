@@ -3,8 +3,6 @@ import Moment from 'react-moment';
 
 import { CareerHistory as history } from './data-points';
 
-
-
 // **** START: Material-ui 
 
 import { Card, Typography, Container, Box, CardContent, Grid } from '@material-ui/core';

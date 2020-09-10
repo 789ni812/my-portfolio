@@ -48,7 +48,6 @@ import Container from '@material-ui/core/Container'
 
 // Icons
 import { MdGetApp } from 'react-icons/md';
-import { DiGithub } from "react-icons/di";
 // Icons
 import { MdSend, MdInbox } from 'react-icons/md';
 
