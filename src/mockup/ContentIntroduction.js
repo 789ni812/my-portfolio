@@ -11,22 +11,26 @@ import Grid from '@material-ui/core/Grid';
 import { DiHtml5, DiCss3, DiMongodb, DiReact, DiNodejs, DiJavascript } from "react-icons/di";
 import styled from "styled-components";
 // Icons
-import { MdEuroSymbol, MdGroupAdd, MdAssignmentInd, MdTrendingUp, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdPool, MdAccountBalance } from 'react-icons/md';
-
-import CareerHistory from './careerHistory';
+import { MdEuroSymbol, MdGroupAdd, MdAssignmentInd, MdTrendingUp, MdBusiness, MdTimer, MdShoppingCart, MdLocalHospital, MdLocationCity, MdLocalLibrary, MdAudiotrack, MdPool, MdAccountBalance, MdEmail } from 'react-icons/md';
+import { AiFillLinkedin } from 'react-icons/ai'
 
 
 const TitleWorkingAs = styled.h2`
 font-size: 24px;
-    color: #2f855a;
-`;
+    color: #47624fff;
+    `;
+
+
 
 const ContentIntroduction = () => {
 
     return (
         <>
             <h1>Hi, I'm Stuart</h1>
-            <h2>Over 20 yesrs experience delivering digital projects</h2>
+            <h2>Over the last 20 years I've worked with some great people to both build and Project manage digital projects.</h2>
+            <h3>And that ladies and gentlemen is a LOT of deadlines!</h3>
+
+            <h3 align="center">Current status: Available for work. </h3>
             <Card>
 
                 <CardContent>
@@ -63,7 +67,7 @@ const ContentIntroduction = () => {
                     <Divider variant="middle" />
                     <Card>
                         <CardContent>
-                            <TitleWorkingAs>Development Manager / Digital Project Manager</TitleWorkingAs>
+                            <TitleWorkingAs>Digital Project Manager / Development Manager</TitleWorkingAs>
                             <Grid container spacing={2}>
                                 <Grid item xs={6} sm={2}>
                                     <MdGroupAdd /> Teams
@@ -77,8 +81,7 @@ const ContentIntroduction = () => {
                                     <MdAssignmentInd /> Projects
                         </Grid>
                                 <Grid item xs={6} sm={2}>
-                                    <MdTimer />
-                            Clients
+                                    <MdTimer /> Clients
                         </Grid>
 
                             </Grid>
@@ -129,7 +132,25 @@ const ContentIntroduction = () => {
                         </CardContent>
                     </Card>
                     <Divider />
+
+                    <h3 align="center">Want to get in touch?</h3>
+                    <Card>
+                        <CardContent>
+                            <p>I'm currently available for work so please feel free to contact me.</p>
+
+                            <Grid container spacing={2}>
+                                <Grid item xs={6} sm={3}>
+                                    <a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"><AiFillLinkedin /> LinkedIn</a>
+                                </Grid>
+                                <Grid item xs={6} sm={3}>
+                                    <a href="mailto:bradfordstuart+sbs@gmail.com"><MdEmail /> Email</a>
+                                </Grid>
+                            </Grid>
+
+                        </CardContent>
+                    </Card>
                 </CardContent>
+
             </Card>
         </>
     )
