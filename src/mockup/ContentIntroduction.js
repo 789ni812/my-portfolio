@@ -21,13 +21,31 @@ font-size: 24px;
     `;
 
 
+const Links = styled.a`
+    a:link {
+        text-decoration: none;
+      }
+      
+      a:visited {
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      
+      a:active {
+        text-decoration: underline;
+      }
+    `;
+
 
 const ContentIntroduction = () => {
 
     return (
         <>
             <h1>Hi, I'm Stuart</h1>
-            <h2>For the last 20 years I've worked with some great people to develop, project manage and deliver digital projects.</h2>
+            <h2>For the last 20 years, I've worked with some great people to develop, project manage and deliver digital projects.</h2>
 
             <h3 align="center">Current status: Available for work. </h3>
             <Card>
@@ -139,10 +157,13 @@ const ContentIntroduction = () => {
 
                             <Grid container spacing={2}>
                                 <Grid item xs={6} sm={3}>
-                                    <a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"><AiFillLinkedin /> LinkedIn</a>
+                                    <Links><a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"><AiFillLinkedin /> LinkedIn</a>
+                                    </Links>
                                 </Grid>
                                 <Grid item xs={6} sm={3}>
-                                    <a href="mailto:bradfordstuart+sbs@gmail.com"><MdEmail /> Email</a>
+                                    <Links>
+                                        <a href="mailto:bradfordstuart+sbs@gmail.com"><MdEmail /> Email</a>
+                                    </Links>
                                 </Grid>
                             </Grid>
 
