@@ -157,12 +157,19 @@ const ContentIntroduction = () => {
 
                             <Grid container spacing={2}>
                                 <Grid item xs={6} sm={3}>
-                                    <Links><a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"><AiFillLinkedin /> LinkedIn</a>
+                                    <Links>
+                                        <a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"><AiFillLinkedin /> LinkedIn
+                                    </a>
+
+
                                     </Links>
                                 </Grid>
                                 <Grid item xs={6} sm={3}>
+                                    <a href="mailto:bradfordstuart+sbs@gmail.com">
+                                        <MdEmail /> Email
+                                        </a>
                                     <Links>
-                                        <a href="mailto:bradfordstuart+sbs@gmail.com"><MdEmail /> Email</a>
+
                                     </Links>
                                 </Grid>
                             </Grid>

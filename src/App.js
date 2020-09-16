@@ -7,19 +7,8 @@ import {
   Link
 } from "react-router-dom";
 
-
-
-
-//import './App.scss'; //TODo decide if to keep this stylesheet / theme approach
-
-
-import Footer from './components/Footer';
-//import ChartExample from './mockup/chartExample'; // show off some information in chart. Dont know what though?
-import CareerHistory from './mockup/careerHistory';
-//import UserDetailsTest from './mockup/test_usersDetails'; // navigator useragent information
 import ContentIntroduction from './mockup/ContentIntroduction';
-//import PortfolioContent from './mockup/Portfolio';
-
+import CareerHistory from './mockup/careerHistory';
 
 // Material-ui
 import Grid from '@material-ui/core/Grid';
@@ -163,7 +152,6 @@ const App = () => {
                         open={Boolean(anchorEl)}
                         onClose={handleClose}
                       >
-
                         <StyledMenuItem>
                           <ListItemIcon>
                             <MdSend fontSize="large" />
