@@ -27,8 +27,8 @@ const ContentIntroduction = () => {
     return (
         <>
             <h1>Hi, I'm Stuart</h1>
-            <h2>Over the last 20 years I've worked with some great people to both build and Project manage digital projects.</h2>
-            <h3>And that ladies and gentlemen is a LOT of deadlines!</h3>
+            <h2>Over the last 20 years I've worked with some great people to develop and project manage digital projects.</h2>
+
 
             <h3 align="center">Current status: Available for work. </h3>
             <Card>
