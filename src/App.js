@@ -238,11 +238,6 @@ const App = () => {
             </Grid>
             {/* END CONTENT SWITCH */}
 
-
-
-            {/* START FOOTER */}
-            <Grid item xs={12} sm={10}><Footer /></Grid>
-            {/* END FOOTER */}
           </Grid>
         </Container>
       </ ThemeProvider>
