@@ -21,23 +21,34 @@ font-size: 24px;
     `;
 
 
-const Links = styled.a`
-    a:link {
-        text-decoration: none;
-      }
-      
-      a:visited {
-        text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
-      
-      a:active {
-        text-decoration: underline;
-      }
-    `;
+const Button = styled.button`
+  display: inline-block;
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+  display: block;
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  `;
+
+
 
 
 const ContentIntroduction = () => {
@@ -157,20 +168,21 @@ const ContentIntroduction = () => {
 
                             <Grid container spacing={2}>
                                 <Grid item xs={6} sm={3}>
-                                    <Links>
+                                    <Button>
                                         <a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"><AiFillLinkedin /> LinkedIn
                                     </a>
 
 
-                                    </Links>
+                                    </Button>
                                 </Grid>
                                 <Grid item xs={6} sm={3}>
-                                    <a href="mailto:bradfordstuart+sbs@gmail.com">
-                                        <MdEmail /> Email
+                                    <Button>
+                                        <a href="mailto:bradfordstuart+sbs@gmail.com">
+                                            <MdEmail /> Email
                                         </a>
-                                    <Links>
 
-                                    </Links>
+
+                                    </Button>
                                 </Grid>
                             </Grid>
 
