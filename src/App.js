@@ -1,19 +1,10 @@
 import React from "react";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
-import ContentIntroduction from './mockup/ContentIntroduction';
-import CareerHistory from './mockup/careerHistory';
+import ContentIntroduction from './components/ContentIntroduction';
 
 // Material-ui
 import Grid from '@material-ui/core/Grid';
-
-
 
 // playing
 import { ThemeProvider } from '@material-ui/core/styles'
@@ -28,16 +19,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Menu from '@material-ui/core/Menu';
 import { withStyles } from '@material-ui/core/styles';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Container from '@material-ui/core/Container'
 
-
-// Icons
-import { MdGetApp } from 'react-icons/md';
-// Icons
-import { MdSend, MdInbox } from 'react-icons/md';
 
 
 
@@ -64,16 +46,7 @@ const StyledMenu = withStyles({
   />
 ));
 
-const StyledMenuItem = withStyles((theme) => ({
-  root: {
-    '&:focus': {
-      backgroundColor: theme.palette.primary.main,
-      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: theme.palette.common.white,
-      },
-    },
-  },
-}))(MenuItem);
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -96,17 +69,7 @@ const useStyles = makeStyles(theme => ({
 
 
 
-function Home() {
-  return <ContentIntroduction />;
-}
 
-// function Portfolio() {
-//   return <PortfolioContent />
-// }
-
-function EmploymentHistory() {
-  return <CareerHistory />
-}
 
 const App = () => {
   const classes = useStyles();
@@ -120,21 +83,21 @@ const App = () => {
     setAnchorEl(null);
   }
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Container >
-          <Grid container spacing={8} alignitems="center"
-            justify="center">
 
-            {/* START HEADER */}
-            <Grid item xs={12} >
-              <div className={classes.root}>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
 
-                <AppBar position="fixed" >
-                  <Toolbar>
-                    <div>
-                      {/*<Button
+      <Grid container spacing={8} alignitems="center"
+        justify="center">
+
+        {/* START HEADER */}
+        <Grid item xs={12} >
+          <div className={classes.root}>
+
+            <AppBar position="fixed" >
+              <Toolbar>
+                <div>
+                  {/*<Button
                         aria-controls="customized-menu"
                         aria-haspopup="true"
                         variant="contained"
@@ -144,30 +107,15 @@ const App = () => {
                       </Button>*/}
 
 
-                      <StyledMenu
-                        id="customized-menu"
-                        anchorEl={anchorEl}
-                        keepMounted
-                        open={Boolean(anchorEl)}
-                        onClose={handleClose}
-                      >
-                        <StyledMenuItem>
-                          <ListItemIcon>
-                            <MdSend fontSize="large" />
-                          </ListItemIcon>
-                          <Link to="/">  <ListItemText primary="Home" />
-                          </Link>
-                        </StyledMenuItem>
+                  <StyledMenu
+                    id="customized-menu"
+                    anchorEl={anchorEl}
+                    keepMounted
+                    open={Boolean(anchorEl)}
+                    onClose={handleClose}
+                  >
 
-                        <StyledMenuItem>
-                          <ListItemIcon>
-                            <MdInbox fontSize="large" />
-                          </ListItemIcon>
-                          <Link to="/employmentHistory">  <ListItemText primary="Previous Employment" />
-                          </Link>
-                        </StyledMenuItem>
-
-                        {/*
+                    {/*
                         <StyledMenuItem>
                           <ListItemIcon>
                             <MdDrafts fontSize="small" />
@@ -186,50 +134,32 @@ const App = () => {
 */}
 
 
-                        <StyledMenuItem>
-                          <ListItemIcon>
-                            <MdGetApp fontSize="small" />
-                          </ListItemIcon>
-                          <Link to="/employmentHistory">  <ListItemText primary="Download CV" />
-                          </Link>
-                        </StyledMenuItem>
-                      </StyledMenu>
+                  </StyledMenu>
 
-                    </div>
-                    <div>
-                      <Typography variant="h6" className={classes.title}>
-                        StuartBradford.com
+                </div>
+                <div>
+                  <Typography variant="h6" className={classes.title}>
+                    StuartBradford.com
                   </Typography>
-                    </div>
-                  </Toolbar>
+                </div>
+              </Toolbar>
 
-                </AppBar>
+            </AppBar>
 
-              </div>
-            </Grid>
-            {/* END HEADER */}
+          </div>
+        </Grid>
+        {/* END HEADER */}
 
-            {/* START CONTENT SWITCH */}
-            <Grid item >
-              <Switch>
-                { /* <Route path="/portfolio">
-                  <Portfolio />
-                </Route> */}
-                <Route path="/employmentHistory">
-                  <EmploymentHistory />
-                </Route>
-                <Route path="/" exact>
-                  <Home />
-                </Route>
-              </Switch>
-            </Grid>
-            {/* END CONTENT SWITCH */}
+        {/* START CONTENT SWITCH */}
+        <Grid item >
+          <ContentIntroduction />
+        </Grid>
+        {/* END CONTENT SWITCH */}
 
-          </Grid>
-        </Container>
-      </ ThemeProvider>
+      </Grid>
+    </ ThemeProvider>
 
-    </Router>
+
   );
 }
 export default App;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Moment from 'react-moment';
 
-import { CareerHistory as history } from './data-points';
+import { CareerHistory as history } from '../mockup/data-points';
 
 // **** START: Material-ui 
 

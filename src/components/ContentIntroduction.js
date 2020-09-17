@@ -27,23 +27,27 @@ const Button = styled.button`
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
+  border: 2px solid #47624fff;
   border-radius: 3px;
   display: block;
   a:link {
+      color: black;
     text-decoration: none;
   }
   
   a:visited {
+    color: black;
     text-decoration: none;
   }
   
   a:hover {
+    color: #47624fff;
     text-decoration: underline;
   }
   
   a:active {
-    text-decoration: underline;
+    color: black;
+    text-decoration: none;
   }
 
   `;
@@ -64,6 +68,36 @@ const ContentIntroduction = () => {
                 <CardContent>
 
                     <h3>Working as a...</h3>
+
+                    <Card>
+                        <CardContent>
+                            <TitleWorkingAs>Digital Project Manager / Development Manager</TitleWorkingAs>
+                            <Grid container spacing={2}>
+                                <Grid item xs={6} sm={2}>
+                                    <MdGroupAdd /> Teams
+                    </Grid>
+
+                                <Grid item xs={6} sm={2}>
+                                    <MdEuroSymbol /> Budgets
+                    </Grid>
+
+                                <Grid item xs={6} sm={2}>
+                                    <MdAssignmentInd /> Projects
+                    </Grid>
+                                <Grid item xs={6} sm={2}>
+                                    <MdTimer /> Clients
+                    </Grid>
+
+                            </Grid>
+                        </CardContent>
+                    </Card>
+
+
+
+                    <h3>And a <span >...</span></h3>
+                    <Divider variant="middle" />
+
+
                     <Card>
                         <CardContent>
                             <TitleWorkingAs>Front End / Full Stack Developer</TitleWorkingAs>
@@ -91,30 +125,8 @@ const ContentIntroduction = () => {
                             </Grid>
                         </CardContent>
                     </Card>
-                    <h3>And a <span >...</span></h3>
-                    <Divider variant="middle" />
-                    <Card>
-                        <CardContent>
-                            <TitleWorkingAs>Digital Project Manager / Development Manager</TitleWorkingAs>
-                            <Grid container spacing={2}>
-                                <Grid item xs={6} sm={2}>
-                                    <MdGroupAdd /> Teams
-                        </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <MdEuroSymbol /> Budgets
-                        </Grid>
 
-                                <Grid item xs={6} sm={2}>
-                                    <MdAssignmentInd /> Projects
-                        </Grid>
-                                <Grid item xs={6} sm={2}>
-                                    <MdTimer /> Clients
-                        </Grid>
-
-                            </Grid>
-                        </CardContent>
-                    </Card>
 
                     <h3>Across some great sectors</h3>
                     <Card>
@@ -141,7 +153,7 @@ const ContentIntroduction = () => {
                         </Grid>
 
                                 <Grid item xs={6} sm={3}>
-                                    <MdPool />Sport
+                                    <MdPool /> Sport
                         </Grid>
 
                                 <Grid item xs={6} sm={3}>
