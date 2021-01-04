@@ -1,6 +1,6 @@
 import React from "react";
 
-import ContentIntroduction from "./components/ContentIntroduction";
+// import ContentIntroduction from "./components/ContentIntroduction";
 
 // Material-ui
 import Grid from "@material-ui/core/Grid";
