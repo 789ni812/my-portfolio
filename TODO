@@ -1,6 +1,6 @@
 Project: My-Portfolio
   
-  Project: Styling 
+  Project: Styling: 
       [ ] Style Content and typography first
       [ ] Layout
         [ ] Add main body padding for the card layout so cards are more centered.
@@ -12,11 +12,11 @@ Project: My-Portfolio
           [ ] icons on buttons (especially Github button is wrong size) github is coming from devicons other are MD.
         [ ] Add Material-ui Back to top - https://material-ui.com/components/app-bar/
  
-  Project: General
+  Project: General:
       [ ] Add Links for the content pages
       [ ] IDEA: Download CV on header or footer maybe? 
 
-  Project: Content
+  Project: Content:
       [ ] Home / Intro Text / About 
       [ ] Portfolio
       [ ] Employment History
