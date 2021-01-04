@@ -1,55 +1,46 @@
 import React from "react";
 
-
-import ContentIntroduction from './components/ContentIntroduction';
+import ContentIntroduction from "./components/ContentIntroduction";
 
 // Material-ui
-import Grid from '@material-ui/core/Grid';
+import Grid from "@material-ui/core/Grid";
 
 // playing
-import { ThemeProvider } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from './theme'
-
+import { ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import theme from "./theme";
 
 //START Material-ui AppBar
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Menu from '@material-ui/core/Menu';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Menu from "@material-ui/core/Menu";
+import { withStyles } from "@material-ui/core/styles";
 
-
-
-
-
-
+import TimelineWorkHistory from "./components/TimelineWorkHistory/TimelineWorkHistory";
 
 const StyledMenu = withStyles({
   paper: {
-    border: '1px solid #d3d4d5',
+    border: "1px solid #d3d4d5",
   },
 })((props) => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
     anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'center',
+      vertical: "bottom",
+      horizontal: "center",
     }}
     transformOrigin={{
-      vertical: 'top',
-      horizontal: 'center',
+      vertical: "top",
+      horizontal: "center",
     }}
     {...props}
   />
 ));
 
-
-
-
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -60,16 +51,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     marginLeft: theme.spacing(2),
   },
-
-
 }));
 //END Material-ui AppBar
-
-
-
-
-
-
 
 const App = () => {
   const classes = useStyles();
@@ -81,20 +64,16 @@ const App = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
-  }
+  };
   return (
-
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <Grid container spacing={8} alignitems="center"
-        justify="center">
-
+      <Grid container spacing={8} alignitems="center" justify="center">
         {/* START HEADER */}
-        <Grid item xs={12} >
+        <Grid item xs={12}>
           <div className={classes.root}>
-
-            <AppBar position="fixed" >
+            <AppBar position="fixed">
               <Toolbar>
                 <div>
                   {/*<Button
@@ -106,7 +85,6 @@ const App = () => {
                       >Menu
                       </Button>*/}
 
-
                   <StyledMenu
                     id="customized-menu"
                     anchorEl={anchorEl}
@@ -114,7 +92,6 @@ const App = () => {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                   >
-
                     {/*
                         <StyledMenuItem>
                           <ListItemIcon>
@@ -132,10 +109,7 @@ const App = () => {
                           </Link>
                         </StyledMenuItem>
 */}
-
-
                   </StyledMenu>
-
                 </div>
                 <div>
                   <Typography variant="h6" className={classes.title}>
@@ -143,23 +117,18 @@ const App = () => {
                   </Typography>
                 </div>
               </Toolbar>
-
             </AppBar>
-
           </div>
         </Grid>
         {/* END HEADER */}
 
         {/* START CONTENT SWITCH */}
-        <Grid item >
-          <ContentIntroduction />
+        <Grid item>
+          <TimelineWorkHistory data-test="component-timelineWorkHistory" />
         </Grid>
         {/* END CONTENT SWITCH */}
-
       </Grid>
-    </ ThemeProvider>
-
-
+    </ThemeProvider>
   );
-}
+};
 export default App;
