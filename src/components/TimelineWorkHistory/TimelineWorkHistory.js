@@ -38,7 +38,16 @@ const TimelineWorkHistory = () => {
           <h3 className="vertical-timeline-element-title">
             Digital Project Manager
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Panlogic</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Panlogic :{" "}
+            <a
+              href="https://www.panlogic.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.panlogic.co.uk
+            </a>
+          </h4>
           <p>Digital Project Manager focusing on Drupal based projects</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -52,7 +61,14 @@ const TimelineWorkHistory = () => {
             Technical Project Manager
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Ensemble Systems. UK
+            Ensemble Systems. UK :{" "}
+            <a
+              href="https://www.ensemble.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ensemble.co.uk
+            </a>
           </h4>
           <p>
             Responsible for the smooth running of multiple client projects,
@@ -73,7 +89,16 @@ const TimelineWorkHistory = () => {
           <h3 className="vertical-timeline-element-title">
             Senior Agile Project Manager
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Tictrac</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Tictrac :{" "}
+            <a
+              href="https://tictrac.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              tictrac.com
+            </a>
+          </h4>
           <p>
             Grew the project management function for one of the UK’s fastest
             growing start-ups in the self-tracking and healthcare space
@@ -90,7 +115,22 @@ const TimelineWorkHistory = () => {
             Development Manager
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Electric Word PLC
+            Electric Word PLC :{" "}
+            <a
+              href="https://www.sportbusiness.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              sportbusiness.com
+            </a>{" "}
+            :{" "}
+            <a
+              href="https://www.optimus-education.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              optimus-education.com
+            </a>
           </h4>
           <p>
             Hired and trained a new web development team in agile methodologies.
@@ -111,7 +151,14 @@ const TimelineWorkHistory = () => {
             Senior Web Delivery Manager
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            AVG Technologies
+            AVG Technologies :{" "}
+            <a
+              href="http://www.avg.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              avg.com
+            </a>
           </h4>
           <p>
             Successful hiring of a web team in Prague, focusing on optimizing
@@ -132,7 +179,14 @@ const TimelineWorkHistory = () => {
             Senior Developer/Head of Technology
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            London Gifted & Talented
+            London Gifted & Talented :{" "}
+            <a
+              href="https://londongt.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              londongt.org
+            </a>
           </h4>
           <p>
             Developing and maintaining over 50 educational websites. Responsible
@@ -149,7 +203,16 @@ const TimelineWorkHistory = () => {
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">Senior Developer</h3>
-          <h4 className="vertical-timeline-element-subtitle">Moneynet</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Moneynet :{" "}
+            <a
+              href="http://www.moneynet.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              moneynet.co.uk
+            </a>
+          </h4>
           <p>
             Senior Developer for one of the largest online independent finance
             sites in the UK, powering several finance portals for companies such
@@ -183,7 +246,14 @@ const TimelineWorkHistory = () => {
             Web Developer/Designer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            BBC Sport Online
+            BBC Sport Online :{" "}
+            <a
+              href="http://news.bbc.co.uk/sport/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BBC Sport
+            </a>
           </h4>
           <p>In charge of all graphics for the BBC sport website</p>
         </VerticalTimelineElement>
@@ -196,7 +266,14 @@ const TimelineWorkHistory = () => {
         >
           <h3 className="vertical-timeline-element-title">Web Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Ministry of Sound
+            Ministry of Sound :{" "}
+            <a
+              href="https://www.ministryofsound.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ministryofsound.com
+            </a>
           </h4>
           <p>
             Web developer to help maintain current website alongside a team of
