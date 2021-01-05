@@ -28,3 +28,8 @@ it("TimelineWorkHistory component renders", () => {
   const component = findByTestAttr(wrapper, "component-timelineWorkHistory");
   expect(component.length).toBe(1);
 });
+
+it("Footer component renders", () => {
+  const component = findByTestAttr(wrapper, "component-Footer");
+  expect(component.length).toBe(1);
+});

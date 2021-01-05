@@ -11,6 +11,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 
 import TimelineWorkHistory from "./components/TimelineWorkHistory/TimelineWorkHistory";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Grid item>
           <ContentIntroduction data-test="component-ContentIntroduction" />
           <TimelineWorkHistory data-test="component-timelineWorkHistory" />
+          <Footer data-test="component-Footer" />
         </Grid>
         {/* END CONTENT SWITCH */}
       </Grid>
