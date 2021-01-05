@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header/header";
-// import ContentIntroduction from "./components/ContentIntroduction";
+import ContentIntroduction from "./components/ContentIntroduction/ContentIntroduction";
 
 // Material-ui
 import Grid from "@material-ui/core/Grid";
@@ -22,6 +22,7 @@ const App = () => {
       <Grid container spacing={8} alignitems="center" justify="center">
         {/* START CONTENT SWITCH */}
         <Grid item>
+          <ContentIntroduction data-test="component-ContentIntroduction" />
           <TimelineWorkHistory data-test="component-timelineWorkHistory" />
         </Grid>
         {/* END CONTENT SWITCH */}

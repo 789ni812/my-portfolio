@@ -14,12 +14,17 @@ it("Should render without crashing", () => {
   expect(component.length).toBe(1);
 });
 
-it("TimelineWorkHistory component renders", () => {
-  const component = findByTestAttr(wrapper, "component-timelineWorkHistory");
+it("Header component renders", () => {
+  const component = findByTestAttr(wrapper, "component-Header");
   expect(component.length).toBe(1);
 });
 
-it("Header component renders", () => {
-  const component = findByTestAttr(wrapper, "component-Header");
+it("Introduction component renders", () => {
+  const component = findByTestAttr(wrapper, "component-ContentIntroduction");
+  expect(component.length).toBe(1);
+});
+
+it("TimelineWorkHistory component renders", () => {
+  const component = findByTestAttr(wrapper, "component-timelineWorkHistory");
   expect(component.length).toBe(1);
 });
