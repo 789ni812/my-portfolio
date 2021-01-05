@@ -1,4 +1,4 @@
 contentIntroduction:
-    [ ] Move Want to get in Toch to footer area
+    [ ] Move "Want to get in Touch" to footer area or seperate component
     [ ] Refactor content to fit with timeline better
-    
+    [ ] Review fonts used as different to timeline
