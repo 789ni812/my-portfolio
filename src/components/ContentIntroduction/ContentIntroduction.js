@@ -40,46 +40,18 @@ const TitleWorkingAs = styled.h2`
 const ContentIntroduction = () => {
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>Hi, I'm Stuart</h1>
-      <h2>
-        For the last 20 years, I've worked with some great people to develop,
-        project manage and deliver digital projects.
-      </h2>
+      <p>Javascript (React) Engineer / Digital Project Manager</p>
+      <p>20 years experience developing and managing digital projects</p>
 
       <h3 align="center">Current status: Available for work. </h3>
       <Card>
         <CardContent>
           <h3>Working as a...</h3>
-
-          <Card>
-            <CardContent>
-              <TitleWorkingAs>
-                Digital Project Manager / Development Manager
-              </TitleWorkingAs>
-              <Grid container spacing={2}>
-                <Grid item xs={6} sm={2}>
-                  <MdGroupAdd /> Teams
-                </Grid>
-
-                <Grid item xs={6} sm={2}>
-                  <MdEuroSymbol /> Budgets
-                </Grid>
-
-                <Grid item xs={6} sm={2}>
-                  <MdAssignmentInd /> Projects
-                </Grid>
-                <Grid item xs={6} sm={2}>
-                  <MdTimer /> Clients
-                </Grid>
-              </Grid>
-            </CardContent>
-          </Card>
-
-          <h3>
-            And a <span>...</span>
-          </h3>
-          <Divider variant="middle" />
-
           <Card>
             <CardContent>
               <TitleWorkingAs>Front End / Full Stack Developer</TitleWorkingAs>
@@ -106,6 +78,35 @@ const ContentIntroduction = () => {
                 </Grid>
                 <Grid item xs={6} sm={2}>
                   <DiNodejs /> NodeJS
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
+
+          <h3>
+            And a <span>...</span>
+          </h3>
+          <Divider variant="middle" />
+
+          <Card>
+            <CardContent>
+              <TitleWorkingAs>
+                Digital Project / Development Manager
+              </TitleWorkingAs>
+              <Grid container spacing={2}>
+                <Grid item xs={6} sm={2}>
+                  <MdGroupAdd /> Teams
+                </Grid>
+
+                <Grid item xs={6} sm={2}>
+                  <MdEuroSymbol /> Budgets
+                </Grid>
+
+                <Grid item xs={6} sm={2}>
+                  <MdAssignmentInd /> Projects
+                </Grid>
+                <Grid item xs={6} sm={2}>
+                  <MdTimer /> Clients
                 </Grid>
               </Grid>
             </CardContent>

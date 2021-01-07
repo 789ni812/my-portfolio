@@ -10,6 +10,7 @@ import SchoolIcon from "@material-ui/core/Snackbar";
 const TimelineWorkHistory = () => {
   return (
     <div data-test="component-timelineDemo">
+      <h3>Employment history</h3>
       <VerticalTimeline>
         <VerticalTimelineElement
           data-test="dt-AvailableForWork"
@@ -24,8 +25,8 @@ const TimelineWorkHistory = () => {
             Available for work
           </h3>
           <p>
-            Currently working on a few React and Drupal 9 project. I am also
-            seeking employment.
+            Currently working on a few React based projects. I am also seeking
+            employment.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
