@@ -12,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.common.blue,
     width: "100%",
+    padding: "15px",
+  },
+  gridItem: {
+    margin: "3em",
   },
 }));
 
@@ -20,17 +24,17 @@ const Footer = () => {
 
   return (
     <footer className={classes.footer}>
-      <h3 align="center">Want to get in touch?</h3>
+      <h3>Want to get in touch?</h3>
 
       <p>I'm currently available for work so please feel free to contact me.</p>
 
-      <Grid container spacing={2}>
-        <Grid item xs={6} sm={3}>
+      <Grid container justify="center" className={classes.mainContainer}>
+        <Grid item className={classes.gridItem}>
           <a href="https://www.linkedin.com/in/stuart-bradford-2a751b3/">
             <AiFillLinkedin /> LinkedIn
           </a>
         </Grid>
-        <Grid item xs={6} sm={3}>
+        <Grid item className={classes.gridItem}>
           <a href="mailto:bradfordstuart+sbs@gmail.com">
             <MdEmail /> Email
           </a>
