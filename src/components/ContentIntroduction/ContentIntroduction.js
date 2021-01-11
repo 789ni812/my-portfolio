@@ -39,11 +39,7 @@ const TitleWorkingAs = styled.h2`
 
 const ContentIntroduction = () => {
   return (
-    <>
-      <br />
-      <br />
-      <br />
-      <br />
+    <React.Fragment>
       <h1>Hi, I'm Stuart</h1>
       <p>Javascript (React) Engineer / Digital Project Manager</p>
       <p>20 years experience developing and managing digital projects</p>
@@ -157,7 +153,7 @@ const ContentIntroduction = () => {
           <Divider />
         </CardContent>
       </Card>
-    </>
+    </React.Fragment>
   );
 };
 
