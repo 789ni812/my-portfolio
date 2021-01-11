@@ -14,7 +14,7 @@ import {
   DiNodejs,
   DiJavascript,
 } from "react-icons/di";
-import styled from "styled-components";
+
 // Icons
 import {
   MdEuroSymbol,
@@ -32,11 +32,6 @@ import {
   MdAccountBalance,
 } from "react-icons/md";
 
-const TitleWorkingAs = styled.h2`
-  font-size: 24px;
-  color: #47624fff;
-`;
-
 const ContentIntroduction = () => {
   return (
     <React.Fragment>
@@ -50,7 +45,7 @@ const ContentIntroduction = () => {
           <h3>Working as a...</h3>
           <Card>
             <CardContent>
-              <TitleWorkingAs>Front End / Full Stack Developer</TitleWorkingAs>
+              <h3>Front End / Full Stack Developer</h3>
               <h5>
                 My current development environment is around the JavaScript
                 ecosystem:
@@ -86,9 +81,7 @@ const ContentIntroduction = () => {
 
           <Card>
             <CardContent>
-              <TitleWorkingAs>
-                Digital Project / Development Manager
-              </TitleWorkingAs>
+              <h3>Digital Project / Development Manager</h3>
               <Grid container spacing={2}>
                 <Grid item xs={6} sm={2}>
                   <MdGroupAdd /> Teams
