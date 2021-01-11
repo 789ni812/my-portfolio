@@ -1,7 +1,7 @@
 import React from "react";
 // Material-ui
 import { ThemeProvider } from "@material-ui/core/styles";
-import theme from "./theme";
+import theme from "./components/ui/Theme.js";
 
 // custom comps
 import Header from "./components/ui/Header/header";
