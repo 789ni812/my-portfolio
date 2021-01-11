@@ -1,34 +1,21 @@
 import React from "react";
-import Header from "./components/ui/Header/header";
-import ContentIntroduction from "./components/ContentIntroduction/ContentIntroduction";
-
 // Material-ui
-import Grid from "@material-ui/core/Grid";
-
-// playing
 import { ThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 
+// custom comps
+import Header from "./components/ui/Header/header";
+import ContentIntroduction from "./components/ContentIntroduction/ContentIntroduction";
 import TimelineWorkHistory from "./components/TimelineWorkHistory/TimelineWorkHistory";
 import Footer from "./components/ui/Footer/Footer";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Grid item xs={12}>
-        <Header data-test="component-Header" />
-      </Grid>
-      <Grid container spacing={8} alignitems="center" justify="center">
-        {/* START CONTENT SWITCH */}
-        <Grid item>
-          <ContentIntroduction data-test="component-ContentIntroduction" />
-          <TimelineWorkHistory data-test="component-timelineWorkHistory" />
-          <Footer data-test="component-Footer" />
-        </Grid>
-        {/* END CONTENT SWITCH */}
-      </Grid>
+      <Header data-test="component-Header" />
+      <ContentIntroduction data-test="component-ContentIntroduction" />
+      <TimelineWorkHistory data-test="component-timelineWorkHistory" />
+      <Footer data-test="component-Footer" />
     </ThemeProvider>
   );
 };
