@@ -4,9 +4,21 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import WorkIcon from "@material-ui/icons/Work";
-import SchoolIcon from "@material-ui/core/Snackbar";
 
+import CodeIcon from "@material-ui/icons/Code";
+import SettingsInputIcon from "@material-ui/icons/SettingsInputComponent";
+import DevicesIcon from "@material-ui/icons/Devices";
+import BusinessIcon from "@material-ui/icons/Business";
+import AlbumIcon from "@material-ui/icons/Album";
+import SportHandballIcon from "@material-ui/icons/SportsHandball";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import BugReportIcon from "@material-ui/icons/BugReport";
+import ExtensionIcon from "@material-ui/icons/Extension";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import CommuteIcon from "@material-ui/icons/Commute";
+import TouchAppIcon from "@material-ui/icons/TouchApp";
+import SchoolIcon from "@material-ui/icons/School";
 const TimelineWorkHistory = () => {
   return (
     <div data-test="component-timelineDemo">
@@ -16,10 +28,10 @@ const TimelineWorkHistory = () => {
           data-test="dt-AvailableForWork"
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          contentArrowStyle={{ borderRight: "17px solid  rgb(33, 150, 243)" }}
           date="2021 - present"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />}
+          icon={<CodeIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Available for work
@@ -34,7 +46,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--work"
           date="2020 - 2020"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />}
+          icon={<TouchAppIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Digital Project Manager
@@ -56,7 +68,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--work"
           date="2016 - 2020"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />}
+          icon={<CommuteIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Technical Project Manager
@@ -85,7 +97,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--work"
           date="2014 - 2016"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />}
+          icon={<FavoriteIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Senior Agile Project Manager
@@ -110,7 +122,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="2010 - 2014"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<ExtensionIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Development Manager
@@ -146,7 +158,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="2009 - 2010"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<BugReportIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Senior Web Delivery Manager
@@ -201,7 +213,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="2001 - 2006"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<MonetizationOnIcon />}
         >
           <h3 className="vertical-timeline-element-title">Senior Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -225,7 +237,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="2000 - 2001"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<ShoppingCartIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             E-Commerce Project Manager/Developer
@@ -241,7 +253,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="2000 - 2000"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<SportHandballIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Web Developer/Designer
@@ -256,14 +268,14 @@ const TimelineWorkHistory = () => {
               BBC Sport
             </a>
           </h4>
-          <p>In charge of all graphics for the BBC sport website</p>
+          <p>Web developer and designer for the BBC Sport platform. </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           data-test="dt-MinistryOfSound"
           className="vertical-timeline-element--education"
           date="2000 - 2000"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<AlbumIcon />}
         >
           <h3 className="vertical-timeline-element-title">Web Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -286,20 +298,23 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="1999 - 2000"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<BusinessIcon />}
         >
           <h3 className="vertical-timeline-element-title">Managing Director</h3>
           <h4 className="vertical-timeline-element-subtitle">
             Unreal Internet Design Solutions Ltd
           </h4>
-          <p>Ran web design company with a colleague</p>
+          <p>
+            Early adopters of the internet with a start up Web design &
+            development company
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           data-test="dt-selfEmployed"
           className="vertical-timeline-element--education"
           date="1997 - 1999"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<DevicesIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Self Employed Web Developer
@@ -312,7 +327,7 @@ const TimelineWorkHistory = () => {
           className="vertical-timeline-element--education"
           date="1997 - 1999"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
+          icon={<SettingsInputIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Resident Sound Engineer
