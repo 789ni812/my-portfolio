@@ -1,33 +1,26 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
-const sbBlue = "#0B72B9";
-const sbOrange = "#FFBA60";
+const sbGreen = "#00838f";
+const sbBlue = "#2196f3";
 
 export default createMuiTheme({
   palette: {
-    common: {
-      blue: `${sbBlue}`,
-      orange: `${sbOrange}`,
-    },
     primary: {
-      main: `${sbBlue}`,
+      light: "#4dabf5",
+      main: "#2196f3",
+      dark: "#1769aa",
+      contrastText: "#fff",
     },
-    seconday: {
-      main: `${sbOrange}`,
+    secondary: {
+      main: "#00bcd4",
+
+      contrastText: "#000",
     },
   },
   typography: {
-    tab: {
-      fontFamily: "Raleway",
-      textTransform: "none",
-      fontWeight: 700,
-      fontSize: "1rem",
-    },
-    estimate: {
-      fontFamily: "Pacifico",
-      fontSize: "1rem",
-      textTransform: "none",
-      color: "white",
-    },
+    fontFamily: "Raleway",
+    textTransform: "none",
+    fontWeight: 700,
+    fontSize: "1rem",
   },
 });

@@ -19,7 +19,23 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import CommuteIcon from "@material-ui/icons/Commute";
 import TouchAppIcon from "@material-ui/icons/TouchApp";
 import SchoolIcon from "@material-ui/icons/School";
+import { makeStyles } from "@material-ui/styles";
+
+const useStyles = makeStyles((theme) => ({
+  dateText: {
+    fontFamily: "Raleway",
+    color: "#000",
+  },
+  timelineTextAreaCurrent: {
+    background: theme.palette.primary.main,
+    color: "#fff",
+  },
+  timelineTextArea1: {},
+  timelineTextArea2: {},
+}));
+
 const TimelineWorkHistory = () => {
+  const classes = useStyles();
   return (
     <div data-test="component-timelineDemo">
       <h3>Employment history</h3>
@@ -27,9 +43,10 @@ const TimelineWorkHistory = () => {
         <VerticalTimelineElement
           data-test="dt-AvailableForWork"
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          textClassName={classes.timelineTextAreaCurrent}
           contentArrowStyle={{ borderRight: "17px solid  rgb(33, 150, 243)" }}
           date="2021 - present"
+          dateClassName={classes.dateText}
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<CodeIcon />}
         >
@@ -44,8 +61,9 @@ const TimelineWorkHistory = () => {
         <VerticalTimelineElement
           data-test="dt-Panlogic"
           className="vertical-timeline-element--work"
+          textClassName={classes.timelineTextArea1}
           date="2020 - 2020"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: "#e91e63", color: "#fff" }}
           icon={<TouchAppIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -66,6 +84,7 @@ const TimelineWorkHistory = () => {
         <VerticalTimelineElement
           data-test="dt-Ensemble"
           className="vertical-timeline-element--work"
+          textClassName={classes.timelineTextArea2}
           date="2016 - 2020"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<CommuteIcon />}
@@ -96,7 +115,8 @@ const TimelineWorkHistory = () => {
           data-test="dt-Tictrac"
           className="vertical-timeline-element--work"
           date="2014 - 2016"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          textClassName={classes.timelineTextArea1}
+          iconStyle={{ background: "#e91e63", color: "#fff" }}
           icon={<FavoriteIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -121,7 +141,7 @@ const TimelineWorkHistory = () => {
           data-test="dt-ElectricWord"
           className="vertical-timeline-element--education"
           date="2010 - 2014"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<ExtensionIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -185,7 +205,7 @@ const TimelineWorkHistory = () => {
           data-test="dt-LGT"
           className="vertical-timeline-element--education"
           date="2006 - 2009"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -236,7 +256,7 @@ const TimelineWorkHistory = () => {
           data-test="dt-BudgetDirect"
           className="vertical-timeline-element--education"
           date="2000 - 2001"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<ShoppingCartIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -274,7 +294,7 @@ const TimelineWorkHistory = () => {
           data-test="dt-MinistryOfSound"
           className="vertical-timeline-element--education"
           date="2000 - 2000"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<AlbumIcon />}
         >
           <h3 className="vertical-timeline-element-title">Web Developer</h3>
@@ -313,7 +333,7 @@ const TimelineWorkHistory = () => {
           data-test="dt-selfEmployed"
           className="vertical-timeline-element--education"
           date="1997 - 1999"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<DevicesIcon />}
         >
           <h3 className="vertical-timeline-element-title">
