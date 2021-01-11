@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header/header";
+import Header from "./components/ui/Header/header";
 import ContentIntroduction from "./components/ContentIntroduction/ContentIntroduction";
 
 // Material-ui
@@ -11,7 +11,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 
 import TimelineWorkHistory from "./components/TimelineWorkHistory/TimelineWorkHistory";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/ui/Footer/Footer";
 
 const App = () => {
   return (

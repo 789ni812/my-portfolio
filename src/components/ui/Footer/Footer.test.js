@@ -1,4 +1,4 @@
-import { findByTestAttr } from "../../Utils/testUtils";
+import { findByTestAttr } from "../../../Utils/testUtils";
 import React from "react";
 import { shallow } from "enzyme";
 
