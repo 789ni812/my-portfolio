@@ -18,8 +18,9 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     fontFamily: "Raleway",
-    padding: "0.2em",
     fontSize: "1.75rem",
+    color: "white",
+    padding: "0.2em",
     [theme.breakpoints.down("md")]: {
       fontSize: "1.50rem",
     },
@@ -43,7 +44,7 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <AppBar position="fixed">
+      <AppBar position="fixed" color="secondary">
         <Toolbar disableGutters>
           <Typography className={classes.logo}>
             StuartBradford<span className={classes.logoCom}>.com</span>
