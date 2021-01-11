@@ -24,3 +24,4 @@ yarn-error.log*
 
 Don't include the ideas folder
 /ideas 
+src/assets/sb-v1.svg
