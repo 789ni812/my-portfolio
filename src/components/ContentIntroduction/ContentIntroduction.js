@@ -1,7 +1,8 @@
 import React from "react";
 
 // Material UI
-import { Card } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import { Card, Typography } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
@@ -32,24 +33,59 @@ import {
   MdAccountBalance,
 } from "react-icons/md";
 
-const ContentIntroduction = () => {
+const useStyles = makeStyles((theme) => ({
+  titles: {
+    fontFamily: "Raleway",
+  },
+  rootCard: {
+    fontFamily: "Raleway",
+    minWidth: 275,
+  },
+  currentStatus: {
+    fontFamily: "Raleway",
+
+    color: "#555",
+  },
+  wordHighlight: {
+    color: theme.palette.primary.dark,
+  },
+}));
+
+const ContentIntroduction = (theme) => {
+  const classes = useStyles();
   return (
     <React.Fragment>
-      <h1>Hi, I'm Stuart</h1>
-      <p>Javascript (React) Engineer / Digital Project Manager</p>
-      <p>20 years experience developing and managing digital projects</p>
+      <Typography>
+        <h3 align="center" className={classes.currentStatus}>
+          Current status:{" "}
+          <span className={classes.wordHighlight}>Available</span> for work
+        </h3>
+      </Typography>
 
-      <h3 align="center">Current status: Available for work. </h3>
-      <Card>
+      <Card className={classes.rootCard} variant="elevation">
+        <CardContent className={classes.IntroText}>
+          <h1>
+            Hi, I'm <span className={classes.wordHighlight}>Stuart</span>
+          </h1>
+          <p>Javascript (React) Engineer / Digital Project Manager</p>
+          <p>20 years experience developing and managing digital projects</p>
+        </CardContent>
+      </Card>
+
+      <Card className={classes.rootCard} variant="outlined">
         <CardContent>
-          <h3>Working as a...</h3>
-          <Card>
+          <Typography color="secondary">
+            <h3 className={classes.titles}>Working as a...</h3>
+          </Typography>
+          <Card className={classes.rootCard} variant="elevation">
             <CardContent>
-              <h3>Front End / Full Stack Developer</h3>
-              <h5>
+              <h3 className={classes.titles}>
+                Front End / Full Stack Developer
+              </h3>
+              <p>
                 My current development environment is around the JavaScript
                 ecosystem:
-              </h5>
+              </p>
               <Grid container spacing={2}>
                 <Grid item xs={6} sm={2}>
                   <DiHtml5 /> HTML
@@ -73,15 +109,18 @@ const ContentIntroduction = () => {
               </Grid>
             </CardContent>
           </Card>
-
-          <h3>
-            And a <span>...</span>
-          </h3>
+          <Typography align="center" color="secondary">
+            <h3 className={classes.titles}>
+              And a <span>...</span>
+            </h3>
+          </Typography>
           <Divider variant="middle" />
 
-          <Card>
+          <Card className={classes.rootCard} variant="elevated">
             <CardContent>
-              <h3>Digital Project / Development Manager</h3>
+              <h3 className={classes.titles}>
+                Digital Project / Development Manager
+              </h3>
               <Grid container spacing={2}>
                 <Grid item xs={6} sm={2}>
                   <MdGroupAdd /> Teams
@@ -100,9 +139,10 @@ const ContentIntroduction = () => {
               </Grid>
             </CardContent>
           </Card>
-
-          <h3>Across some great sectors</h3>
-          <Card>
+          <Typography align="right" color="secondary">
+            <h3 className={classes.titles}>Across some great sectors...</h3>
+          </Typography>
+          <Card className={classes.rootCard} variant="elevated">
             <CardContent>
               <Grid container spacing={2}>
                 <Grid item xs={6} sm={3}>

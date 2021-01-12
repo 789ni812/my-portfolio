@@ -14,7 +14,10 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Header data-test="component-Header" />
       <ContentIntroduction data-test="component-ContentIntroduction" />
-      <TimelineWorkHistory data-test="component-timelineWorkHistory" />
+      <TimelineWorkHistory
+        data-test="component-timelineWorkHistory"
+        theme={theme}
+      />
       <Footer data-test="component-Footer" />
     </ThemeProvider>
   );
