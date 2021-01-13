@@ -1,7 +1,7 @@
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { Card } from "@material-ui/core";
+import { Card, Typography } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 
@@ -37,7 +37,29 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     opacity: 1,
     "&:hover": {
-      opacity: 0.7,
+      opacity: 0.5,
+    },
+  },
+  linkItemText: {
+    opacity: 0.3,
+    "&:hover": {
+      opacity: 0.1,
+    },
+  },
+  mainContainer: {
+    fontFamily: "Raleway",
+    color: "#fff",
+  },
+  icon: {
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+    color: "#fff",
+    height: "4em",
+    width: "4em",
+    [theme.breakpoints.down("xs")]: {
+      height: "2.5em",
+      width: "2.5em",
     },
   },
 }));
@@ -53,22 +75,33 @@ const Footer = () => {
         I'm currently available for work so feel free to contact me.
       </p>
 
-      <Grid container justify="center" className={classes.mainContainer}>
-        <Grid item className={classes.gridItem}>
-          <a
-            className={classes.linkItem}
-            href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"
-          >
-            <AiFillLinkedin /> LinkedIn
-          </a>
+      <Grid
+        container
+        justify="space-evenly"
+        spacing={5}
+        className={classes.mainContainer}
+      >
+        <Grid
+          item
+          component={"a"}
+          href="https://www.linkedin.com/in/stuart-bradford-2a751b3/"
+          rel="noopener noreferrer"
+          target="_blank"
+          className={classes.linkItem}
+        >
+          <AiFillLinkedin className={classes.icon} />
+          <span className={classes.linkItemText}>Linkedin</span>
         </Grid>
-        <Grid item className={classes.gridItem}>
-          <a
-            className={classes.linkItem}
-            href="mailto:bradfordstuart+sbs@gmail.com"
-          >
-            <MdEmail /> Email
-          </a>
+        <Grid
+          item
+          component={"a"}
+          href="mailto:bradfordstuart+sbs@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          className={classes.linkItem}
+        >
+          <MdEmail className={classes.icon} />
+          <span className={classes.linkItemText}>Email</span>
         </Grid>
       </Grid>
     </footer>
