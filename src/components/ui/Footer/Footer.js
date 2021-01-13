@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   linkItem: {
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
     fontSize: "1.50em",
     color: "#fff",
     textDecoration: "none",
