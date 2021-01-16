@@ -46,8 +46,18 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#555",
   },
-  wordHighlight: {
-    color: theme.palette.primary.dark,
+  icon: {
+    height: "4em",
+    width: "4em",
+    [theme.breakpoints.down("xs")]: {
+      height: "3em",
+      width: "3em",
+    },
+  },
+  listGridContainer: {
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "flex",
   },
 }));
 
@@ -64,11 +74,11 @@ const ContentIntroduction = (theme) => {
 
       <Card className={classes.rootCard} variant="elevation">
         <CardContent className={classes.IntroText}>
-          <h1>
-            Hi, I'm <span className={classes.wordHighlight}>Stuart</span>
-          </h1>
-          <p>Javascript (React) Engineer / Digital Project Manager</p>
-          <p>20 years experience developing and managing digital projects</p>
+          <h1>Hi, I'm Stuart</h1>
+          <p>A Javascript full stack engineer and Digital Project Manager</p>
+          <p>
+            with 20 years experience developing and managing digital projects
+          </p>
         </CardContent>
       </Card>
 
@@ -86,25 +96,24 @@ const ContentIntroduction = (theme) => {
                 My current development environment is around the JavaScript
                 ecosystem:
               </p>
-              <Grid container spacing={2}>
-                <Grid item xs={6} sm={2}>
-                  <DiHtml5 /> HTML
+              <Grid container spacing={2} className={classes.listGridContainer}>
+                <Grid item>
+                  <DiHtml5 className={classes.icon} /> HTML
                 </Grid>
-                <Grid item xs={6} sm={2}>
-                  <DiCss3 /> CSS
+                <Grid item>
+                  <DiCss3 className={classes.icon} /> CSS
                 </Grid>
-                <Grid item xs={6} sm={2}>
-                  <DiJavascript /> JavaScript
+                <Grid item>
+                  <DiJavascript className={classes.icon} /> JavaScript
                 </Grid>
-
-                <Grid item xs={6} sm={2}>
-                  <DiMongodb /> Mongo
+                <Grid item>
+                  <DiMongodb className={classes.icon} /> Mongo
                 </Grid>
-                <Grid item xs={6} sm={2}>
-                  <DiReact /> React
+                <Grid item>
+                  <DiReact className={classes.icon} /> React
                 </Grid>
-                <Grid item xs={6} sm={2}>
-                  <DiNodejs /> NodeJS
+                <Grid item>
+                  <DiNodejs className={classes.icon} /> NodeJS
                 </Grid>
               </Grid>
             </CardContent>
@@ -121,20 +130,25 @@ const ContentIntroduction = (theme) => {
               <h3 className={classes.titles}>
                 Digital Project / Development Manager
               </h3>
-              <Grid container spacing={2}>
-                <Grid item xs={6} sm={2}>
-                  <MdGroupAdd /> Teams
+              <p>
+                A skilled digital project manager and development manager.
+                Utilising Agile and Waterfall project management styles.
+                Experience working with/managing:{" "}
+              </p>
+              <Grid container spacing={2} className={classes.listGridContainer}>
+                <Grid item>
+                  <MdGroupAdd className={classes.icon} /> Teams
                 </Grid>
 
-                <Grid item xs={6} sm={2}>
-                  <MdEuroSymbol /> Budgets
+                <Grid item>
+                  <MdEuroSymbol className={classes.icon} /> Budgets
                 </Grid>
 
-                <Grid item xs={6} sm={2}>
-                  <MdAssignmentInd /> Projects
+                <Grid item>
+                  <MdAssignmentInd className={classes.icon} /> Projects
                 </Grid>
-                <Grid item xs={6} sm={2}>
-                  <MdTimer /> Clients
+                <Grid item>
+                  <MdTimer className={classes.icon} /> Clients
                 </Grid>
               </Grid>
             </CardContent>
