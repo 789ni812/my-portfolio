@@ -158,41 +158,41 @@ const ContentIntroduction = (theme) => {
           </Typography>
           <Card className={classes.rootCard} variant="elevated">
             <CardContent>
-              <Grid container spacing={2}>
-                <Grid item xs={6} sm={3}>
-                  <MdTrendingUp /> Startups
+              <Grid container spacing={2} className={classes.listGridContainer}>
+                <Grid item>
+                  <MdTrendingUp className={classes.icon} /> Startups
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdLocationCity /> Government
+                <Grid item>
+                  <MdLocationCity className={classes.icon} /> Government
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdAccountBalance /> Banks
+                <Grid item>
+                  <MdAccountBalance className={classes.icon} /> Banks
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdLocalHospital /> Health
+                <Grid item>
+                  <MdLocalHospital className={classes.icon} /> Health
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdLocalLibrary /> Education
+                <Grid item>
+                  <MdLocalLibrary className={classes.icon} /> Education
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdPool /> Sport
+                <Grid item>
+                  <MdPool className={classes.icon} /> Sport
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdShoppingCart /> Ecommerce
+                <Grid item>
+                  <MdShoppingCart className={classes.icon} /> Ecommerce
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdAudiotrack /> Music
+                <Grid item>
+                  <MdAudiotrack className={classes.icon} /> Music
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
-                  <MdBusiness /> Global Brands
+                <Grid item>
+                  <MdBusiness className={classes.icon} /> Global Brands
                 </Grid>
               </Grid>
             </CardContent>
