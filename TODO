@@ -1,59 +1,20 @@
 Project: My-Portfolio
+Branch: ProdReady-v1.1: 
+  [ ] tidy card embose on fed and digital PM so they feel more together(unified)
+  [ ] change digital project manager to technical project manager
+  [ ] Make employment history title the same blue as working as a...
+  [ ] Make Fed and digital PM title centered to help unite them?
+  [ ] Add Icon wording underneath the icons 
+  [ ] Test and improve media queries of the icon sizes
+  [ ] Move date to top of each employment entry 
+  [ ] Proof read of content in emplyment hisotry & full spell check in gramarly or similar
 
-  Making a build: 
-    [ ] removed homepage from package.json for local testing (// "homepage": "stuartbradford",)  
-  Project: Styling: 
-      [ ] Style Content and typography first
-      [ ] Layout
-        [ ] Add main body padding for the card layout so cards are more centered.
-        [ ] Navigation
-          [ ] Improve look of the hyperlinks
-          [ ] Update Icons with something a bit appropriate
-        [ ] Footer
-          [ ] Improve layout of buttons 
-          [ ] icons on buttons (especially Github button is wrong size) github is coming from devicons other are MD.
-        [ ] Add Material-ui Back to top - https://material-ui.com/components/app-bar/
- 
-  Project: General:
-      [ ] Add Links for the content pages
-      [ ] IDEA: Download CV on header or footer maybe? 
 
-  Project: Content:
-      [ ] Home / Intro Text / About 
-      [ ] Portfolio
-      [ ] Employment History
-      [ ] Contact
-      [ ] Footer content
-        [ ] 
-
-    Project: Home / Intro Text / About 
-      Todo:   
-        [ ] @high Write Content for intro text
-        
-        [ ] @high Review old and update About text
-
-    Project: Portfolio
-      Todo:
-        [ ] Build Portfolio page/section
-          [ ] Finish @Easy Finish  Adding devicons for each project I link to (class="devicons devicons-drupal")    
-
-    Project: Employment History
-      Todo:   
-        [x] Fix Invalid Dates for "Ended" field.
-        [x] Fix Invalid Dates for "Time at role" field.
-        [x] Add spacing between Skills 
-        [x] @high  Improve layout of content
-        [x] fix example sites
-        [x] Show employment history in reverse order e.g. last company first.
-        [x] @high FIX warnings about keys for the arrays in the history data
-        [x] Finish @Easy layout of companies worked for Expansion  panels
-        [x] Sort Companies to show last company work for first.
-        REFERENCE: https://dev.to/ramonak/react-how-to-dynamically-sort-an-array-of-objects-using-the-dropdown-with-react-hooks-195p
-        
-
-        [ ] Fix @later startDateUS and endDateUS to work as en-gb locale.
-Project: CV
-  Todo:
-    [ ] @easy Check email for old examples of good CV
-    [ ] Review and rewrite Ensemble content
-    [ ] Write impactful intro message (this should be used on the site)
+Future Branch propsals:
+  [ ] Add the form experience from the Udemy course Ive been working on
+  [ ] Review and possible regactor of material-ui code based on new learnings 
+  [ ] Add in articles from Devbob
+  [ ] Add Devbob as a "what I'm currently working on"
+  [ ] Create a PDF CV and attach it the site
+  [ ] Demonstrate coding projects Ive been working on
+  
