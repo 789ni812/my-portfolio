@@ -1,5 +1,7 @@
 Project: My-Portfolio
-  
+
+  Making a build: 
+    [ ] removed homepage from package.json for local testing (// "homepage": "stuartbradford",)  
   Project: Styling: 
       [ ] Style Content and typography first
       [ ] Layout
