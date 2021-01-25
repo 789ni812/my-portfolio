@@ -1,5 +1,8 @@
 TimelineWorkHistory:
     [x] Add web address to timeline entries
-    [ ] Add icons for skills in timeline? - think will be a good idea
-    [ ] Proof read timeline content.
-    
+    [x ] Add icons for skills in timeline? - think will be a good idea
+    [ x] Proof read timeline content.
+    [ ] Improve responsive styling of grid icons
+    [ ] Add careerHistory dropdowns to the timeline? 
+    [ ] Make it clear to expand career history dropdown
+    [ ] Check wording is OK.
