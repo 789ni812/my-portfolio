@@ -78,9 +78,9 @@ const ContentIntroduction = (theme) => {
       <Card className={classes.rootCard} variant="elevation">
         <CardContent className={classes.IntroText}>
           <h1>Hi, I'm Stuart</h1>
-          <p>A Javascript full stack engineer and Digital Project Manager</p>
+          <p>A Javascript Full-stack Engineer and Technical Project Manager</p>
           <p>
-            with 20 years experience developing and managing digital projects
+            with 20 years experience engineering and managing technical projects
           </p>
         </CardContent>
       </Card>
@@ -102,25 +102,31 @@ const ContentIntroduction = (theme) => {
                 container
                 spacing={2}
                 className={classes.listGridContainer}
-                justify="center"
+                justify="space-around"
               >
                 <Grid item>
-                  <DiHtml5 className={classes.icon} /> HTML
+                  <DiHtml5 className={classes.icon} />
+                  <br /> HTML
                 </Grid>
                 <Grid item>
-                  <DiCss3 className={classes.icon} /> CSS
+                  <DiCss3 className={classes.icon} />
+                  <br /> CSS
                 </Grid>
                 <Grid item>
-                  <DiJavascript className={classes.icon} /> JavaScript
+                  <DiJavascript className={classes.icon} />
+                  <br /> JavaScript
                 </Grid>
                 <Grid item>
-                  <DiMongodb className={classes.icon} /> Mongo
+                  <DiMongodb className={classes.icon} />
+                  <br /> Mongo
                 </Grid>
                 <Grid item>
-                  <DiReact className={classes.icon} /> React
+                  <DiReact className={classes.icon} />
+                  <br /> React
                 </Grid>
                 <Grid item>
-                  <DiNodejs className={classes.icon} /> NodeJS
+                  <DiNodejs className={classes.icon} />
+                  <br /> NodeJS
                 </Grid>
               </Grid>
             </CardContent>
@@ -142,23 +148,27 @@ const ContentIntroduction = (theme) => {
               </p>
               <Grid
                 container
-                spacing={2}
                 className={classes.listGridContainer}
-                justify="center"
+                spacing={2}
+                justify="space-around"
               >
                 <Grid item>
-                  <MdGroupAdd className={classes.icon} /> Teams
+                  <MdGroupAdd className={classes.icon} />
+                  <br /> Teams
                 </Grid>
 
                 <Grid item>
-                  <MdEuroSymbol className={classes.icon} /> Budgets
+                  <MdEuroSymbol className={classes.icon} />
+                  <br /> Budgets
                 </Grid>
 
                 <Grid item>
-                  <MdAssignmentInd className={classes.icon} /> Projects
+                  <MdAssignmentInd className={classes.icon} />
+                  <br /> Projects
                 </Grid>
                 <Grid item>
-                  <MdTimer className={classes.icon} /> Clients
+                  <MdTimer className={classes.icon} />
+                  <br /> Clients
                 </Grid>
               </Grid>
             </CardContent>
@@ -172,44 +182,54 @@ const ContentIntroduction = (theme) => {
             <CardContent>
               <Grid
                 container
-                spacing={2}
                 className={classes.listGridContainer}
-                justify="center"
+                spacing={2}
+                justify="space-around"
               >
                 <Grid item>
-                  <MdTrendingUp className={classes.icon} /> Startups
+                  <MdTrendingUp className={classes.icon} />
+                  <br />
+                  Startups
                 </Grid>
 
                 <Grid item>
-                  <MdLocationCity className={classes.icon} /> Government
+                  <MdLocationCity className={classes.icon} />
+                  <br /> Government
                 </Grid>
 
                 <Grid item>
-                  <MdAccountBalance className={classes.icon} /> Banks
+                  <MdAccountBalance className={classes.icon} />
+                  <br /> Banks
                 </Grid>
 
                 <Grid item>
-                  <MdLocalHospital className={classes.icon} /> Health
+                  <MdLocalHospital className={classes.icon} />
+                  <br /> Health
                 </Grid>
 
                 <Grid item>
-                  <MdLocalLibrary className={classes.icon} /> Education
+                  <MdLocalLibrary className={classes.icon} />
+                  <br /> Education
                 </Grid>
 
                 <Grid item>
-                  <MdPool className={classes.icon} /> Sport
+                  <MdPool className={classes.icon} />
+                  <br /> Sport
                 </Grid>
 
                 <Grid item>
-                  <MdShoppingCart className={classes.icon} /> Ecommerce
+                  <MdShoppingCart className={classes.icon} />
+                  <br /> Ecommerce
                 </Grid>
 
                 <Grid item>
-                  <MdAudiotrack className={classes.icon} /> Music
+                  <MdAudiotrack className={classes.icon} />
+                  <br /> Music
                 </Grid>
 
                 <Grid item>
-                  <MdBusiness className={classes.icon} /> Global Brands
+                  <MdBusiness className={classes.icon} />
+                  <br /> Global Brands
                 </Grid>
               </Grid>
             </CardContent>

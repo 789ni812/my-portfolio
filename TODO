@@ -5,12 +5,14 @@ Branch: ProdReady-v1.1:
   [x] Make employment history title the same blue as working as a...
   [x] Make Fed and digital PM title centered to help unite them?
   [x] fix html descendant issue
-  [ ] Add Icon wording underneath the icons 
-  [ ] Test and improve media queries of the icon sizes
-  [ ] Proof read of content in emplyment hisotry & full spell check in gramarly or similar
+  [x] Add Icon wording underneath the icons 
+  [x] Test and improve media queries of the icon sizes
+  [x] Proof read of content in emplyment hisotry & full spell check in gramarly or similar
 
 
 Future Branch propsals:
+  [ ] create css/js animation on wording "  with 20 years experience developing and managing digital projects
+  for a variety of companies"  (ref: https://speckyboy.com/css-javascript-text-animation-snippets/)
   [ ] Add the form experience from the Udemy course Ive been working on
   [ ] Review and possible regactor of material-ui code based on new learnings 
   [ ] Add in articles from Devbob
