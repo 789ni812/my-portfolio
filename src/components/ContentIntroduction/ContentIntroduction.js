@@ -130,13 +130,11 @@ const ContentIntroduction = (theme) => {
                 </Grid>
               </Grid>
             </CardContent>
-          </Card>
 
-          <h3 className={classes.titleLight} align="center">
-            And a <span>...</span>
-          </h3>
+            <h3 className={classes.titleLight} align="center">
+              And a <span>...</span>
+            </h3>
 
-          <Card className={classes.rootCard} variant="elevation">
             <CardContent>
               <h3 className={classes.titles} align="center">
                 Technical Project / Development Manager
