@@ -2,7 +2,7 @@ import React from "react";
 
 // Material UI
 import { makeStyles } from "@material-ui/core/styles";
-import { Card, Typography } from "@material-ui/core";
+import { Card } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
@@ -36,6 +36,11 @@ import {
 const useStyles = makeStyles((theme) => ({
   titles: {
     fontFamily: "Raleway",
+    color: theme.palette.secondary.dark,
+  },
+  titleLight: {
+    fontFamily: "Raleway",
+    color: theme.palette.secondary.main,
   },
   rootCard: {
     fontFamily: "Raleway",
@@ -65,12 +70,10 @@ const ContentIntroduction = (theme) => {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Typography>
-        <h3 align="center" className={classes.currentStatus}>
-          Current status:{" "}
-          <span className={classes.wordHighlight}>Available</span> for work
-        </h3>
-      </Typography>
+      <h3 align="center" className={classes.currentStatus}>
+        Current status: <span className={classes.wordHighlight}>Available</span>{" "}
+        for work
+      </h3>
 
       <Card className={classes.rootCard} variant="elevation">
         <CardContent className={classes.IntroText}>
@@ -84,19 +87,23 @@ const ContentIntroduction = (theme) => {
 
       <Card className={classes.rootCard} variant="outlined">
         <CardContent>
-          <Typography color="secondary">
-            <h3 className={classes.titles}>Working as a...</h3>
-          </Typography>
-          <Card className={classes.rootCard} variant="elevation">
+          <h3 className={classes.titleLight}>Working as a...</h3>
+
+          <Card className={classes.rootCard}>
             <CardContent>
-              <h3 className={classes.titles}>
+              <h3 className={classes.titles} align="center">
                 Front End / Full Stack Developer
               </h3>
               <p>
                 My current development environment is around the JavaScript
                 ecosystem:
               </p>
-              <Grid container spacing={2} className={classes.listGridContainer}>
+              <Grid
+                container
+                spacing={2}
+                className={classes.listGridContainer}
+                justify="center"
+              >
                 <Grid item>
                   <DiHtml5 className={classes.icon} /> HTML
                 </Grid>
@@ -118,24 +125,27 @@ const ContentIntroduction = (theme) => {
               </Grid>
             </CardContent>
           </Card>
-          <Typography align="center" color="secondary">
-            <h3 className={classes.titles}>
-              And a <span>...</span>
-            </h3>
-          </Typography>
-          <Divider variant="middle" />
 
-          <Card className={classes.rootCard} variant="elevated">
+          <h3 className={classes.titleLight} align="center">
+            And a <span>...</span>
+          </h3>
+
+          <Card className={classes.rootCard} variant="elevation">
             <CardContent>
-              <h3 className={classes.titles}>
-                Digital Project / Development Manager
+              <h3 className={classes.titles} align="center">
+                Technical Project / Development Manager
               </h3>
               <p>
-                A skilled digital project manager and development manager.
+                A skilled technical project manager and development manager.
                 Utilising Agile and Waterfall project management styles.
                 Experience working with/managing:{" "}
               </p>
-              <Grid container spacing={2} className={classes.listGridContainer}>
+              <Grid
+                container
+                spacing={2}
+                className={classes.listGridContainer}
+                justify="center"
+              >
                 <Grid item>
                   <MdGroupAdd className={classes.icon} /> Teams
                 </Grid>
@@ -153,12 +163,19 @@ const ContentIntroduction = (theme) => {
               </Grid>
             </CardContent>
           </Card>
-          <Typography align="right" color="secondary">
-            <h3 className={classes.titles}>Across some great sectors...</h3>
-          </Typography>
-          <Card className={classes.rootCard} variant="elevated">
+
+          <h3 className={classes.titleLight} align="right">
+            Across some great sectors...
+          </h3>
+
+          <Card className={classes.rootCard} variant="elevation">
             <CardContent>
-              <Grid container spacing={2} className={classes.listGridContainer}>
+              <Grid
+                container
+                spacing={2}
+                className={classes.listGridContainer}
+                justify="center"
+              >
                 <Grid item>
                   <MdTrendingUp className={classes.icon} /> Startups
                 </Grid>
