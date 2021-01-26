@@ -1,12 +1,12 @@
 Project: My-Portfolio
 Branch: ProdReady-v1.1: 
-  [ ] tidy card embose on fed and digital PM so they feel more together(unified)
-  [ ] change digital project manager to technical project manager
-  [ ] Make employment history title the same blue as working as a...
-  [ ] Make Fed and digital PM title centered to help unite them?
+  [x] tidy card embose on fed and digital PM so they feel more together(unified)
+  [x] change digital project manager to technical project manager
+  [x] Make employment history title the same blue as working as a...
+  [x] Make Fed and digital PM title centered to help unite them?
+  [x] fix html descendant issue
   [ ] Add Icon wording underneath the icons 
   [ ] Test and improve media queries of the icon sizes
-  [ ] Move date to top of each employment entry 
   [ ] Proof read of content in emplyment hisotry & full spell check in gramarly or similar
 
 

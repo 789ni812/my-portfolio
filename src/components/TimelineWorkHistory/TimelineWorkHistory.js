@@ -63,6 +63,14 @@ const useStyles = makeStyles((theme) => ({
   timelineTextAreaCurrent: {
     background: theme.palette.primary.main,
   },
+  titleLight: {
+    fontFamily: "Raleway",
+    color: theme.palette.secondary.main,
+  },
+  dateCurrent: {
+    color: "white",
+    margin: "1em",
+  },
 }));
 
 const TimelineWorkHistory = () => {
@@ -71,7 +79,7 @@ const TimelineWorkHistory = () => {
     <div data-test="component-timelineDemo">
       <Card className={classes.rootCard} variant="outlined">
         <CardContent className={classes.IntroText}>
-          <h3 className={classes.rootTitle}>Employment history</h3>
+          <h3 className={classes.titleLight}>Employment history</h3>
           <VerticalTimeline>
             <VerticalTimelineElement
               data-test="dt-AvailableForWork"
@@ -81,6 +89,7 @@ const TimelineWorkHistory = () => {
                 borderRight: "17px solid  rgb(33, 150, 243)",
               }}
               date="2021 - present"
+              dateClassName={classes.dateCurrent}
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon={<CodeIcon />}
             >
@@ -92,8 +101,8 @@ const TimelineWorkHistory = () => {
                 Available for work
               </h3>
               <p className={classes.textPCurrent}>
-                Currently working on a few React based projects. I am also
-                seeking employment.
+                Currently availble for work, In the meantime I'm working on a
+                few React based projects to keep the engineering oil flowing
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -163,10 +172,9 @@ const TimelineWorkHistory = () => {
               <p className={classes.textP}>
                 Responsible for the smooth running of multiple client projects,
                 working closely with clients, stakeholders and developers to
-                ensure agile projects and budgets are on track, facilitating and
-                running all relevant project meetings across several time zones.
-                A varied role requiring a strong technical background, good
-                communication skills and a heavy focus on agile principles.
+                ensure agile projects and budgets are on track. A varied role
+                requiring a strong technical background, good communication
+                skills and a heavy focus on agile principles.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -202,6 +210,15 @@ const TimelineWorkHistory = () => {
               <p className={classes.textP}>
                 Grew the project management function for one of the UK’s fastest
                 growing start-ups in the self-tracking and healthcare space
+                (2010)
+              </p>
+              <p>
+                A technical project management role, manging the role out of the
+                core product and customer platforms
+              </p>
+              <p>
+                Utilising Agile methodoliges to ensure successful continuous
+                deployments across Web, Android and IOS
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -243,11 +260,15 @@ const TimelineWorkHistory = () => {
                 </a>
               </h4>
               <p className={classes.textP}>
-                Hired and trained a new web development team in agile
-                methodologies. Migrated around 50 websites over to new Drupal 7
-                platforms with improved subscription and e-commerce
-                functionality as well as improving the user experience, SEO
-                techniques and editor environments.
+                Hired and trained up a new web development team in agile
+                methodologies. Migrated around 30+ websites over to the (then
+                new) Drupal 7 platforms with improved subscription and
+                e-commerce functionality as well as improving the user
+                experience, SEO techniques and editor environments.
+              </p>
+              <p>
+                Another varied role requiring a combination of hands on
+                engineering and technical project management
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -318,11 +339,11 @@ const TimelineWorkHistory = () => {
                 </a>
               </h4>
               <p className={classes.textP}>
-                Developing and maintaining over 50 educational websites.
-                Responsible for managing a team of developers, contract
-                programmers and content developers through strict development
-                processes to tight budgets and timelines. Manage all servers and
-                IT infrastructure.
+                Developing and maintaining over 50 drupal based educational
+                websites. Responsible for managing a team of developers,
+                contract programmers and content developers through strict
+                development processes to tight budgets and timelines. Manage all
+                servers and IT infrastructure.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
