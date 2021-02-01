@@ -118,7 +118,7 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                Digital Project Manager
+                Technical Project Manager
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
@@ -136,7 +136,14 @@ const TimelineWorkHistory = () => {
                 </a>
               </h4>
               <p className={classes.textP}>
-                Digital Project Manager focusing on Drupal based projects
+                Led on Drupal (and other) CMS / technology client deliveriables.
+              </p>
+              <p className={classes.textP}>
+                Worked directly with clients to manage scope, planning, delivery
+                and maintenance of multiple projects
+              </p>
+              <p className={classes.textP}>
+                Helped out with QA and development tasks when required
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -176,6 +183,10 @@ const TimelineWorkHistory = () => {
                 requiring a strong technical background, good communication
                 skills and a heavy focus on agile principles.
               </p>
+              <p>
+                Lead developer for smaller projects and prototypes to help
+                reduce resource bottlenecks
+              </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               data-test="dt-Tictrac"
@@ -210,15 +221,19 @@ const TimelineWorkHistory = () => {
               <p className={classes.textP}>
                 Grew the project management function for one of the UK’s fastest
                 growing start-ups in the self-tracking and healthcare space
-                (2010)
+                (2015)
               </p>
               <p>
-                A technical project management role, manging the role out of the
-                core product and customer platforms
+                Accountable for the successful management of multi-disciplinary
+                teams to customise and deliver software-as-a-service
               </p>
               <p>
                 Utilising Agile methodoliges to ensure successful continuous
                 deployments across Web, Android and IOS
+              </p>
+              <p>
+                Lead developer for smaller projects and prototypes to help
+                reduce resource bottlenecks
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -233,7 +248,7 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                Development Manager
+                Web Development Manager
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
@@ -260,7 +275,7 @@ const TimelineWorkHistory = () => {
                 </a>
               </h4>
               <p className={classes.textP}>
-                Hired and trained up a new web development team in agile
+                Hired and trained new web development team in agile
                 methodologies. Migrated around 30+ websites over to the (then
                 new) Drupal 7 platforms with improved subscription and
                 e-commerce functionality as well as improving the user
@@ -301,12 +316,16 @@ const TimelineWorkHistory = () => {
                 </a>
               </h4>
               <p className={classes.textP}>
-                Successful hiring of a web team in Prague, focusing on
-                optimizing the global web presence, revenue and user experience.
-                Working closely with the CEO and VP of web marketing and
+                Successful hiring of a new global marketing web team in Prague,
+                focusing on optimizing the global web presence, revenue and user
+                experience. Working closely with the CEO and VP of marketing.
                 managing a team of developers, designers, copywriters and
                 marketing specialists to shape a centre of excellence for the
                 web.
+              </p>
+              <p>
+                Accountable for the successful rebrand and continuous rollout
+                AVG's global web platforms
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -358,7 +377,7 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                Senior Developer
+                Senior Web Developer
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
@@ -393,7 +412,7 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                E-Commerce Project Manager/Developer
+                Senior Developer
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
@@ -419,7 +438,7 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                Web Developer/Designer
+                Web Developer
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
@@ -486,7 +505,7 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                Managing Director
+                Web Developer / Managing Director
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
@@ -512,14 +531,14 @@ const TimelineWorkHistory = () => {
                   classes.rootTitle
                 }`}
               >
-                Self Employed Web Developer
+                Web Developer
               </h3>
               <h4
                 className={`${"vertical-timeline-element-subtitle"} ${
                   classes.rootTitle2
                 }`}
               >
-                Self employed
+                Freelance
               </h4>
               <p className={classes.textP}>
                 Web design and development for ad-hoc projects
