@@ -1,21 +1,14 @@
 Project: My-Portfolio:
 
 CV Changes: 
-  Version 26-january-2021:
-    [] Change intro text to be similar to website
-    [] change 50 websites for lgt or elec word
-    [] Add panlogic 
-    [] Add github account
-    
-    [] Spellcheck
-    [] Upload to job sites
-    [] Fix typo Utilising Agile methodoliges
+
 
 
 
   Branch: ProdReady-v1.2:
     [ ] Add the form experience from the Udemy course Ive been working on
     [ ] Add Google analytics to site (check udemy for lesson)
+    [ ] Add github account
     
   Future Branch propsals:
     [ ] create css/js animation on wording "  with 20 years experience developing and managing digital projects
@@ -28,6 +21,14 @@ CV Changes:
     [ ] Demonstrate coding projects Ive been working on
  
 Archive: 
+  Version 26-january-2021:
+    ✔ Change intro text to be similar to website @done(21-02-01 11:26)
+    ✔ Add panlogic @done(21-02-01 11:27)
+    ✔ Spellcheck @done(21-02-01 11:27)
+    ✔ Upload to job sites @done(21-02-01 11:27)
+    ✔ Fix typo Utilising Agile methodoliges @done(21-02-01 11:27)
+    ✔ Create PDF of CV @done(21-02-01 11:29)
+
   Branch: ProdReady-v1.1: 
     ✔ tidy card embose on fed and digital PM so they feel more together(unified) @done(21-01-26 15:30)
     ✔ change digital project manager to technical project manager @done(21-01-26 15:30)
