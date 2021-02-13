@@ -7,17 +7,19 @@ import theme from "./components/ui/Theme.js";
 import Header from "./components/ui/Header/header";
 import ContentIntroduction from "./components/ContentIntroduction/ContentIntroduction";
 import TimelineWorkHistory from "./components/TimelineWorkHistory/TimelineWorkHistory";
+import RecentProjects from "./components/RecentProjects/RecentProjects";
 import Footer from "./components/ui/Footer/Footer";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header data-test="component-Header" />
-      <ContentIntroduction data-test="component-ContentIntroduction" />
+      {/* <ContentIntroduction data-test="component-ContentIntroduction" />
       <TimelineWorkHistory
         data-test="component-timelineWorkHistory"
         theme={theme}
-      />
+      /> */}
+      <RecentProjects />
       <Footer data-test="component-Footer" />
     </ThemeProvider>
   );
