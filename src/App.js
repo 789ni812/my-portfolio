@@ -1,7 +1,7 @@
 import React from "react";
 // Material-ui
 import { ThemeProvider } from "@material-ui/core/styles";
-import theme from "./components/ui/Theme.js";
+import theme from "./components/ui/Theme";
 
 // custom comps
 import Header from "./components/ui/Header/header";
@@ -14,13 +14,13 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header data-test="component-Header" />
-      {/* <ContentIntroduction data-test="component-ContentIntroduction" />
-      <TimelineWorkHistory
-        data-test="component-timelineWorkHistory"
+      <ContentIntroduction
+        data-test="component-ContentIntroduction"
         theme={theme}
-      /> */}
-      <RecentProjects />
-      <Footer data-test="component-Footer" />
+      />
+      <RecentProjects theme={theme} />
+      <TimelineWorkHistory theme={theme} />
+      <Footer data-test="component-Footer" theme={theme} />
     </ThemeProvider>
   );
 };

@@ -21,303 +21,402 @@ import QuizApp from "../../assets/images/Quiz-app.png";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Avatar from "@material-ui/core/Avatar";
-import { green } from "@material-ui/core/colors";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
 
 const useStyles = makeStyles((theme) => ({
-  listGridContainer: {
-    display: "flex",
-    alignItems: "center",
-    flexWrap: "flex",
+  titles: {
+    fontFamily: "Raleway",
+    color: theme.palette.secondary.dark,
   },
-  root: {
-    display: "flex",
+  titleLight: {
+    fontFamily: "Raleway",
+    color: theme.palette.secondary.main,
   },
-  details: {
-    display: "flex",
-    flexDirection: "column",
+  icon: {
+    height: "2em",
+    width: "2em",
+    [theme.breakpoints.down("sm")]: {
+      height: "1em",
+      width: "1em",
+    },
   },
-  content: {
-    flex: "1 0 auto",
-  },
-
-  rounded: {
-    width: 180,
-    height: 180,
-    color: "#fff",
-    backgroundColor: green[500],
+  linkItem: {
+    color: theme.palette.secondary.dark,
+    opacity: 0.7,
+    "&:hover": {
+      opacity: 1,
+    },
   },
 }));
 
 const RecentProjects = () => {
   const classes = useStyles();
-
   return (
     <>
-      <Typography variant="h3">Recent projects</Typography>
-      <Typography variant="body2">
-        Below are a few recent projects I've been working on. My current
-        preferred development stack is using JavaScript, React, Material-ui{" "}
-      </Typography>
-      <Typography variant="subtitle2">
-        You can find other work on my <DiGithubBadge>Github</DiGithubBadge>{" "}
-        account. {/* //TODO Check Material-ui or react way to use hyperlinks */}
-        <a href="https://github.com/789ni812">https://github.com/789ni812</a>
-      </Typography>
+      <Card variant="outlined">
+        <CardContent>
+          <Typography
+            variant="h3"
+            component="h1"
+            className={classes.titleLight}
+            gutterBottom
+          >
+            Recent projects
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Below are a few recent projects I've been working on. My current
+            preferred development stack is using JavaScript, React, Material-ui
+          </Typography>
+          <Typography variant="body2" align="center" color="textSecondary">
+            Find me on <DiGithubBadge>Github</DiGithubBadge> account.{" "}
+            <a
+              className={classes.linkItem}
+              href="https://github.com/789ni812"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://github.com/789ni812
+            </a>
+          </Typography>
 
-      <Grid
-        container
-        direction="row"
-        justify="space-evenly"
-        alignItems="flex-start"
-      >
-        <Grid item>
-          <Card>
-            <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                Open Quiz{" "}
-              </Typography>
-              <Typography variant="subtitle1">
-                A quiz app allowing the user to answer multiple choice questions
-                based on a chosen category.
-              </Typography>
-
-              <Grid
-                container
-                direction="row"
-                spacing={3}
-                justify="space-evenly"
-                alignItems="center"
+          <Grid
+            container
+            direction="row"
+            justify="space-evenly"
+            alignItems="flex-start"
+          >
+            <Grid item>
+              <Card
+                variant="outlined"
+                style={{ maxWidth: 700, marginBottom: 50, marginTop: 25 }}
               >
-                <Grid item>
-                  <Avatar variant="rounded" className={classes.rounded}>
-                    <img
-                      src={QuizApp}
-                      alt="Quiz App screenshot"
-                      width="175"
-                      height="175"
-                    />
-                  </Avatar>
-                </Grid>
-                <Grid item>
-                  <ul>
-                    <li>
-                      Checks to see if an opentdb token exists in localstorage
-                    </li>
-                    <li>
-                      Fetching of OpenTDB token to ensure duplicate questions
-                      are not retrieved
-                    </li>
-                    <li>fetches questions based on user selected category</li>
-                    <li>
-                      Merges and then randomises the correct and incorrect
-                      answers together
-                    </li>
-                    <li>Manages round score and session score</li>
-                  </ul>
-                </Grid>
-              </Grid>
+                <CardContent>
+                  <Typography
+                    variant="h4"
+                    component="h2"
+                    className={classes.titles}
+                    gutterBottom
+                  >
+                    Open Quiz
+                  </Typography>
 
-              <Typography variant="subtitle1">Technology Stack</Typography>
-
-              <Grid
-                container
-                spacing={2}
-                className={classes.listGridContainer}
-                justify="space-around"
-              >
-                <Grid item>
-                  <AiFillApi className={classes.icon} />
-                  <br /> OpenTDB API
-                </Grid>
-
-                <Grid item>
-                  <DiHtml5 className={classes.icon} />
-                  <br /> HTML
-                </Grid>
-                <Grid item>
-                  <DiCss3 className={classes.icon} />
-                  <br /> CSS
-                </Grid>
-                <Grid item>
-                  <DiJavascript className={classes.icon} />
-                  <br /> JavaScript
-                </Grid>
-                <Grid item>
-                  <DiReact className={classes.icon} />
-                  <br /> React
-                </Grid>
-
-                <Grid item>
-                  <DiNodejs className={classes.icon} />
-                  <br /> NodeJS
-                </Grid>
-                <Grid item>
-                  <DiDrupal className={classes.icon} />
-                  <br /> Drupal
-                </Grid>
-                <Grid item>
-                  <DiDebian className={classes.icon} />
-                  <br /> Debian
-                </Grid>
-              </Grid>
-            </CardContent>
-          </Card>
-          <Grid item>
-            <Card>
-              <CardContent className={classes.content}>
-                <Typography component="h5" variant="h5">
-                  DevBob Database{" "}
-                </Typography>
-                <Typography variant="subtitle1">
-                  A big fan of Drupal CMS since version 4.5 and I'm really
-                  enjoying Drupal 9 CMS and it's headless capabilities when
-                  using React on the front end. The combination of Drupal and
-                  React gives a rapid change environment, easy author editing
-                  and admin with a strong level of security.
-                </Typography>
-
-                <Grid
-                  container
-                  direction="row"
-                  spacing={3}
-                  justify="space-evenly"
-                  alignItems="center"
-                >
-                  <Grid item>
-                    <Avatar variant="rounded" className={classes.rounded}>
-                      <img
-                        src={DevBobApp}
-                        alt="Devbob screenshot"
-                        width="175"
-                        height="175"
+                  <Typography variant="body1" paragraph>
+                    A quiz app allowing the user to answer multiple choice
+                    questions based on a chosen category.
+                  </Typography>
+                  <Grid container direction="row" spacing={2}>
+                    <Grid item style={{ maxWidth: 150 }}>
+                      <Avatar
+                        variant="circle"
+                        src={QuizApp}
+                        alt="Quiz App Screenshot"
+                        style={{ width: 150, height: 150 }}
                       />
-                    </Avatar>
-                  </Grid>
-                  <Grid item>
-                    <ul>
-                      <li>Easy and secure editor environment in Drupal</li>
-                      <li>
-                        Rapid creation of Content Types, Taxonomies, Topics and
-                        Authentication
-                      </li>
-                      <li>
-                        React fetches data from drupal to render on the front
-                        end
-                      </li>
-                      <li>
-                        Multiple front end environments utilise data stored in
-                        Drupal
-                      </li>
-                    </ul>
-                  </Grid>
-                </Grid>
+                    </Grid>
+                    <Grid item style={{ maxWidth: 450 }}>
+                      <List>
+                        <ListItem>
+                          <ListItemText>
+                            Checks to see if an opentdb token exists in
+                            localstorage
+                          </ListItemText>
+                        </ListItem>
 
-                <Typography variant="h4">Technology Stack</Typography>
+                        <ListItem>
+                          <ListItemText>
+                            Fetching of OpenTDB token to ensure duplicate
+                            questions are not retrieved
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            fetches questions based on user selected category
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Merges and then randomises the correct and incorrect
+                            answers together
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Manages round score and session score
+                          </ListItemText>
+                        </ListItem>
+                      </List>
+                    </Grid>
+                  </Grid>
+                  <Typography
+                    variant="h5"
+                    component="h3"
+                    className={classes.titles}
+                    gutterBottom
+                  >
+                    Technology Stack
+                  </Typography>
+                  <Grid
+                    container
+                    spacing={4}
+                    direction="row"
+                    justify="space-evenly"
+                  >
+                    <Grid item>
+                      <AiFillApi className={classes.icon} />
+                      <Typography>API</Typography>
+                    </Grid>
 
-                <Grid
-                  container
-                  spacing={2}
-                  className={classes.listGridContainer}
-                  justify="space-around"
+                    <Grid item>
+                      <DiHtml5 className={classes.icon} />
+                      <Typography> HTML</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiCss3 className={classes.icon} />
+                      <Typography> CSS</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiJavascript className={classes.icon} />
+                      <Typography> JavaScript</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiReact className={classes.icon} />
+                      <Typography> React</Typography>
+                    </Grid>
+
+                    <Grid item>
+                      <DiNodejs className={classes.icon} />
+                      <Typography> NodeJS</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiDrupal className={classes.icon} />
+                      <Typography> Drupal</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiDebian className={classes.icon} />
+                      <Typography> Debian</Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
+              <Grid item>
+                <Card
+                  variant="outlined"
+                  style={{ maxWidth: 700, marginBottom: 50, marginTop: 25 }}
                 >
-                  <Grid item>
-                    <DiHtml5 className={classes.icon} />
-                    <br /> HTML
-                  </Grid>
-                  <Grid item>
-                    <DiCss3 className={classes.icon} />
-                    <br /> CSS
-                  </Grid>
-                  <Grid item>
-                    <DiJavascript className={classes.icon} />
-                    <br /> JavaScript
-                  </Grid>
-                  <Grid item>
-                    <DiReact className={classes.icon} />
-                    <br /> React
-                  </Grid>
-                  <Grid item>
-                    <DiNodejs className={classes.icon} />
-                    <br /> NodeJS
-                  </Grid>
-                  <Grid item>
-                    <DiDrupal className={classes.icon} />
-                    <br /> Drupal
-                  </Grid>
-                  <Grid item>
-                    <AiFillApi className={classes.icon} />
-                    <br /> Headless Drupal API
-                  </Grid>
+                  <CardContent>
+                    <Typography
+                      variant="h4"
+                      component="h2"
+                      className={classes.titles}
+                      gutterBottom
+                    >
+                      DevBob Database
+                    </Typography>
+                    <Typography variant="body1" paragraph>
+                      A big fan of Drupal CMS since version 4.5 and I'm really
+                      enjoying Drupal 9 CMS and it's headless capabilities when
+                      using React on the front end. The combination of Drupal
+                      and React gives a rapid change environment, easy author
+                      editing and admin with a strong level of security.
+                    </Typography>
 
-                  <Grid item>
-                    <DiDebian className={classes.icon} />
-                    <br /> Debian
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item>
-            <Card>
-              <CardContent className={classes.content}>
-                <Typography component="h5" variant="h5">
-                  Rainy's Cycle App{" "}
-                </Typography>
-                <Typography variant="subtitle1">
-                  Location based realtime map and weather app to help cyclists
-                  naviagte directions and weather whilst out on a bike tour.
-                  Unlike many other apps, the focus is less on fitness and more
-                  on the enjoyment of getting lost on a bike and finding the
-                  best spot for a sandwich and a coffee.
-                </Typography>
+                    <Grid container direction="row" spacing={2}>
+                      <Grid item style={{ maxWidth: 150 }}>
+                        <Avatar
+                          variant="circle"
+                          src={DevBobApp}
+                          alt="Quiz App Screenshot"
+                          style={{ width: 150, height: 150 }}
+                        />
+                      </Grid>
+                      <Grid item style={{ maxWidth: 450 }}>
+                        <List>
+                          <ListItem>
+                            <ListItemText>
+                              Easy and secure editor environment in Drupal
+                            </ListItemText>
+                          </ListItem>
 
-                <Typography variant="h4">Technology Stack</Typography>
+                          <ListItem>
+                            <ListItemText>
+                              Rapid creation of Content Types, Taxonomies,
+                              Topics and Authentication
+                            </ListItemText>
+                          </ListItem>
 
-                <Grid
-                  container
-                  spacing={2}
-                  className={classes.listGridContainer}
-                  justify="space-around"
+                          <ListItem>
+                            <ListItemText>
+                              React fetches data from drupal to render on the
+                              front end
+                            </ListItemText>
+                          </ListItem>
+
+                          <ListItem>
+                            <ListItemText>
+                              Multiple front end environments utilise data
+                              stored in Drupal
+                            </ListItemText>
+                          </ListItem>
+                        </List>
+                      </Grid>
+                    </Grid>
+
+                    <Typography
+                      variant="h5"
+                      component="h3"
+                      className={classes.titles}
+                      gutterBottom
+                    >
+                      Technology Stack
+                    </Typography>
+
+                    <Grid
+                      container
+                      spacing={4}
+                      direction="row"
+                      justify="space-evenly"
+                    >
+                      <Grid item>
+                        <DiHtml5 className={classes.icon} />
+                        <Typography>HTML</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiCss3 className={classes.icon} />
+                        <Typography>CSS</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiJavascript className={classes.icon} />
+                        <Typography>JavaScript</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiReact className={classes.icon} />
+                        <Typography>React</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiNodejs className={classes.icon} />
+                        <Typography>NodeJS</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiDrupal className={classes.icon} />
+                        <Typography>Drupal</Typography>
+                      </Grid>
+                      <Grid item>
+                        <AiFillApi className={classes.icon} />
+                        <Typography>API</Typography>
+                      </Grid>
+
+                      <Grid item>
+                        <DiDebian className={classes.icon} />
+                        <Typography>Debian</Typography>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item>
+                <Card
+                  variant="outlined"
+                  style={{ maxWidth: 700, marginBottom: 50, marginTop: 25 }}
                 >
-                  <Grid item>
-                    <DiHtml5 className={classes.icon} />
-                    <br /> HTML
-                  </Grid>
-                  <Grid item>
-                    <DiCss3 className={classes.icon} />
-                    <br /> CSS
-                  </Grid>
-                  <Grid item>
-                    <DiJavascript className={classes.icon} />
-                    <br /> JavaScript
-                  </Grid>
-                  <Grid item>
-                    <DiReact className={classes.icon} />
-                    <br /> React
-                  </Grid>
-                  <Grid item>
-                    <DiNodejs className={classes.icon} />
-                    <br /> NodeJS
-                  </Grid>
-                  <Grid item>
-                    <AiFillApi className={classes.icon} />
-                    <br /> Leaflet API
-                  </Grid>
+                  <CardContent>
+                    <Typography
+                      variant="h4"
+                      component="h2"
+                      className={classes.titles}
+                      gutterBottom
+                    >
+                      Rainy's Cycle App
+                    </Typography>
+                    <Typography variant="body1" paragraph>
+                      Location based realtime map and weather app to help
+                      cyclists naviagte directions and weather whilst out on a
+                      bike tour. Unlike many other apps, the focus is less on
+                      fitness and more on the enjoyment of getting lost on a
+                      bike and finding the best spot for a sandwich and a
+                      coffee.
+                    </Typography>
+                    <Grid container direction="row" spacing={2}>
+                      <Grid item style={{ maxWidth: 150 }}>
+                        <Avatar
+                          variant="circle"
+                          src={DevBobApp}
+                          alt="Quiz App Screenshot"
+                          style={{ width: 150, height: 150 }}
+                        />
+                      </Grid>
+                      <Grid item style={{ maxWidth: 450 }}>
+                        <List>
+                          <ListItem>
+                            <ListItemText>[UPDATE THIS TEXT]</ListItemText>
+                          </ListItem>
+                          <ListItem>
+                            <ListItemText>[UPDATE THIS TEXT]</ListItemText>
+                          </ListItem>
+                          <ListItem>
+                            <ListItemText>[UPDATE THIS TEXT]</ListItemText>
+                          </ListItem>
+                        </List>
+                      </Grid>
+                    </Grid>
 
-                  <Grid item>
-                    <DiMongodb className={classes.icon} />
-                    <br /> Mongo
-                  </Grid>
-                  <Grid item>
-                    <DiDebian className={classes.icon} />
-                    <br /> Debian
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
+                    <Typography
+                      variant="h5"
+                      component="h3"
+                      className={classes.titles}
+                      gutterBottom
+                    >
+                      Technology Stack
+                    </Typography>
+
+                    <Grid
+                      container
+                      spacing={4}
+                      direction="row"
+                      justify="space-evenly"
+                    >
+                      <Grid item>
+                        <DiHtml5 className={classes.icon} />
+                        <Typography>HTML</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiCss3 className={classes.icon} />
+                        <Typography>CSS</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiJavascript className={classes.icon} />
+                        <Typography>JavaScript</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiReact className={classes.icon} />
+                        <Typography>React</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiNodejs className={classes.icon} />
+                        <Typography>NodeJS</Typography>
+                      </Grid>
+                      <Grid item>
+                        <AiFillApi className={classes.icon} />
+                        <Typography>Leaflet API</Typography>
+                      </Grid>
+
+                      <Grid item>
+                        <DiMongodb className={classes.icon} />
+                        <Typography>Mongo</Typography>
+                      </Grid>
+                      <Grid item>
+                        <DiDebian className={classes.icon} />
+                        <Typography>Debian</Typography>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
           </Grid>
-        </Grid>
-      </Grid>
+        </CardContent>
+      </Card>
     </>
   );
 };
