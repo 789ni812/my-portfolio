@@ -17,6 +17,7 @@ import { AiFillApi } from "react-icons/ai";
 
 import DevBobApp from "../../assets/images/Devbob-app.png";
 import QuizApp from "../../assets/images/Quiz-app.png";
+import RainysCycleApp from "../../assets/images/rainyscyclesapp.png";
 
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -24,6 +25,7 @@ import Avatar from "@material-ui/core/Avatar";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   titles: {
@@ -55,7 +57,7 @@ const RecentProjects = () => {
   const classes = useStyles();
   return (
     <>
-      <Card variant="outlined">
+      <Card variant="elevation">
         <CardContent>
           <Typography
             variant="h3"
@@ -84,14 +86,139 @@ const RecentProjects = () => {
           <Grid
             container
             direction="row"
-            justify="space-evenly"
-            alignItems="flex-start"
+            justify="space-around"
+            alignItems="stretch"
           >
             <Grid item>
               <Card
                 variant="outlined"
-                style={{ maxWidth: 700, marginBottom: 50, marginTop: 25 }}
+                style={{
+                  maxWidth: 650,
+                  margin: 50,
+                }}
               >
+                <CardContent>
+                  <Typography
+                    variant="h4"
+                    component="h2"
+                    className={classes.titles}
+                    gutterBottom
+                  >
+                    Rainy's Cycle App
+                  </Typography>
+                  <Typography variant="subtitle2" gutterBottom>
+                    <a
+                      href="https://www.rainyscycles.co.uk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      https://www.rainyscycles.co.uk
+                    </a>
+                  </Typography>
+                  <Typography variant="body1" paragraph>
+                    Location based realtime cycle map with realtime update to
+                    heading, speed, altitude and weather. The focus is less on
+                    fitness and more on the enjoyment of getting lost on a bike
+                    and finding the best spot for a sandwich and a coffee.
+                  </Typography>
+                  <Typography variant="body1" paragraph>
+                    The current MVP currently supports the cycle maps, realtime
+                    navigation update and realtime speed and heading updates.
+                    Further update will be rolledout shortly.
+                  </Typography>
+                  <Grid container direction="row" spacing={2}>
+                    <Grid
+                      item
+                      component={"a"}
+                      href="https://www.rainyscycles.co.uk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      style={{ maxWidth: 150 }}
+                    >
+                      <Avatar
+                        variant="circle"
+                        src={RainysCycleApp}
+                        alt="Quiz App Screenshot"
+                        style={{ width: 150, height: 150 }}
+                      />
+                    </Grid>
+                    <Grid item style={{ maxWidth: 450 }}>
+                      <List>
+                        <ListItem>
+                          <ListItemText>Browser based geolocation</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Merges OpenStreetMap and OpenCycleMap together
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Realtime updates to speed and heading via
+                            geolocation
+                          </ListItemText>
+                        </ListItem>
+                      </List>
+                    </Grid>
+                  </Grid>
+
+                  <Typography
+                    variant="h5"
+                    component="h3"
+                    className={classes.titles}
+                    gutterBottom
+                  >
+                    Technology Stack
+                  </Typography>
+
+                  <Grid
+                    container
+                    spacing={4}
+                    direction="row"
+                    justify="space-evenly"
+                  >
+                    <Grid item>
+                      <DiHtml5 className={classes.icon} />
+                      <Typography>HTML</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiCss3 className={classes.icon} />
+                      <Typography>CSS</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiJavascript className={classes.icon} />
+                      <Typography>JavaScript</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiReact className={classes.icon} />
+                      <Typography>React</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiNodejs className={classes.icon} />
+                      <Typography>NodeJS</Typography>
+                    </Grid>
+                    <Grid item>
+                      <AiFillApi className={classes.icon} />
+                      <Typography>Leaflet API</Typography>
+                    </Grid>
+                    <Grid item>
+                      <AiFillApi className={classes.icon} />
+                      <Typography>OpenCycleMap API</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiMongodb className={classes.icon} />
+                      <Typography>Mongo</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiDebian className={classes.icon} />
+                      <Typography>Debian</Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item>
+              <Card variant="outlined" style={{ maxWidth: 650, margin: 50 }}>
                 <CardContent>
                   <Typography
                     variant="h4"
@@ -201,10 +328,7 @@ const RecentProjects = () => {
                 </CardContent>
               </Card>
               <Grid item>
-                <Card
-                  variant="outlined"
-                  style={{ maxWidth: 700, marginBottom: 50, marginTop: 25 }}
-                >
+                <Card variant="outlined" style={{ maxWidth: 650, margin: 50 }}>
                   <CardContent>
                     <Typography
                       variant="h4"
@@ -307,104 +431,6 @@ const RecentProjects = () => {
                         <Typography>API</Typography>
                       </Grid>
 
-                      <Grid item>
-                        <DiDebian className={classes.icon} />
-                        <Typography>Debian</Typography>
-                      </Grid>
-                    </Grid>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item>
-                <Card
-                  variant="outlined"
-                  style={{ maxWidth: 700, marginBottom: 50, marginTop: 25 }}
-                >
-                  <CardContent>
-                    <Typography
-                      variant="h4"
-                      component="h2"
-                      className={classes.titles}
-                      gutterBottom
-                    >
-                      Rainy's Cycle App
-                    </Typography>
-                    <Typography variant="body1" paragraph>
-                      Location based realtime map and weather app to help
-                      cyclists naviagte directions and weather whilst out on a
-                      bike tour. Unlike many other apps, the focus is less on
-                      fitness and more on the enjoyment of getting lost on a
-                      bike and finding the best spot for a sandwich and a
-                      coffee.
-                    </Typography>
-                    <Grid container direction="row" spacing={2}>
-                      <Grid item style={{ maxWidth: 150 }}>
-                        <Avatar
-                          variant="circle"
-                          src={DevBobApp}
-                          alt="Quiz App Screenshot"
-                          style={{ width: 150, height: 150 }}
-                        />
-                      </Grid>
-                      <Grid item style={{ maxWidth: 450 }}>
-                        <List>
-                          <ListItem>
-                            <ListItemText>[UPDATE THIS TEXT]</ListItemText>
-                          </ListItem>
-                          <ListItem>
-                            <ListItemText>[UPDATE THIS TEXT]</ListItemText>
-                          </ListItem>
-                          <ListItem>
-                            <ListItemText>[UPDATE THIS TEXT]</ListItemText>
-                          </ListItem>
-                        </List>
-                      </Grid>
-                    </Grid>
-
-                    <Typography
-                      variant="h5"
-                      component="h3"
-                      className={classes.titles}
-                      gutterBottom
-                    >
-                      Technology Stack
-                    </Typography>
-
-                    <Grid
-                      container
-                      spacing={4}
-                      direction="row"
-                      justify="space-evenly"
-                    >
-                      <Grid item>
-                        <DiHtml5 className={classes.icon} />
-                        <Typography>HTML</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiCss3 className={classes.icon} />
-                        <Typography>CSS</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiJavascript className={classes.icon} />
-                        <Typography>JavaScript</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiReact className={classes.icon} />
-                        <Typography>React</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiNodejs className={classes.icon} />
-                        <Typography>NodeJS</Typography>
-                      </Grid>
-                      <Grid item>
-                        <AiFillApi className={classes.icon} />
-                        <Typography>Leaflet API</Typography>
-                      </Grid>
-
-                      <Grid item>
-                        <DiMongodb className={classes.icon} />
-                        <Typography>Mongo</Typography>
-                      </Grid>
                       <Grid item>
                         <DiDebian className={classes.icon} />
                         <Typography>Debian</Typography>
