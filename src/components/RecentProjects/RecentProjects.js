@@ -116,15 +116,15 @@ const RecentProjects = () => {
                     </a>
                   </Typography>
                   <Typography variant="body1" paragraph>
-                    Location based realtime cycle map with realtime update to
+                    Location based cycle app with realtime updates to location,
                     heading, speed, altitude and weather. The focus is less on
                     fitness and more on the enjoyment of getting lost on a bike
                     and finding the best spot for a sandwich and a coffee.
                   </Typography>
                   <Typography variant="body1" paragraph>
                     The current MVP currently supports the cycle maps, realtime
-                    navigation update and realtime speed and heading updates.
-                    Further update will be rolledout shortly.
+                    navigation, speed and heading updates, Further updates will
+                    be rolledout shortly
                   </Typography>
                   <Grid container direction="row" spacing={2}>
                     <Grid

@@ -2,12 +2,19 @@ Project: My-Portfolio:
 
 CV Changes: 
 
- Branch: recentWorkSection-v1.0:
+  Branch: recentWorkSection-v1.0:
+
+[ ] Add Intro, Recent Projects and Employment History  to app bar navigation
+[ ] Add scroll to top navigation
+[ ] Proof read content 
+[ ] Deploy
+
+
   Recent Projects: 
     Rainys Cycles:
-        [] Add screenshot 
-        [] Update description
-        [] Point to site.
+        ✔ Add screenshot @done(21-02-17 16:45)
+        ✔ Update description @done(21-02-17 16:45)
+        ✔ Point to site. @done(21-02-17 16:45)
 
 
   Branch: ProdReady-v1.2:

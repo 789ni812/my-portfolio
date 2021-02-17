@@ -213,7 +213,7 @@ const ContentIntroduction = (theme) => {
             <Grid
               container
               direction="row"
-              justify="space-evenly"
+              justify="center"
               alignItems="flex-start"
             >
               <Grid item>
