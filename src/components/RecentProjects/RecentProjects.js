@@ -93,7 +93,7 @@ const RecentProjects = () => {
               <Card
                 variant="outlined"
                 style={{
-                  maxWidth: 650,
+                  maxWidth: 450,
                   margin: 50,
                 }}
               >
@@ -218,7 +218,7 @@ const RecentProjects = () => {
               </Card>
             </Grid>
             <Grid item>
-              <Card variant="outlined" style={{ maxWidth: 650, margin: 50 }}>
+              <Card variant="outlined" style={{ maxWidth: 450, margin: 50 }}>
                 <CardContent>
                   <Typography
                     variant="h4"
@@ -328,7 +328,7 @@ const RecentProjects = () => {
                 </CardContent>
               </Card>
               <Grid item>
-                <Card variant="outlined" style={{ maxWidth: 650, margin: 50 }}>
+                <Card variant="outlined" style={{ maxWidth: 450, margin: 50 }}>
                   <CardContent>
                     <Typography
                       variant="h4"
