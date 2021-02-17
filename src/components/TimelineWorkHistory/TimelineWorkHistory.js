@@ -152,14 +152,14 @@ const TimelineWorkHistory = () => {
                   www.panlogic.co.uk
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Led on Drupal (and other) CMS / technology client deliveriables.
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Worked directly with clients to manage scope, planning, delivery
                 and maintenance of multiple projects
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Helped out with QA and development tasks when required
               </Typography>
             </VerticalTimelineElement>
@@ -200,7 +200,7 @@ const TimelineWorkHistory = () => {
                 </a>
               </Typography>
 
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Responsible for the smooth running of multiple client projects,
                 working closely with clients, stakeholders and developers to
                 ensure agile projects and budgets are on track. A varied role
@@ -208,7 +208,7 @@ const TimelineWorkHistory = () => {
                 skills and a heavy focus on agile principles.
               </Typography>
 
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Lead developer for smaller projects and prototypes to help
                 reduce resource bottlenecks
               </Typography>
@@ -246,20 +246,20 @@ const TimelineWorkHistory = () => {
                   tictrac.com
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Grew the project management function for one of the UK’s fastest
                 growing start-ups in the self-tracking and healthcare space
                 (2015)
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Accountable for the successful management of multi-disciplinary
                 teams to customise and deliver software-as-a-service
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Utilising Agile methodoliges to ensure successful continuous
                 deployments across Web, Android and IOS
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Lead developer for smaller projects and prototypes to help
                 reduce resource bottlenecks
               </Typography>
@@ -308,14 +308,14 @@ const TimelineWorkHistory = () => {
                   optimus-education.com
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Hired and trained new web development team in agile
                 methodologies. Migrated around 30+ websites over to the (then
                 new) Drupal 7 platforms with improved subscription and
                 e-commerce functionality as well as improving the user
                 experience, SEO techniques and editor environments.
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Another varied role requiring a combination of hands on
                 engineering and technical project management
               </Typography>
@@ -355,7 +355,7 @@ const TimelineWorkHistory = () => {
                   avg.com
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Successful hiring of a new global marketing web team in Prague,
                 focusing on optimizing the global web presence, revenue and user
                 experience. Working closely with the CEO and VP of marketing.
@@ -363,7 +363,7 @@ const TimelineWorkHistory = () => {
                 marketing specialists to shape a centre of excellence for the
                 web.
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Accountable for the successful rebrand and continuous rollout
                 AVG's global web platforms
               </Typography>
@@ -403,7 +403,7 @@ const TimelineWorkHistory = () => {
                   londongt.org
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Developing and maintaining over 50 drupal based educational
                 websites. Responsible for managing a team of developers,
                 contract programmers and content developers through strict
@@ -446,7 +446,7 @@ const TimelineWorkHistory = () => {
                   moneynet.co.uk
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Senior Developer for one of the largest online independent
                 finance sites in the UK, powering several finance portals for
                 companies such as Financial Times and The Independent.
@@ -479,7 +479,7 @@ const TimelineWorkHistory = () => {
               >
                 Budget Direct
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Responsible for design, build, market and maintenance of
                 e-commerce websites for B2B and B2C.
               </Typography>
@@ -519,7 +519,7 @@ const TimelineWorkHistory = () => {
                   BBC Sport
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Web developer and designer for the BBC Sport platform.{" "}
               </Typography>
             </VerticalTimelineElement>
@@ -558,7 +558,7 @@ const TimelineWorkHistory = () => {
                   ministryofsound.com
                 </a>
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Web developer to help maintain current website alongside a team
                 of journalists and coders.
               </Typography>
@@ -590,8 +590,8 @@ const TimelineWorkHistory = () => {
               >
                 Unreal Internet Design Solutions Ltd
               </Typography>
-              <Typography variant="body1">
-                Early adopters of the internet with a start up Web design &
+              <Typography variant="body2">
+                Early adopters of the internet with a start up web design &
                 development company
               </Typography>
             </VerticalTimelineElement>
@@ -622,7 +622,7 @@ const TimelineWorkHistory = () => {
               >
                 Freelance
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Web design and development for ad-hoc projects
               </Typography>
             </VerticalTimelineElement>
@@ -653,7 +653,7 @@ const TimelineWorkHistory = () => {
               >
                 Union Bar/The Crypt
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body2">
                 Resident sound engineer for a live venue
               </Typography>
             </VerticalTimelineElement>
