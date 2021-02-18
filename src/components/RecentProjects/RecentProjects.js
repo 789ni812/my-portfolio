@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid } from "@material-ui/core";
 import {
-  DiGithubBadge,
   DiHtml5,
   DiCss3,
   DiDrupal,
@@ -67,20 +66,21 @@ const RecentProjects = () => {
           >
             Recent projects
           </Typography>
-          <Typography variant="body1" gutterBottom>
-            Below are a few recent projects I've been working on. My current
-            preferred development stack is using JavaScript, React, Material-ui
+          <Typography variant="body1" paragraph>
+            Below are a few projects I've been working on recently.
           </Typography>
-          <Typography variant="body2" align="center" color="textSecondary">
-            Find me on <DiGithubBadge>Github</DiGithubBadge> account.{" "}
-            <a
-              className={classes.linkItem}
-              href="https://github.com/789ni812"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://github.com/789ni812
-            </a>
+          <Typography variant="body2" paragraph>
+            My preferred development stack is currently
+            <br /> JavaScript, React, Material-ui on the front end.
+          </Typography>
+          <Typography variant="body2" paragraph>
+            For the backend databses I've used a couple including
+            <br /> Firebase, Mongo and Drupal (9 headless)
+          </Typography>
+          <Typography variant="body2" paragraph>
+            I host my projects at Linode. They're similar to AWS and Azure.
+            <br />
+            it's allways been easy to spin up a new Linux server when requried
           </Typography>
 
           <Grid

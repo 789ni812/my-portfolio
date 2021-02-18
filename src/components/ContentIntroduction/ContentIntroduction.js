@@ -8,6 +8,7 @@ import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 
 import {
+  DiGithubBadge,
   DiHtml5,
   DiCss3,
   DiMongodb,
@@ -57,6 +58,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       height: "1em",
       width: "1em",
+    },
+  },
+  linkItem: {
+    color: theme.palette.secondary.dark,
+    opacity: 0.7,
+    "&:hover": {
+      opacity: 1,
     },
   },
 }));
@@ -109,6 +117,22 @@ const ContentIntroduction = (theme) => {
                     gutterBottom
                   >
                     Front End / Full Stack Developer
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    align="center"
+                    color="textSecondary"
+                    gutterBottom
+                  >
+                    <DiGithubBadge>Github</DiGithubBadge> Find me on Github{" "}
+                    <a
+                      className={classes.linkItem}
+                      href="https://github.com/789ni812"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://github.com/789ni812
+                    </a>
                   </Typography>
                   <Typography variant="body2" paragraph>
                     My current development environment is around the JavaScript
