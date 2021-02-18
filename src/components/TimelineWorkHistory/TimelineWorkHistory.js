@@ -5,7 +5,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { Typography, Card, CardContent, Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+import { Typography, Card, CardContent } from "@material-ui/core";
 
 import SettingsInputIcon from "@material-ui/icons/SettingsInputComponent";
 import DevicesIcon from "@material-ui/icons/Devices";
@@ -21,7 +22,6 @@ import CommuteIcon from "@material-ui/icons/Commute";
 import TouchAppIcon from "@material-ui/icons/TouchApp";
 import SchoolIcon from "@material-ui/icons/School";
 import CodeIcon from "@material-ui/icons/Code";
-import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
   rootCard: {

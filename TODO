@@ -5,7 +5,8 @@ CV Changes:
   Branch: recentWorkSection-v1.0:
 
 [ ] Add Intro, Recent Projects and Employment History  to app bar navigation @started(21-02-18 05:31)
-[ ] Add scroll to top navigation
+[ ] Add sticky titles @low 
+✔ Add scroll to top navigation @done(21-02-18 11:07)
 [ ] Proof read content 
 [ ] Deploy
 
