@@ -60,7 +60,7 @@ const RecentProjects = () => {
           <Typography
             variant="h3"
             component="h1"
-            className={classes.titleLight}
+            className={classes.titles}
             gutterBottom
           >
             Recent projects
@@ -68,7 +68,7 @@ const RecentProjects = () => {
           <Typography variant="body1" paragraph>
             Below are a few projects I've been working on recently.
           </Typography>
-          <Typography variant="body2" paragraph>
+          {/*   <Typography variant="body2" paragraph>
             My preferred development stack is currently
             <br /> JavaScript, React, Material-ui on the front end.
           </Typography>
@@ -80,27 +80,27 @@ const RecentProjects = () => {
             I host my projects at Linode. They're similar to AWS and Azure.
             <br />
             it's allways been easy to spin up a new Linux server when requried
-          </Typography>
+          </Typography> */}
 
           <Grid
             container
             direction="row"
             justify="space-around"
             alignItems="stretch"
+            spacing={2}
           >
             <Grid item>
               <Card
                 variant="outlined"
                 style={{
                   maxWidth: 450,
-                  margin: 50,
                 }}
               >
                 <CardContent>
                   <Typography
                     variant="h4"
                     component="h2"
-                    className={classes.titles}
+                    className={classes.titleLight}
                     gutterBottom
                   >
                     Rainy's Cycle App
@@ -116,23 +116,22 @@ const RecentProjects = () => {
                   </Typography>
                   <Typography variant="body1" paragraph>
                     Location based cycle app with realtime updates to location,
-                    heading, speed, altitude and weather. The focus is less on
-                    fitness and more on the enjoyment of getting lost on a bike
-                    and finding the best spot for a sandwich and a coffee.
+                    heading, speed, altitude and weathe data. The focus is less
+                    on fitness and more around the enjoyment of getting lost and
+                    finding the best spot for a sandwich and a coffee.
                   </Typography>
                   <Typography variant="body1" paragraph>
-                    The current MVP currently supports the cycle maps, realtime
+                    The MVP currently supports the cycle maps, realtime
                     navigation, speed and heading updates, Further updates will
                     be rolledout shortly
                   </Typography>
-                  <Grid container direction="row" spacing={2}>
+                  <Grid container direction="row" spacing={1}>
                     <Grid
                       item
                       component={"a"}
                       href="https://www.rainyscycles.co.uk"
                       rel="noopener noreferrer"
                       target="_blank"
-                      style={{ maxWidth: 150 }}
                     >
                       <Avatar
                         variant="circle"
@@ -141,7 +140,7 @@ const RecentProjects = () => {
                         style={{ width: 150, height: 150 }}
                       />
                     </Grid>
-                    <Grid item style={{ maxWidth: 450 }}>
+                    <Grid item>
                       <List>
                         <ListItem>
                           <ListItemText>Browser based geolocation</ListItemText>
@@ -217,12 +216,12 @@ const RecentProjects = () => {
               </Card>
             </Grid>
             <Grid item>
-              <Card variant="outlined" style={{ maxWidth: 450, margin: 50 }}>
+              <Card variant="outlined" style={{ maxWidth: 450 }}>
                 <CardContent>
                   <Typography
                     variant="h4"
                     component="h2"
-                    className={classes.titles}
+                    className={classes.titleLight}
                     gutterBottom
                   >
                     Open Quiz
@@ -245,6 +244,12 @@ const RecentProjects = () => {
                       <List>
                         <ListItem>
                           <ListItemText>
+                            Fetching of OpenTDB token to ensure duplicate
+                            questions are not retrieved
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
                             Checks to see if an opentdb token exists in
                             localstorage
                           </ListItemText>
@@ -258,7 +263,7 @@ const RecentProjects = () => {
                         </ListItem>
                         <ListItem>
                           <ListItemText>
-                            fetches questions based on user selected category
+                            Fetches questions based on user selected category
                           </ListItemText>
                         </ListItem>
                         <ListItem>
@@ -269,7 +274,7 @@ const RecentProjects = () => {
                         </ListItem>
                         <ListItem>
                           <ListItemText>
-                            Manages round score and session score
+                            Manages round and session score
                           </ListItemText>
                         </ListItem>
                       </List>
@@ -326,118 +331,118 @@ const RecentProjects = () => {
                   </Grid>
                 </CardContent>
               </Card>
-              <Grid item>
-                <Card variant="outlined" style={{ maxWidth: 450, margin: 50 }}>
-                  <CardContent>
-                    <Typography
-                      variant="h4"
-                      component="h2"
-                      className={classes.titles}
-                      gutterBottom
-                    >
-                      DevBob Database
-                    </Typography>
-                    <Typography variant="body1" paragraph>
-                      A big fan of Drupal CMS since version 4.5 and I'm really
-                      enjoying Drupal 9 CMS and it's headless capabilities when
-                      using React on the front end. The combination of Drupal
-                      and React gives a rapid change environment, easy author
-                      editing and admin with a strong level of security.
-                    </Typography>
+            </Grid>
+            <Grid item>
+              <Card variant="outlined" style={{ maxWidth: 450 }}>
+                <CardContent>
+                  <Typography
+                    variant="h4"
+                    component="h2"
+                    className={classes.titleLight}
+                    gutterBottom
+                  >
+                    DevBob Database
+                  </Typography>
+                  <Typography variant="body1" paragraph>
+                    A big fan of Drupal CMS since version 4.5 and I'm really
+                    enjoying Drupal 9 CMS and it's headless capabilities when
+                    using React on the front end. The combination of Drupal and
+                    React gives a rapid change environment, easy author editing
+                    and admin with a strong level of security.
+                  </Typography>
 
-                    <Grid container direction="row" spacing={2}>
-                      <Grid item style={{ maxWidth: 150 }}>
-                        <Avatar
-                          variant="circle"
-                          src={DevBobApp}
-                          alt="Quiz App Screenshot"
-                          style={{ width: 150, height: 150 }}
-                        />
-                      </Grid>
-                      <Grid item style={{ maxWidth: 450 }}>
-                        <List>
-                          <ListItem>
-                            <ListItemText>
-                              Easy and secure editor environment in Drupal
-                            </ListItemText>
-                          </ListItem>
+                  <Grid container direction="row" spacing={2}>
+                    <Grid item style={{ maxWidth: 150 }}>
+                      <Avatar
+                        variant="circle"
+                        src={DevBobApp}
+                        alt="Quiz App Screenshot"
+                        style={{ width: 150, height: 150 }}
+                      />
+                    </Grid>
+                    <Grid item style={{ maxWidth: 450 }}>
+                      <List>
+                        <ListItem>
+                          <ListItemText>
+                            Easy and secure editor environment in Drupal
+                          </ListItemText>
+                        </ListItem>
 
-                          <ListItem>
-                            <ListItemText>
-                              Rapid creation of Content Types, Taxonomies,
-                              Topics and Authentication
-                            </ListItemText>
-                          </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Rapid creation of Content Types, Taxonomies, Topics
+                            and Authentication
+                          </ListItemText>
+                        </ListItem>
 
-                          <ListItem>
-                            <ListItemText>
-                              React fetches data from drupal to render on the
-                              front end
-                            </ListItemText>
-                          </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            React fetches data from drupal to render on the
+                            front end
+                          </ListItemText>
+                        </ListItem>
 
-                          <ListItem>
-                            <ListItemText>
-                              Multiple front end environments utilise data
-                              stored in Drupal
-                            </ListItemText>
-                          </ListItem>
-                        </List>
-                      </Grid>
+                        <ListItem>
+                          <ListItemText>
+                            Multiple front end environments utilise data stored
+                            in Drupal
+                          </ListItemText>
+                        </ListItem>
+                      </List>
+                    </Grid>
+                  </Grid>
+
+                  <Typography
+                    variant="h5"
+                    component="h3"
+                    className={classes.titles}
+                    gutterBottom
+                  >
+                    Technology Stack
+                  </Typography>
+
+                  <Grid
+                    container
+                    spacing={4}
+                    direction="row"
+                    justify="space-evenly"
+                  >
+                    <Grid item>
+                      <DiHtml5 className={classes.icon} />
+                      <Typography>HTML</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiCss3 className={classes.icon} />
+                      <Typography>CSS</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiJavascript className={classes.icon} />
+                      <Typography>JavaScript</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiReact className={classes.icon} />
+                      <Typography>React</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiNodejs className={classes.icon} />
+                      <Typography>NodeJS</Typography>
+                    </Grid>
+                    <Grid item>
+                      <DiDrupal className={classes.icon} />
+                      <Typography>Drupal</Typography>
+                    </Grid>
+                    <Grid item>
+                      <AiFillApi className={classes.icon} />
+                      <Typography>API</Typography>
                     </Grid>
 
-                    <Typography
-                      variant="h5"
-                      component="h3"
-                      className={classes.titles}
-                      gutterBottom
-                    >
-                      Technology Stack
-                    </Typography>
-
-                    <Grid
-                      container
-                      spacing={4}
-                      direction="row"
-                      justify="space-evenly"
-                    >
-                      <Grid item>
-                        <DiHtml5 className={classes.icon} />
-                        <Typography>HTML</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiCss3 className={classes.icon} />
-                        <Typography>CSS</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiJavascript className={classes.icon} />
-                        <Typography>JavaScript</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiReact className={classes.icon} />
-                        <Typography>React</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiNodejs className={classes.icon} />
-                        <Typography>NodeJS</Typography>
-                      </Grid>
-                      <Grid item>
-                        <DiDrupal className={classes.icon} />
-                        <Typography>Drupal</Typography>
-                      </Grid>
-                      <Grid item>
-                        <AiFillApi className={classes.icon} />
-                        <Typography>API</Typography>
-                      </Grid>
-
-                      <Grid item>
-                        <DiDebian className={classes.icon} />
-                        <Typography>Debian</Typography>
-                      </Grid>
+                    <Grid item>
+                      <DiDebian className={classes.icon} />
+                      <Typography>Debian</Typography>
                     </Grid>
-                  </CardContent>
-                </Card>
-              </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
             </Grid>
           </Grid>
         </CardContent>

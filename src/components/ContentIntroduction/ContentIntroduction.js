@@ -80,7 +80,12 @@ const ContentIntroduction = (theme) => {
 
       <Card variant="outlined">
         <CardContent>
-          <Typography variant="h3" component="h1" gutterBottom>
+          <Typography
+            variant="h3"
+            component="h1"
+            gutterBottom
+            className={classes.titles}
+          >
             Hi, I'm Stuart
           </Typography>
           <Typography variant="body1">
@@ -134,7 +139,7 @@ const ContentIntroduction = (theme) => {
                       https://github.com/789ni812
                     </a>
                   </Typography>
-                  <Typography variant="body2" paragraph>
+                  <Typography variant="body1" paragraph align="center">
                     My current development environment is around the JavaScript
                     ecosystem:
                   </Typography>
@@ -190,9 +195,11 @@ const ContentIntroduction = (theme) => {
                   >
                     Technical Project / Development Manager
                   </Typography>
-                  <Typography variant="body1" gutterBottom>
+                  <Typography variant="body1" paragraph>
                     A skilled technical project manager and development manager.
                     Utilising Agile and Waterfall project management styles.
+                  </Typography>
+                  <Typography variant="body1" paragraph>
                     Experience working with/managing:
                   </Typography>
                   <Grid
