@@ -1,21 +1,6 @@
 Project: My-Portfolio:
 
-CV Changes: 
 
-  Branch: recentWorkSection-v1.0:
-
-✔ Add Intro, Recent Projects and Employment History  to app bar navigation @started(21-02-18 05:31) @done(21-02-18 15:15) @lasted(9h44m32s)
-
-✔ Add scroll to top navigation @done(21-02-18 11:07)
-✔ Proof read content @done(21-02-18 16:00)
-[ ] Deploy
-
-
-  Recent Projects: 
-    Rainys Cycles:
-        ✔ Add screenshot @done(21-02-17 16:45)
-        ✔ Update description @done(21-02-17 16:45)
-        ✔ Point to site. @done(21-02-17 16:45)
 
 
   Branch: ProdReady-v1.2:
@@ -34,6 +19,20 @@ CV Changes:
     [ ] Demonstrate coding projects Ive been working on
  
 Archive: 
+  Branch: recentWorkSection-v1.0:
+
+    ✔ Add Intro, Recent Projects and Employment History  to app bar navigation @started(21-02-18 05:31) @done(21-02-18 15:15) @lasted(9h44m32s)
+    ✔ Add scroll to top navigation @done(21-02-18 11:07)
+    ✔ Proof read content @done(21-02-18 16:00)
+    ✔ Deploy @done(21-02-18 16:05)
+    
+    
+      Recent Projects: 
+        Rainys Cycles:
+            ✔ Add screenshot @done(21-02-17 16:45)
+            ✔ Update description @done(21-02-17 16:45)
+            ✔ Point to site. @done(21-02-17 16:45)
+
   Version 26-january-2021:
     ✔ Change intro text to be similar to website @done(21-02-01 11:26)
     ✔ Add panlogic @done(21-02-01 11:27)
