@@ -212,6 +212,10 @@ const RecentProjects = () => {
                       <Typography>Debian</Typography>
                     </Grid>
                   </Grid>
+                  <Typography variant="body1">
+                    NOTE: Please enable location on your device before loading
+                    this app
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
