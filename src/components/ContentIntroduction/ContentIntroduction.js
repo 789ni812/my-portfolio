@@ -89,7 +89,7 @@ const ContentIntroduction = (theme) => {
             Hi, I'm Stuart
           </Typography>
           <Typography variant="body1">
-            A Javascript Full-stack Engineer and Technical Project Manager with
+            A JavaScript Full-stack Engineer and Technical Project Manager with
             20 years experience engineering and managing technical projects
           </Typography>
         </CardContent>
@@ -129,7 +129,7 @@ const ContentIntroduction = (theme) => {
                     color="textSecondary"
                     gutterBottom
                   >
-                    <DiGithubBadge>Github</DiGithubBadge> Find me on Github{" "}
+                    <DiGithubBadge>GitHub</DiGithubBadge> Find me on Github{" "}
                     <a
                       className={classes.linkItem}
                       href="https://github.com/789ni812"

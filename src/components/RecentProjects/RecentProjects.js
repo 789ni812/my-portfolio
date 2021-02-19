@@ -115,15 +115,15 @@ const RecentProjects = () => {
                     </a>
                   </Typography>
                   <Typography variant="body1" paragraph>
-                    Location based cycle app with realtime updates to location,
-                    heading, speed, altitude and weathe data. The focus is less
+                    Location based cycle app with real-time updates to location,
+                    heading, speed, altitude and weather data. The focus is less
                     on fitness and more around the enjoyment of getting lost and
                     finding the best spot for a sandwich and a coffee.
                   </Typography>
                   <Typography variant="body1" paragraph>
-                    The MVP currently supports the cycle maps, realtime
+                    The MVP currently supports the cycle maps, real-time
                     navigation, speed and heading updates, Further updates will
-                    be rolledout shortly
+                    be rolled out shortly
                   </Typography>
                   <Grid container direction="row" spacing={1}>
                     <Grid
@@ -152,7 +152,7 @@ const RecentProjects = () => {
                         </ListItem>
                         <ListItem>
                           <ListItemText>
-                            Realtime updates to speed and heading via
+                            Real-time updates to speed and heading via
                             geolocation
                           </ListItemText>
                         </ListItem>
@@ -250,7 +250,7 @@ const RecentProjects = () => {
                         </ListItem>
                         <ListItem>
                           <ListItemText>
-                            Checks to see if an opentdb token exists in
+                            Checks to see if an OpenTDB token exists in
                             localstorage
                           </ListItemText>
                         </ListItem>
@@ -341,7 +341,7 @@ const RecentProjects = () => {
                     className={classes.titleLight}
                     gutterBottom
                   >
-                    DevBob Database
+                    Drupal Headless Database with React Front
                   </Typography>
                   <Typography variant="body1" paragraph>
                     A big fan of Drupal CMS since version 4.5 and I'm really
