@@ -65,7 +65,7 @@ const Header = () => {
           <Typography className={classes.logo}>
             StuartBradford<span className={classes.logoCom}>.com</span>
           </Typography>
-          <Paper square>
+          {/* <Paper square>
             <Tabs
               indicatorColor="primary"
               textColor="primary"
@@ -86,7 +86,7 @@ const Header = () => {
                 onClick={() => handleChangeSection("timelineWorkHistory")}
               />
             </Tabs>
-          </Paper>
+          </Paper> */}
         </AppBar>
       </HideOnScroll>
       <Toolbar id="back-to-top-anchor" />
@@ -104,11 +104,7 @@ const Header = () => {
           <KeyboardArrowUp />
         </Fab>
       </BackToTop>
-      {/* <ScrollToIntro>
-        <Fab color="secondary" size="large" aria-label="scroll back to top">
-          <KeyboardArrowUp />
-        </Fab>
-      </ScrollToIntro> */}
+
       <div className={classes.toolbarMargin} />
     </React.Fragment>
   );
