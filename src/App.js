@@ -1,5 +1,6 @@
 import React from "react";
 // Material-ui
+import Grid from "@material-ui/core/Grid";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./components/ui/Theme";
 
@@ -11,8 +12,20 @@ import Footer from "./components/ui/Footer/Footer";
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Header data-test="component-Header" />
-      <Footer data-test="component-Footer" theme={theme} />
+      <Grid
+        container
+        style={{
+          margin: 0,
+          width: "100%",
+        }}
+      >
+        <Grid item>
+          <Header data-test="component-Header" />
+        </Grid>
+        <Grid item>
+          <Footer data-test="component-Footer" theme={theme} />
+        </Grid>
+      </Grid>
     </ThemeProvider>
   );
 };
