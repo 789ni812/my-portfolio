@@ -21,8 +21,6 @@ const App = () => {
       >
         <Grid item>
           <Header data-test="component-Header" />
-        </Grid>
-        <Grid item>
           <Footer data-test="component-Footer" theme={theme} />
         </Grid>
       </Grid>
