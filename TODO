@@ -5,18 +5,18 @@ Project: My-Portfolio:
 
   Branch: ProdReady-v1.2:
     [ ] Add the form experience from the Udemy course Ive been working on
-    [ ] Add Google analytics to site (check udemy for lesson)
-    [ ] Add github account
+    [ ] Add Google analytics to site
+    ✔ Add github account @done(21-02-20 06:12)
     
   Future Branch propsals:
     [ ] create css/js animation on wording "  with 20 years experience developing and managing digital projects
     for a variety of companies"  (ref: https://speckyboy.com/css-javascript-text-animation-snippets/)
-    [ ] Review and possible regactor of material-ui code based on new learnings 
+    ✔ Review and possible regactor of material-ui code based on new learnings @done(21-02-20 06:12)
     [] Mock up Articles page 
     [ ] Add in articles from Devbob
-    [ ] Add Devbob as a "what I'm currently working on"
+    ✔ Add Devbob as a "what I'm currently working on" @done(21-02-20 06:12)
     [ ] Create a PDF CV and attach it the site
-    [ ] Demonstrate coding projects Ive been working on
+    ✔ Demonstrate coding projects Ive been working on @done(21-02-20 06:12)
  
 Archive: 
   Branch: recentWorkSection-v1.0:
