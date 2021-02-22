@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.secondary.dark,
     width: "100%",
-    padding: "15px",
   },
   gridItem: {
     margin: "3em",
@@ -79,7 +78,7 @@ const Footer = () => {
       <Grid
         container
         justify="space-evenly"
-        spacing={5}
+        spacing={0}
         className={classes.mainContainer}
       >
         <Grid
