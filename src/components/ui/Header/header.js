@@ -9,7 +9,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
 import HideOnScroll from "../../ui/HideOnScroll.jsx";
-import Grid from "@material-ui/core/Grid";
 // import BackToTop from "../../ui/BackToTop.jsx";
 // import { KeyboardArrowUp } from "@material-ui/icons";
 // import Fab from "@material-ui/core/Fab";
@@ -91,44 +90,15 @@ const Header = () => {
         </AppBar>
       </HideOnScroll>
       <Toolbar id="back-to-top-anchor" />
-      <Grid
-        container
-        style={{
-          width: "100%",
-        }}
-      >
-        <Grid
-          item
-          index="intro"
-          id="intro"
-          style={{
-            width: "100%",
-          }}
-        >
-          <ContentIntroduction data-test="component-ContentIntroduction" />
-        </Grid>
-        <Grid
-          item
-          index="recentProjects"
-          id="recentProjects"
-          style={{
-            width: "100%",
-          }}
-        >
-          <RecentProjects />
-        </Grid>
-        <Grid
-          item
-          index="timelineWorkHistory"
-          id="timelineWorkHistory"
-          style={{
-            width: "100%",
-          }}
-        >
-          <TimelineWorkHistory />
-        </Grid>
-      </Grid>
-
+      <div index="intro" id="intro">
+        <ContentIntroduction data-test="component-ContentIntroduction" />
+      </div>
+      <div index="recentProjects" id="recentProjects">
+        <RecentProjects />
+      </div>
+      <div index="timelineWorkHistory" id="timelineWorkHistory">
+        <TimelineWorkHistory />
+      </div>
       {/* <BackToTop>
         <Fab color="secondary" size="large" aria-label="scroll back to top">
           <KeyboardArrowUp />
