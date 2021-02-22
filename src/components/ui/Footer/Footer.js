@@ -10,6 +10,8 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.secondary.dark,
     width: "100%",
+    zIndex: 1302,
+    position: "relative",
   },
   gridItem: {
     margin: "3em",
