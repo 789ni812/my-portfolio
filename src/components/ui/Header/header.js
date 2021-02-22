@@ -9,12 +9,12 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
 import HideOnScroll from "../../ui/HideOnScroll.jsx";
-import BackToTop from "../../ui/BackToTop.jsx";
-import { KeyboardArrowUp } from "@material-ui/icons";
-import Fab from "@material-ui/core/Fab";
-import Paper from "@material-ui/core/Paper";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+// import BackToTop from "../../ui/BackToTop.jsx";
+// import { KeyboardArrowUp } from "@material-ui/icons";
+// import Fab from "@material-ui/core/Fab";
+// import Paper from "@material-ui/core/Paper";
+// import Tabs from "@material-ui/core/Tabs";
+// import Tab from "@material-ui/core/Tab";
 
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
@@ -53,11 +53,11 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
 
-  const handleChangeSection = (value) => {
-    document
-      .getElementById(value)
-      .scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  // const handleChangeSection = (value) => {
+  //   document
+  //     .getElementById(value)
+  //     .scrollIntoView({ behavior: "smooth", block: "start" });
+  // };
   return (
     <React.Fragment>
       <HideOnScroll>
@@ -99,11 +99,11 @@ const Header = () => {
       <div index="timelineWorkHistory" id="timelineWorkHistory">
         <TimelineWorkHistory />
       </div>
-      <BackToTop>
+      {/* <BackToTop>
         <Fab color="secondary" size="large" aria-label="scroll back to top">
           <KeyboardArrowUp />
         </Fab>
-      </BackToTop>
+      </BackToTop> */}
 
       <div className={classes.toolbarMargin} />
     </React.Fragment>
