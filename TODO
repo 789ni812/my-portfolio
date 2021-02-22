@@ -6,6 +6,10 @@ Project: My-Portfolio:
   Branch: ProdReady-v1.2:
     [ ] Add the form experience from the Udemy course Ive been working on
     [ ] Add Google analytics to site
+    [ ] Add Back To Top functionality
+      [] Enable Back To Top
+      [] fix bug on mobile, button not working and 
+      [] button clashes with email footer button
     ✔ Add github account @done(21-02-20 06:12)
     
   Future Branch propsals:
