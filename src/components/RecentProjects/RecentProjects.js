@@ -5,7 +5,7 @@ import {
   DiHtml5,
   DiCss3,
   DiDrupal,
-  DiMongodb,
+  DiFirebase,
   DiReact,
   DiNodejs,
   DiJavascript,
@@ -115,15 +115,14 @@ const RecentProjects = () => {
                     </a>
                   </Typography>
                   <Typography variant="body1" paragraph>
-                    Location based cycle app with real-time updates to location,
-                    heading, speed, altitude and weather data. The focus is less
-                    on fitness and more around the enjoyment of getting lost and
-                    finding the best spot for a sandwich and a coffee.
+                    Location-based cycling app, ability to record your route to
+                    a database in realtime. Heading, speed, altitude and weather
+                    data is stored using Google's firebase service.
                   </Typography>
                   <Typography variant="body1" paragraph>
                     The MVP currently supports the cycle maps, real-time
-                    navigation, speed and heading updates, Further updates will
-                    be rolled out shortly
+                    recording to Firebase with navigation, speed and heading
+                    updates. Further updates will be rolled out shortly
                   </Typography>
                   <Grid container direction="row" spacing={1}>
                     <Grid
@@ -143,7 +142,7 @@ const RecentProjects = () => {
                     <Grid item>
                       <List>
                         <ListItem>
-                          <ListItemText>Browser based geolocation</ListItemText>
+                          <ListItemText>Browser-based geolocation</ListItemText>
                         </ListItem>
                         <ListItem>
                           <ListItemText>
@@ -154,6 +153,17 @@ const RecentProjects = () => {
                           <ListItemText>
                             Real-time updates to speed and heading via
                             geolocation
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Real-time recording users geolocation data with
+                            Google's FireStore database
+                          </ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>
+                            Uses Google Authentication to manage user access
                           </ListItemText>
                         </ListItem>
                       </List>
@@ -204,22 +214,18 @@ const RecentProjects = () => {
                       <Typography>OpenCycleMap API</Typography>
                     </Grid>
                     <Grid item>
-                      <DiMongodb className={classes.icon} />
-                      <Typography>Mongo</Typography>
+                      <DiFirebase className={classes.icon} />
+                      <Typography>Google Firebase</Typography>
                     </Grid>
                     <Grid item>
                       <DiDebian className={classes.icon} />
                       <Typography>Debian</Typography>
                     </Grid>
                   </Grid>
-                  <Typography variant="body1">
-                    NOTE: Please enable location on your device before loading
-                    this app
-                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <Card variant="outlined" style={{ maxWidth: 450 }}>
                 <CardContent>
                   <Typography
@@ -335,7 +341,7 @@ const RecentProjects = () => {
                   </Grid>
                 </CardContent>
               </Card>
-            </Grid>
+            </Grid> */}
             <Grid item>
               <Card variant="outlined" style={{ maxWidth: 450 }}>
                 <CardContent>
